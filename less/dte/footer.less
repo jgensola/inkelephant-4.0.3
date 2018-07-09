@@ -1,0 +1,77 @@
+@import 'fonts.less';
+@import 'mixins.less';
+@import 'variables.less';
+@import 'buttons.less';
+
+.site-footer.dte {
+    color: @cod-gray;
+    background: @alabaster;
+
+    font-family: @dte-primary-font;
+    font-size: 14px;
+
+    .top-section {
+        position: relative;
+
+        padding: 30px 15px 0;
+        margin: auto;
+        //background: @cod-gray;
+
+        .flex-display();
+        .flex-direction(column);
+
+        &:before {
+            position: absolute;
+            top: -7px;
+
+            width: 100%;
+            margin-left: -15px;
+
+            color: @white;
+
+            font-family: @google-icon-font;
+            font-size: 70px;
+            text-align: center;
+
+            content: 'arrow_drop_down';
+        }
+
+        a {
+            color: @cod-gray;
+
+            &:hover {
+                color: @thunderbird;
+            }
+        }
+    }
+
+    h3 {
+        margin-bottom: 15px;
+
+        color: @thunderbird;
+
+        font-size: 18px;
+    }
+
+    .footer-block {
+        margin-bottom: 30px;
+    }
+
+    .bottom-section {
+        height: 30px;
+
+        background: @cod-gray;
+    }
+}
+
+//iPad screen and up
+@media only screen  and (min-width: @screen__m) {
+    .site-footer.dte {
+        .top-section {
+            max-width: 760px;
+
+            .flex-direction(row);
+            .justify-content(space-between);
+        }
+    }
+}
