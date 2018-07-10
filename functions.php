@@ -2926,10 +2926,24 @@ function dte_resources() {
     wp_enqueue_style( 'wpb-google-fonts-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', false );
     wp_enqueue_style( 'wpb-google-fonts-fjalla', 'https://fonts.googleapis.com/icon?family=Fjalla+One', false );
     wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
-    wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/dte.js', array(), true );
+
+    if(is_page()){ //Check if we are viewing a page
+        global $wp_query;
+
+        //Check which template is assigned to current page we are looking at
+        $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+        if($template_name == 'page-dte-company.php' || $template_name == 'page-dte-products.php' || $template_name == 'page-dte-service.php' || $template_name == 'page-dte-technology.php'){
+            //If page is using slider portfolio template then load our slider script
+
+            wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/dte.js', array(), true );
+            wp_dequeue_script( 'nectarFrontend' );
+        }
+    }
 }
 
 add_action('wp_enqueue_scripts', 'dte_resources');
+
+
 
 add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
 

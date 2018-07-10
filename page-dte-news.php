@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: DTE Company Page Template
+ * Template Name: DTE News Page Template
  *
  * The template for displaying all pages
  *
@@ -21,7 +21,7 @@ get_header('dte');
 
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-        <div class="page-container dte-company">
+        <div class="page-container">
             <div class="breadcrumbs">
                 <?php bcn_display(); ?>
             </div>
@@ -35,8 +35,19 @@ if (have_posts()) :
                     <?php wp_nav_menu($args); ?>
                 </div>
                 <article class="post page">
-<!--                    <h1>--><?php //the_title(); ?><!--</h1>-->
                     <?php the_content(); ?>
+                    <div class="news-articles">
+                        <?php $mypages = get_pages(array('child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc'));
+                        foreach ($mypages as $page) {
+                            $content = $page->post_content; ?>
+                            <a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo $page->post_title; ?>">
+                                <div class="image-container">
+                                    <?php echo get_the_post_thumbnail($page->ID); ?>
+                                </div>
+                                <p><?php echo get_post_meta($page->ID, 'Description', TRUE); ?></p>
+                            </a>
+                        <?php } ?>
+                    </div>
                 </article>
             </div>
         </div>

@@ -3,12 +3,12 @@
 @import 'variables.less';
 @import 'buttons.less';
 
-.page-id-9,
-.page-template-page-dte-products,
-.page-template-page-dte-news-article,
-.page-template-page-dte-company,
-.page-template-page-dte-service,
-.page-template-page-dte-technology {
+.page-template-page-dte-news-php,
+.page-template-page-dte-products-php,
+.page-template-page-dte-news-article-php,
+.page-template-page-dte-company-php,
+.page-template-page-dte-service-php,
+.page-template-page-dte-technology-php {
     background: url('@{image-path}dte/scanlines.png'), url('@{image-path}dte/background.jpg');
     background-position: 0 0, center 0;
     background-repeat: repeat-x, no-repeat;
@@ -20,9 +20,30 @@
     .flex-display();
     .justify-content(center);
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        color: inherit;
+
+        letter-spacing: initial;
+        font-family: inherit;
+        font-weight: initial;
+        text-transform: none;
+    }
+
+    p {
+        padding: 0;
+    }
+
     .container {
-        max-width: 1200px;
+        max-width: 1200px !important;
         width: 100%;
+        padding: 0;
 
         background: @white;
     }
@@ -46,6 +67,10 @@
     .main-content {
         .flex-display();
         .flex-direction(column);
+
+        ul li {
+            list-style: none;
+        }
     }
 
     //Sidebar
@@ -56,6 +81,7 @@
 
         ul.menu {
             padding: 0;
+            margin: 0;
         }
 
         li {
@@ -87,6 +113,10 @@
 
     //Article
     article.post {
+        border: none;
+        padding: 0;
+        margin: 0;
+
         .flex-order(1);
 
         img {
@@ -167,7 +197,11 @@
             line-height: 24px;
 
             &.nbsp {
-                margin: 0;
+                display: block;
+
+                margin: 8px;
+                height: 1px;
+
                 line-height: 1;
             }
         }
@@ -191,12 +225,16 @@
 
         ul {
             margin-bottom: 21px;
+
+            &.page-list {
+                margin-top: 15px;
+            }
         }
 
         li {
             position: relative;
 
-            margin: 2px 0 0 15px;
+            margin: 2px 0 0 0;
 
             font-family: @dte-primary-font;
             font-size: 14px;
@@ -248,6 +286,7 @@
                 display: block;
 
                 width: 100%;
+                max-width: max-content;
             }
         }
 
@@ -298,20 +337,12 @@
             }
 
             .employee {
-                width: 50%;
                 margin-bottom: 30px;
                 padding-right: 15px;
 
                 color: @cod-gray;
 
-                font-size: 0;
                 line-height: 24px;
-
-                p {
-                    margin: 0;
-
-                    font-size: 14px;
-                }
             }
         }
 
@@ -466,12 +497,12 @@
 
 //iPad screen and up
 @media only screen  and (min-width: @screen__m) {
-    .page-id-9,
-    .page-template-page-dte-products,
-    .page-template-page-dte-news-article,
-    .page-template-page-dte-company,
-    .page-template-page-dte-service,
-    .page-template-page-dte-technology {
+    .page-template-page-dte-news-php,
+    .page-template-page-dte-products-php,
+    .page-template-page-dte-news-article-php,
+    .page-template-page-dte-company-php,
+    .page-template-page-dte-service-php,
+    .page-template-page-dte-technology-php {
         //Breadcrumbs
         .breadcrumbs {
             display: block;
@@ -479,7 +510,7 @@
             margin: 15px 0;
 
             font-size: 12px;
-            text-transform: uppercase;
+            font-family: @dte-primary-font;
 
             a {
                 color: @cod-gray;
@@ -491,6 +522,14 @@
                     color: @thunderbird;
 
                     text-decoration: underline;
+                }
+            }
+
+            span {
+                text-transform: uppercase;
+
+                &.separator {
+                    padding:  0 7px ;
                 }
             }
         }
@@ -513,7 +552,7 @@
 
             .flex-order(1);
 
-            ul {
+            ul.menu {
                 margin: 0 50px 0 0;
             }
         }
@@ -565,8 +604,11 @@
                 margin-bottom: 21px;
                 width: 43%;
 
-                &.car img {
-                    width: 280px;
+                &.car {
+                    img,
+                    .image-description {
+                        width: 280px;
+                    }
                 }
             }
 
@@ -595,7 +637,7 @@
                 }
 
                 .car img {
-                    //width: 311px;
+                    max-width: 100%;
                 }
 
                 .right {
@@ -604,10 +646,23 @@
                             margin-top: 0;
                         }
                     }
+
+                    &.call-to-action {
+                        min-width: 200px;
+                        padding-top: 60px;
+                    }
                 }
 
                 .image-wrapper {
                     margin-right: 20px;
+                }
+
+                .text.paragraph {
+                    width: 60%;
+                }
+
+                .car.has-paragraph {
+                    width: 40%;
                 }
             }
 
@@ -627,7 +682,6 @@
                 .employee {
                     display: inline-block;
 
-                    width: auto;
                     margin-right: 25px;
                 }
             }
@@ -637,8 +691,15 @@
                 padding-right: 3.5%;
 
                 a {
-                    width: 46.4497041%;
-                    padding-right: 3.550295857%;
+                    width: 46%;
+                    margin-right: 4%;
+
+                    .flex-display();
+                    .flex-direction(column);
+
+                    p {
+                        .flex-grow(1);
+                    }
                 }
 
             }

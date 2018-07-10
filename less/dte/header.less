@@ -4,6 +4,7 @@
 @import 'buttons.less';
 
 .site-header.dte {
+
     padding-top: 30px;
 
     background: @cod-gray;
@@ -115,13 +116,20 @@
 
                     &:hover {
                         color: @thunderbird;
+                        background: transparent;
                     }
                 }
 
                 //Home Button in Navigation
-                &.mega-menu-item-850 {
+                &.mega-menu-item-33243 {
                     a {
-                        font-size: 0;
+                        margin-right: -70px;
+
+                        color: transparent;
+
+                        &:hover {
+                            color: transparent;
+                        }
 
                         &:before {
                             display: inline;
@@ -142,9 +150,11 @@
                 }
             }
 
-            > li.mega-menu-flyout ul.mega-sub-menu {
-                .transition(none);
+            ul.mega-sub-menu {
+                .transition(none) !important;
+            }
 
+            > li.mega-menu-flyout ul.mega-sub-menu {
                 li.mega-menu-item a.mega-menu-link {
                     border-bottom: 1px solid @mercury;
                     height: 43px;
@@ -192,7 +202,8 @@
                     }
                 }
 
-                &.mega-menu-item-70 a.mega-menu-link {
+                //PedalBox
+                &.mega-menu-item-33247 a.mega-menu-link {
                     pointer-events: auto;
                 }
 
@@ -218,8 +229,8 @@
                 }
 
                 //PedalBox in Navigation
-                &.mega-menu-item-70,
-                &.mega-menu-item-70.mega-toggle-on {
+                &.mega-menu-item-33247,
+                &.mega-menu-item-33247.mega-toggle-on {
                     a:before {
                         display: none;
                     }
@@ -276,8 +287,9 @@
                     }
 
                     //PedalBox Widget
-                    .mega-menu-item-custom_html-3 {
+                    .mega-menu-item-text-4 {
                         padding: 0;
+                        visibility: visible !important;
                         width: 613px !important;
 
                         cursor: auto;
@@ -306,6 +318,8 @@
                             h2 {
                                 margin: 0;
 
+                                color: @white;
+
                                 font-family: @dte-secondary-font;
                                 font-weight: normal;
                                 font-size: 23px;
@@ -326,8 +340,12 @@
                             h4 {
                                 margin: -7px 0 0 21px;
 
+                                color: @white;
+
                                 font-size: 16px;
                                 font-weight: 300;
+                                text-transform: none;
+                                font-family: @dte-primary-font;
                             }
                         }
 
@@ -385,6 +403,8 @@
 
                         .number {
                             margin: 15px 0 0 20px;
+
+                            color: @cod-gray;
                         }
 
                         .plus,
@@ -403,12 +423,15 @@
                                 margin: 0;
 
                                 font-weight: normal;
+                                font-family: @dte-primary-font;
                                 font-size: 16.5px;
                                 line-height: 1.5;
+                                letter-spacing: initial;
                             }
 
                             p {
                                 margin: 0;
+                                padding: 0;
 
                                 font-size: 11px;
                                 line-height: 1;
@@ -490,8 +513,8 @@
                     }
 
                     //PedalBox in Navigation
-                    &.mega-menu-item-70,
-                    &.mega-menu-item-70.mega-toggle-on {
+                    &.mega-menu-item-33247,
+                    &.mega-menu-item-33247.mega-toggle-on {
                         position: relative;
 
                         a:before {

@@ -10,7 +10,7 @@
     <div class="container">
         <!-- site header -->
         <header class="site-header dte">
-            <a class="logo" href="<?php echo get_page_uri(7); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dte/dte-logo.png"></a>
+            <a class="logo" href="<?php echo get_page_uri(33216); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dte/dte-logo.png"></a>
             <nav class="site-nav">
                 <?php
                 $args = array(

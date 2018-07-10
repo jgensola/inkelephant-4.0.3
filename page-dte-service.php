@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: DTE Company Page Template
+ * Template Name: DTE Service Page Template
  *
  * The template for displaying all pages
  *
@@ -21,7 +21,7 @@ get_header('dte');
 
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-        <div class="page-container dte-company">
+        <div class="page-container dte-service">
             <div class="breadcrumbs">
                 <?php bcn_display(); ?>
             </div>
@@ -29,13 +29,13 @@ if (have_posts()) :
                 <div class="dte-sidebar">
                     <?php
                     $args = array(
-                        'theme_location' => 'dte-company'
+                        'theme_location' => 'dte-service'
                     );
                     ?>
                     <?php wp_nav_menu($args); ?>
                 </div>
                 <article class="post page">
-<!--                    <h1>--><?php //the_title(); ?><!--</h1>-->
+                    <!--                    <h1>--><?php //the_title(); ?><!--</h1>-->
                     <?php the_content(); ?>
                 </article>
             </div>
