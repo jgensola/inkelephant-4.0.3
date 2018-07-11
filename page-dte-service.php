@@ -17,6 +17,7 @@
  * @version 1.0
  */
 
+get_header();
 get_header('dte');
 
 if (have_posts()) :
@@ -46,5 +47,6 @@ else:
 endif;
 
 get_footer('dte');
+get_footer();
 
 ?>

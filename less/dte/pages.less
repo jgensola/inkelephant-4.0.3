@@ -17,9 +17,6 @@
 
     line-height: 22px;
 
-    .flex-display();
-    .justify-content(center);
-
     h1,
     h2,
     h3,
@@ -34,6 +31,14 @@
         font-family: inherit;
         font-weight: initial;
         text-transform: none;
+    }
+
+    bold, strong, b {
+        font-family: inherit;
+
+        a {
+            font-weight: bold;
+        }
     }
 
     p {
@@ -70,6 +75,10 @@
 
         ul li {
             list-style: none;
+        }
+
+        iframe[src] {
+            opacity: 1;
         }
     }
 
@@ -286,7 +295,6 @@
                 display: block;
 
                 width: 100%;
-                max-width: max-content;
             }
         }
 
@@ -299,6 +307,12 @@
             margin: 15px 0 0 0;
 
             text-align: right;
+
+            &.special {
+                float: left;
+
+                text-align: left;
+            }
         }
 
         .clearfix {
@@ -566,15 +580,15 @@
 
             .images-2 {
                 .flex-display();
-                //.flex-wrap(wrap);
-
-                img {
-                    width: 100%;
-                }
 
                 .image-wrapper {
                     width: 100%;
                     margin: 0;
+
+                    img {
+                        width: 100%;
+                        max-width: 100%;
+                    }
                 }
             }
 
@@ -596,6 +610,10 @@
                 span {
                     display: block;
                 }
+
+                img {
+                    .max-width-max-content();
+                }
             }
 
             .left {
@@ -603,13 +621,6 @@
 
                 margin-bottom: 21px;
                 width: 43%;
-
-                &.car {
-                    img,
-                    .image-description {
-                        width: 280px;
-                    }
-                }
             }
 
             .right {
@@ -701,7 +712,6 @@
                         .flex-grow(1);
                     }
                 }
-
             }
 
             &.news {
@@ -709,12 +719,65 @@
                     width: 100%;
                 }
 
+                iframe {
+                    padding-right: 20px;
+                }
+
+                .call-to-action.special {
+                    margin: 0;
+                }
+
                 .bottom-content {
                     .flex-display();
+                    .justify-content(space-between);
+
+                    &.special {
+                        .align-items(center);
+
+                        ul {
+                            .flex-order(1);
+                        }
+
+                        .right {
+                            .flex-order(2);
+                        }
+
+                        &-2 .car img {
+                            width: 280px;
+                        }
+
+                        &-3 {
+                            position: relative;
+
+                            .text {
+                                .flex-order(1);
+                            }
+
+                            .right {
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+
+                                .flex-order(2);
+                            }
+                        }
+
+                        &-4 {
+                            .justify-content(normal);
+                            .align-items(center);
+                        }
+                    }
 
                     .car {
-                        width: 40%;
-                        margin-right: 20px;
+                        width: auto;
+
+                        img {
+                            width: initial;
+                        }
+
+                        .image-description {
+                            width: initial;
+                        }
                     }
 
                     .text {
@@ -727,20 +790,16 @@
                 }
 
                 .left {
-                    float: left;
+                    float: none;
 
                     &.summary {
-                        width: 70%;
+                        width: auto;
                         margin-bottom: 0;
-                    }
-
-                    .lightbox {
-                        //margin-bottom: 20px;
                     }
                 }
 
                 .right {
-                    float: right;
+                    float: none;
 
                     margin: 40px 0 0 0;
                     width: 30%;
@@ -752,8 +811,10 @@
                     }
 
                     &.call-to-action {
-                        margin-top: 0;
-                        width: 100%;
+                        margin: 0 0 0 20px;
+                        width: auto;
+
+                        .min-width-max-content();
                     }
 
                     &.text {

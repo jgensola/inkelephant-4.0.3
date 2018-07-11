@@ -3,6 +3,33 @@
 @import 'variables.less';
 @import 'buttons.less';
 
+//Autovox Footer
+.page-template-page-dte-news-php,
+.page-template-page-dte-products-php,
+.page-template-page-dte-news-article-php,
+.page-template-page-dte-company-php,
+.page-template-page-dte-service-php,
+.page-template-page-dte-technology-php {
+    #footer-outer {
+        .container {
+            max-width: 300px !important;
+
+            background: none;
+        }
+
+        #copyright {
+            width: 100%;
+            padding: 20px 0;
+            margin: 0;
+
+            li a {
+                height: 85px;
+            }
+        }
+    }
+}
+
+//DTE Footer
 .site-footer.dte {
     color: @cod-gray;
     background: @alabaster;
@@ -15,7 +42,6 @@
 
         padding: 30px 15px 0;
         margin: auto;
-        //background: @cod-gray;
 
         .flex-display();
         .flex-direction(column);
@@ -58,20 +84,59 @@
     }
 
     .bottom-section {
+        display: none;
+
         height: 30px;
 
         background: @cod-gray;
     }
 }
 
+//Screens with a width of 690px and up
+@media only screen  and (min-width: @screen__sm) {
+    //Autovox Footer
+    .page-template-page-dte-news-php,
+    .page-template-page-dte-products-php,
+    .page-template-page-dte-news-article-php,
+    .page-template-page-dte-company-php,
+    .page-template-page-dte-service-php,
+    .page-template-page-dte-technology-php {
+        #footer-outer {
+            .container {
+                max-width: 600px !important;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
 //iPad screen and up
 @media only screen  and (min-width: @screen__m) {
+    //DTE Footer
     .site-footer.dte {
         .top-section {
             max-width: 760px;
 
             .flex-direction(row);
             .justify-content(space-between);
+        }
+    }
+}
+
+//Screens with a width of 1000px and up
+@media only screen  and (min-width: @screen__sl) {
+    //Autovox Footer
+    .page-template-page-dte-news-php,
+    .page-template-page-dte-products-php,
+    .page-template-page-dte-news-article-php,
+    .page-template-page-dte-company-php,
+    .page-template-page-dte-service-php,
+    .page-template-page-dte-technology-php {
+        #footer-outer {
+            .container {
+                max-width: 1425px !important;
+                padding: 0 90px;
+            }
         }
     }
 }

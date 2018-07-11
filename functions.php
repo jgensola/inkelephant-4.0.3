@@ -2932,7 +2932,7 @@ function dte_resources() {
 
         //Check which template is assigned to current page we are looking at
         $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
-        if($template_name == 'page-dte-company.php' || $template_name == 'page-dte-products.php' || $template_name == 'page-dte-service.php' || $template_name == 'page-dte-technology.php'){
+        if($template_name == 'page-dte-company.php' || $template_name == 'page-dte-news.php'  || $template_name == 'page-dte-news-article.php' || $template_name == 'page-dte-products.php' || $template_name == 'page-dte-service.php' || $template_name == 'page-dte-technology.php'){
             //If page is using slider portfolio template then load our slider script
 
             wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/dte.js', array(), true );

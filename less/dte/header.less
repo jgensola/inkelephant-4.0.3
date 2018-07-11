@@ -3,8 +3,25 @@
 @import 'variables.less';
 @import 'buttons.less';
 
-.site-header.dte {
+//Autovox Header
+.page-template-page-dte-news-php,
+.page-template-page-dte-products-php,
+.page-template-page-dte-news-article-php,
+.page-template-page-dte-company-php,
+.page-template-page-dte-service-php,
+.page-template-page-dte-technology-php {
+    #header-outer,
+    #mobile-menu {
+        .container {
+            max-width: 300px !important;
 
+            background: none;
+        }
+    }
+}
+
+//DTE Header
+.site-header.dte {
     padding-top: 30px;
 
     background: @cod-gray;
@@ -113,6 +130,7 @@
 
                 > a.mega-menu-link {
                     padding: 0 23px;
+                    width: 100%;
 
                     &:hover {
                         color: @thunderbird;
@@ -244,10 +262,45 @@
     }
 }
 
+//Screens with a width of 640px and up
+@media only screen  and (min-width: @screen__s) {
+    //Autovox Header
+    .page-template-page-dte-news-php,
+    .page-template-page-dte-products-php,
+    .page-template-page-dte-news-article-php,
+    .page-template-page-dte-company-php,
+    .page-template-page-dte-service-php,
+    .page-template-page-dte-technology-php {
+        #header-outer,
+        #mobile-menu {
+            .container {
+                max-width: 420px !important;
+            }
+        }
+    }
+}
+
+//Screens with a width of 690px and up
+@media only screen  and (min-width: @screen__sm) {
+    //Autovox Header
+    .page-template-page-dte-news-php,
+    .page-template-page-dte-products-php,
+    .page-template-page-dte-news-article-php,
+    .page-template-page-dte-company-php,
+    .page-template-page-dte-service-php,
+    .page-template-page-dte-technology-php {
+        #header-outer,
+        #mobile-menu {
+            .container {
+                max-width: 600px !important;
+            }
+        }
+    }
+}
+
 //iPad screen and up
 @media only screen  and (min-width: @screen__m) {
-
-    //Header
+    //DTE Header
     .site-header.dte {
         .logo {
             width: 280px;
@@ -266,6 +319,10 @@
                     border-bottom: none;
 
                     word-wrap: normal;
+
+                    > a.mega-menu-link {
+                        width: auto;
+                    }
 
                     //Home Button in Navigation
                     &.mega-menu-item-850 {
@@ -289,7 +346,6 @@
                     //PedalBox Widget
                     .mega-menu-item-text-4 {
                         padding: 0;
-                        visibility: visible !important;
                         width: 613px !important;
 
                         cursor: auto;
@@ -536,6 +592,25 @@
                 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
                     padding: 0 20px;
                 }
+            }
+        }
+    }
+}
+
+//Screens with a width of 1000px and up
+@media only screen  and (min-width: @screen__sl) {
+    //Autovox Header
+    .page-template-page-dte-news-php,
+    .page-template-page-dte-products-php,
+    .page-template-page-dte-news-article-php,
+    .page-template-page-dte-company-php,
+    .page-template-page-dte-service-php,
+    .page-template-page-dte-technology-php {
+        #header-outer,
+        #mobile-menu {
+            .container {
+                max-width: 1425px !important;
+                padding: 0 90px;
             }
         }
     }

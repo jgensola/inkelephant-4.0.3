@@ -1650,6 +1650,6 @@ jQuery('.abt-dropdown').on('hover', function(){
 
 <!-- END custom jquery 3/16 -->
 
-<script type="text/javascript" src="/wp-content/themes/inkelephant-4.0.3/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/inkelephant-4.0.3/js/.js"></script>
 <script type="text/javascript" src="/wp-content/themes/inkelephant-4.0.3/js/ct.js"></script>
 </html>

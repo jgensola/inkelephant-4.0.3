@@ -195,3 +195,18 @@
     -moz-box-shadow: @string;
     box-shadow: @string;
 }
+
+//Max Content
+.min-width-max-content () {
+    min-width: max-content;
+    min-width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    min-width: -moz-max-content;    /* Firefox/Gecko */
+    min-width: -webkit-max-content; /* Chrome */
+}
+
+.max-width-max-content () {
+    max-width: max-content;
+    max-width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    max-width: -moz-max-content;    /* Firefox/Gecko */
+    max-width: -webkit-max-content; /* Chrome */
+}
