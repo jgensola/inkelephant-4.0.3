@@ -2927,14 +2927,11 @@ function dte_resources() {
     wp_enqueue_style( 'wpb-google-fonts-fjalla', 'https://fonts.googleapis.com/icon?family=Fjalla+One', false );
     wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
 
-    if(is_page()){ //Check if we are viewing a page
+    if(is_page()){
         global $wp_query;
 
-        //Check which template is assigned to current page we are looking at
         $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
         if($template_name == 'page-dte-company.php' || $template_name == 'page-dte-news.php'  || $template_name == 'page-dte-news-article.php' || $template_name == 'page-dte-products.php' || $template_name == 'page-dte-service.php' || $template_name == 'page-dte-technology.php'){
-            //If page is using slider portfolio template then load our slider script
-
             wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/dte.js', array(), true );
             wp_dequeue_script( 'nectarFrontend' );
         }
@@ -2956,6 +2953,30 @@ register_nav_menus(array(
     'dte-company' => __( 'DTE Company Menu'),
     'dte-news-article' => __( 'DTE News Article Menu'),
     'dte-products' => __('DTE Products Menu'),
+));
+
+#-----------------------------------------------------------------#
+# Brembo Functions
+#-----------------------------------------------------------------#
+
+function brembo_resources() {
+    wp_enqueue_style( 'wpb-google-fonts-open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400', false );
+    wp_enqueue_style( 'wpb-google-fonts-titillium-web', 'https://fonts.googleapis.com/css?family=Titillium+Web', false );
+    wp_enqueue_style( 'wpb-google-fonts-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', false );
+    wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
+    wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/brembo.js', array(), true );
+}
+
+add_action('wp_enqueue_scripts', 'brembo_resources');
+
+//Navigation Menus
+register_nav_menus(array(
+    'brembo-header' => __( 'Brembo Header Menu'),
+    'brembo-about' => __( 'Brembo About Menu'),
+    'brembo-product' => __( 'Brembo Product Menu'),
+    'brembo-application-list' => __( 'Brembo Application List Menu'),
+    'brembo-knowledgebase' => __( 'Brembo Knowledgebase Menu'),
+
 ));
 ?>
 

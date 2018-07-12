@@ -3,12 +3,7 @@
 @import 'variables.less';
 @import 'buttons.less';
 
-.page-template-page-dte-news-php,
-.page-template-page-dte-products-php,
-.page-template-page-dte-news-article-php,
-.page-template-page-dte-company-php,
-.page-template-page-dte-service-php,
-.page-template-page-dte-technology-php {
+@{dte-pages} {
     background: url('@{image-path}dte/scanlines.png'), url('@{image-path}dte/background.jpg');
     background-position: 0 0, center 0;
     background-repeat: repeat-x, no-repeat;
@@ -511,12 +506,7 @@
 
 //iPad screen and up
 @media only screen  and (min-width: @screen__m) {
-    .page-template-page-dte-news-php,
-    .page-template-page-dte-products-php,
-    .page-template-page-dte-news-article-php,
-    .page-template-page-dte-company-php,
-    .page-template-page-dte-service-php,
-    .page-template-page-dte-technology-php {
+    @{dte-pages} {
         //Breadcrumbs
         .breadcrumbs {
             display: block;

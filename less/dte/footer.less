@@ -4,12 +4,7 @@
 @import 'buttons.less';
 
 //Autovox Footer
-.page-template-page-dte-news-php,
-.page-template-page-dte-products-php,
-.page-template-page-dte-news-article-php,
-.page-template-page-dte-company-php,
-.page-template-page-dte-service-php,
-.page-template-page-dte-technology-php {
+@{dte-pages} {
     #footer-outer {
         .container {
             max-width: 300px !important;
@@ -25,6 +20,10 @@
             li a {
                 height: 85px;
             }
+        }
+
+        .row {
+            margin: 0;
         }
     }
 }
@@ -92,15 +91,22 @@
     }
 }
 
+//Screens with a width of 360px and up
+@media only screen  and (min-width: @screen__xxss) {
+    //Autovox Header
+    @{dte-pages} {
+        #footer-outer {
+            .row {
+                margin: 0 -15px;
+            }
+        }
+    }
+}
+
 //Screens with a width of 690px and up
 @media only screen  and (min-width: @screen__sm) {
     //Autovox Footer
-    .page-template-page-dte-news-php,
-    .page-template-page-dte-products-php,
-    .page-template-page-dte-news-article-php,
-    .page-template-page-dte-company-php,
-    .page-template-page-dte-service-php,
-    .page-template-page-dte-technology-php {
+    @{dte-pages} {
         #footer-outer {
             .container {
                 max-width: 600px !important;
@@ -126,12 +132,7 @@
 //Screens with a width of 1000px and up
 @media only screen  and (min-width: @screen__sl) {
     //Autovox Footer
-    .page-template-page-dte-news-php,
-    .page-template-page-dte-products-php,
-    .page-template-page-dte-news-article-php,
-    .page-template-page-dte-company-php,
-    .page-template-page-dte-service-php,
-    .page-template-page-dte-technology-php {
+    @{dte-pages} {
         #footer-outer {
             .container {
                 max-width: 1425px !important;

@@ -1,0 +1,116 @@
+@import 'reset.less';
+@import 'header.less';
+@import 'pages.less';
+@import 'footer.less';
+
+//Autovox Footer
+@{brembo-pages} {
+    #footer-outer {
+        font-weight: normal;
+
+        .container {
+            max-width: 300px !important;
+
+            background: none;
+        }
+
+        #copyright {
+            width: 100%;
+            padding: 20px 0;
+            margin: 0;
+
+            li a {
+                height: 85px;
+            }
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        a {
+            .transition(none);
+        }
+    }
+}
+
+//Brembo Footer
+.site-footer.brembo {
+    padding: 60px 15px 15px;
+    background: @tundora;
+
+    .footer-block {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-bottom: 0;
+
+        color: @white;
+
+        font-family: @brembo-secondary-font;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: normal;
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    li {
+        position: relative;
+
+        padding: 0 0 2px 8px;
+    }
+
+    a {
+        color: @silver;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            font-family: @generic-icon-font;
+
+            content: @angle-right;
+        }
+    }
+}
+
+//Screens with a width of 360px and up
+@media only screen  and (min-width: @screen__xxss) {
+    //Autovox Footer
+    @{brembo-pages} {
+        #footer-outer {
+            .row {
+                margin: 0 -15px;
+            }
+        }
+    }
+}
+
+//Screens with a width of 690px and up
+@media only screen  and (min-width: @screen__sm) {
+    //Autovox Footer
+    @{brembo-pages} {
+        #footer-outer {
+            .container {
+                max-width: 600px !important;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+//Screens with a width of 1000px and up
+@media only screen  and (min-width: @screen__sl) {
+    //Autovox Footer
+    @{brembo-pages} {
+        #footer-outer {
+            .container {
+                max-width: 1425px !important;
+                padding: 0 90px;
+            }
+        }
+    }
+}

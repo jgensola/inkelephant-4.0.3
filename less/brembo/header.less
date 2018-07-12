@@ -1,0 +1,341 @@
+@import '../dte/fonts.less';
+@import '../dte/mixins.less';
+@import 'variables.less';
+@import 'buttons.less';
+
+//Autovox Header
+@{brembo-pages} {
+    #header-outer,
+    #mobile-menu {
+        font-weight: normal;
+
+        .container {
+            max-width: 300px !important;
+
+            background: none;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        a {
+            .transition(none);
+        }
+    }
+}
+
+//Brembo Header
+.site-header.brembo {
+    background: @white;
+
+    padding: 0 15px;
+    height: 110px;
+
+    .flex-display();
+    .align-items(center);
+    .justify-content(space-between);
+
+    img {
+        height: 50px;
+    }
+
+    //Navigation
+    .site-nav {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+
+        width: 0;
+        height: 100%;
+
+        .transition(all 0.5s ease-in-out);
+
+        &.active {
+            width: 250px;
+
+            background: @mine-shaft;
+        }
+
+        .inner-container {
+            display: block;
+
+            width: 250px;
+            padding-top: 100px;
+        }
+    }
+
+    ul.menu {
+        margin-top: 7px;
+
+        li {
+            border-top: 1px solid @menu-border-top;
+
+            text-shadow: 0 1px 0 @menu-text-shadow;
+
+            .box-shadow(0 1px 0 @menu-shadow inset);
+
+            &.menu-item-has-children {
+                a:after {
+                    display: block;
+                }
+            }
+
+            &.current_page_item {
+                a {
+                    color: @white;
+                    background: @tundora;
+                }
+            }
+
+            a {
+                padding: 15px;
+
+                color: @silver;
+
+                font-size: 16px;
+                line-height: 16px;
+                text-decoration: none;
+
+                .flex-display();
+                .justify-content(space-between);
+
+                &:hover {
+                    color: @white;
+                    background: @tundora;
+                }
+
+                &:after {
+                    display: none;
+
+                    font-family: @generic-icon-font;
+
+                    content: @caret-down;
+                }
+            }
+        }
+    }
+
+    ul.sub-menu {
+        padding: 12px 30px;
+        li {
+            border: none;
+
+            .box-shadow(none);
+
+            a {
+                padding: 8px 0;
+
+                font-size: 14px;
+                line-height: 14px;
+
+                &:after {
+                    display: none !important;
+                }
+
+                &:hover {
+                    background: none;
+                }
+            }
+
+            &.current_page_item {
+                a {
+                    background: none;
+                }
+            }
+
+        }
+    }
+}
+
+//Screens with a width of 360px and up
+@media only screen  and (min-width: @screen__xxss) {
+    //Autovox Header
+    @{brembo-pages} {
+        #header-outer,
+        #mobile-menu {
+            .row {
+                margin: 0 -15px;
+            }
+        }
+    }
+}
+
+//Screens with a width of 690px and up
+@media only screen  and (min-width: @screen__sm) {
+    //Autovox Header
+    @{brembo-pages} {
+        #header-outer,
+        #mobile-menu {
+            .container {
+                max-width: 600px !important;
+            }
+        }
+    }
+}
+
+//Screens with a width of 1000px and up
+@media only screen  and (min-width: @screen__xsl) {
+    //Brembo Header
+    .site-header.brembo {
+        position: relative;
+
+        max-width: 1170px;
+        margin: auto;
+
+        .flex-display();
+        .align-items(center);
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .btn-close {
+            display: none;
+        }
+
+        .site-nav {
+            position: relative;
+
+            width: auto;
+
+            background: transparent;
+
+            overflow: visible;
+
+            .inner-container {
+                padding-top: 0;
+                width: auto;
+                height: 100%;
+            }
+
+            &.active {
+                width: auto;
+
+                background: transparent;
+            }
+        }
+
+        ul.menu {
+            margin-top: 0;
+            height: 100%;
+
+            .flex-display();
+
+            li {
+                border: none;
+
+                .box-shadow(none);
+
+                &:hover {
+                    background: @tundora;
+
+                    a {
+                        color: @white;
+
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+
+                &.menu-item-has-children {
+                    a {
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        ul.sub-menu {
+                            display: block;
+                        }
+                    }
+
+                    &:hover a:after {
+                        display: block;
+                    }
+                }
+
+                &.current_page_item {
+                    a:after {
+                        display: block;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    height: 100%;
+
+                    color: @mine-shaft;
+
+                    text-shadow: none;
+                    font-size: 14px;
+
+                    .flex-display();
+                    .align-items(center);
+                    .justify-content(center);
+
+                    &:after {
+                        display: none;
+                        position: absolute;
+                        top: -6px;
+                    }
+                }
+            }
+        }
+
+        ul.sub-menu {
+            display: none;
+            position: absolute;
+
+            min-width: 200px;
+
+            background: @tundora;
+
+            .box-shadow(0px 0px 1px 0px @tundora);
+
+            li {
+                &.current_page_item a {
+                    color: @white !important;
+                }
+
+                a {
+                    display: block;
+
+                    color: @gray !important;
+
+                    font-size: 14px;
+
+                    &:hover {
+                        color: @white !important;
+                    }
+
+                    &:after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        .menu-brembo-header-menu-container {
+            height: 100%;
+        }
+    }
+}
+
+//Screens with a width of 1000px and up
+@media only screen  and (min-width: @screen__sl) {
+    //Autovox Header
+    @{brembo-pages} {
+        #header-outer,
+        #mobile-menu {
+            .container {
+                max-width: 1425px !important;
+                padding: 0 90px;
+            }
+        }
+    }
+}

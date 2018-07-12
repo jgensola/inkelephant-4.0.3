@@ -1,34 +1,36 @@
 @import 'fonts.less';
 @import 'variables.less';
 
-//DTE Buttons
-.mega-menu-dte-header .button {
-    position: relative;
-    display: inline-block;
-    z-index: 10;
+@{dte-pages} {
+    //DTE Buttons
+    .button {
+        position: relative;
+        display: inline-block;
+        z-index: 10;
 
-    padding: 10px 15px !important;
-    width: auto !important;
+        padding: 10px 15px !important;
+        width: auto !important;
 
-    background: @vida-local;
-    color: @white !important;
+        background: @vida-local;
+        color: @white !important;
 
-    font-family: @dte-secondary-font !important;
+        font-family: @dte-secondary-font !important;
 
-    &:before {
-        display: inline-block !important;
+        &:before {
+            display: inline-block !important;
 
-        margin-right: 12px;
+            margin-right: 12px;
 
-        font-size: 17px;
-        vertical-align: middle;
+            font-size: 17px;
+            vertical-align: middle;
 
-        content: @double-right-pointing-angle;
-    }
+            content: @double-right-pointing-angle;
+        }
 
-    &:hover {
-        background: lighten(@vida-local, 8%);
+        &:hover {
+            background: lighten(@vida-local, 8%);
 
-        text-decoration: none !important;
+            text-decoration: none !important;
+        }
     }
 }

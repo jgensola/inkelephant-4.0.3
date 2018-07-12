@@ -2875,7 +2875,12 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto;
 }
-.mega-menu-dte-header .button {
+.page-template-page-dte-news-php .button,
+.page-template-page-dte-products-php .button,
+.page-template-page-dte-news-article-php .button,
+.page-template-page-dte-company-php .button,
+.page-template-page-dte-service-php .button,
+.page-template-page-dte-technology-php .button {
   position: relative;
   display: inline-block;
   z-index: 10;
@@ -2885,14 +2890,24 @@ readers do not read off random characters that represent icons */
   color: #fff !important;
   font-family: 'Fjalla One', Arial, sans-serif !important;
 }
-.mega-menu-dte-header .button:before {
+.page-template-page-dte-news-php .button:before,
+.page-template-page-dte-products-php .button:before,
+.page-template-page-dte-news-article-php .button:before,
+.page-template-page-dte-company-php .button:before,
+.page-template-page-dte-service-php .button:before,
+.page-template-page-dte-technology-php .button:before {
   display: inline-block !important;
   margin-right: 12px;
   font-size: 17px;
   vertical-align: middle;
   content: '\00bb';
 }
-.mega-menu-dte-header .button:hover {
+.page-template-page-dte-news-php .button:hover,
+.page-template-page-dte-products-php .button:hover,
+.page-template-page-dte-news-article-php .button:hover,
+.page-template-page-dte-company-php .button:hover,
+.page-template-page-dte-service-php .button:hover,
+.page-template-page-dte-technology-php .button:hover {
   background: #52d626;
   text-decoration: none !important;
 }
@@ -2910,6 +2925,20 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-technology-php #mobile-menu .container {
   max-width: 300px !important;
   background: none;
+}
+.page-template-page-dte-news-php #header-outer .row,
+.page-template-page-dte-products-php #header-outer .row,
+.page-template-page-dte-news-article-php #header-outer .row,
+.page-template-page-dte-company-php #header-outer .row,
+.page-template-page-dte-service-php #header-outer .row,
+.page-template-page-dte-technology-php #header-outer .row,
+.page-template-page-dte-news-php #mobile-menu .row,
+.page-template-page-dte-products-php #mobile-menu .row,
+.page-template-page-dte-news-article-php #mobile-menu .row,
+.page-template-page-dte-company-php #mobile-menu .row,
+.page-template-page-dte-service-php #mobile-menu .row,
+.page-template-page-dte-technology-php #mobile-menu .row {
+  margin: 0;
 }
 .site-header.dte {
   padding-top: 30px;
@@ -2996,7 +3025,7 @@ readers do not read off random characters that represent icons */
   color: #cd1816;
 }
 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item {
-  border-bottom: 1px solid #3c3c3c;
+  border-bottom: 1px solid #333;
 }
 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item > a.mega-menu-link {
   padding: 0 23px;
@@ -3088,20 +3117,20 @@ readers do not read off random characters that represent icons */
 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247.mega-toggle-on .mega-sub-menu {
   display: none;
 }
-@media only screen and (min-width: 640px) {
-  .page-template-page-dte-news-php #header-outer .container,
-  .page-template-page-dte-products-php #header-outer .container,
-  .page-template-page-dte-news-article-php #header-outer .container,
-  .page-template-page-dte-company-php #header-outer .container,
-  .page-template-page-dte-service-php #header-outer .container,
-  .page-template-page-dte-technology-php #header-outer .container,
-  .page-template-page-dte-news-php #mobile-menu .container,
-  .page-template-page-dte-products-php #mobile-menu .container,
-  .page-template-page-dte-news-article-php #mobile-menu .container,
-  .page-template-page-dte-company-php #mobile-menu .container,
-  .page-template-page-dte-service-php #mobile-menu .container,
-  .page-template-page-dte-technology-php #mobile-menu .container {
-    max-width: 420px !important;
+@media only screen and (min-width: 360px) {
+  .page-template-page-dte-news-php #header-outer .row,
+  .page-template-page-dte-products-php #header-outer .row,
+  .page-template-page-dte-news-article-php #header-outer .row,
+  .page-template-page-dte-company-php #header-outer .row,
+  .page-template-page-dte-service-php #header-outer .row,
+  .page-template-page-dte-technology-php #header-outer .row,
+  .page-template-page-dte-news-php #mobile-menu .row,
+  .page-template-page-dte-products-php #mobile-menu .row,
+  .page-template-page-dte-news-article-php #mobile-menu .row,
+  .page-template-page-dte-company-php #mobile-menu .row,
+  .page-template-page-dte-service-php #mobile-menu .row,
+  .page-template-page-dte-technology-php #mobile-menu .row {
+    margin: 0 -15px;
   }
 }
 @media only screen and (min-width: 690px) {
@@ -4889,6 +4918,14 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-technology-php #footer-outer #copyright li a {
   height: 85px;
 }
+.page-template-page-dte-news-php #footer-outer .row,
+.page-template-page-dte-products-php #footer-outer .row,
+.page-template-page-dte-news-article-php #footer-outer .row,
+.page-template-page-dte-company-php #footer-outer .row,
+.page-template-page-dte-service-php #footer-outer .row,
+.page-template-page-dte-technology-php #footer-outer .row {
+  margin: 0;
+}
 .site-footer.dte {
   color: #161616;
   background: #f7f7f7;
@@ -4937,6 +4974,16 @@ readers do not read off random characters that represent icons */
   height: 30px;
   background: #161616;
 }
+@media only screen and (min-width: 360px) {
+  .page-template-page-dte-news-php #footer-outer .row,
+  .page-template-page-dte-products-php #footer-outer .row,
+  .page-template-page-dte-news-article-php #footer-outer .row,
+  .page-template-page-dte-company-php #footer-outer .row,
+  .page-template-page-dte-service-php #footer-outer .row,
+  .page-template-page-dte-technology-php #footer-outer .row {
+    margin: 0 -15px;
+  }
+}
 @media only screen and (min-width: 690px) {
   .page-template-page-dte-news-php #footer-outer .container,
   .page-template-page-dte-products-php #footer-outer .container,
@@ -4966,6 +5013,558 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-company-php #footer-outer .container,
   .page-template-page-dte-service-php #footer-outer .container,
   .page-template-page-dte-technology-php #footer-outer .container {
+    max-width: 1425px !important;
+    padding: 0 90px;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body {
+  height: 100%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: 100%;
+  font: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+  letter-spacing: initial;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+.root {
+  font-size: 16px;
+}
+.page-template-page-brembo-company-php .menu-toggle {
+  color: #0e2127;
+  cursor: pointer;
+}
+.page-template-page-brembo-company-php .menu-toggle i {
+  font-size: 27px;
+}
+.page-template-page-brembo-company-php .btn-close {
+  display: block;
+  margin-right: 15px;
+  color: #aaa;
+  font-size: 12px;
+  text-align: right;
+  cursor: pointer;
+}
+.page-template-page-brembo-company-php .btn-close:hover {
+  color: #fff;
+}
+.page-template-page-brembo-company-php #header-outer,
+.page-template-page-brembo-company-php #mobile-menu {
+  font-weight: normal;
+}
+.page-template-page-brembo-company-php #header-outer .container,
+.page-template-page-brembo-company-php #mobile-menu .container {
+  max-width: 300px !important;
+  background: none;
+}
+.page-template-page-brembo-company-php #header-outer .row,
+.page-template-page-brembo-company-php #mobile-menu .row {
+  margin: 0;
+}
+.page-template-page-brembo-company-php #header-outer a,
+.page-template-page-brembo-company-php #mobile-menu a {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.site-header.brembo {
+  background: #fff;
+  padding: 0 15px;
+  height: 110px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+.site-header.brembo img {
+  height: 50px;
+}
+.site-header.brembo .site-nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.site-header.brembo .site-nav.active {
+  width: 250px;
+  background: #333;
+}
+.site-header.brembo .site-nav .inner-container {
+  display: block;
+  width: 250px;
+  padding-top: 100px;
+}
+.site-header.brembo ul.menu {
+  margin-top: 7px;
+}
+.site-header.brembo ul.menu li {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+}
+.site-header.brembo ul.menu li.menu-item-has-children a:after {
+  display: block;
+}
+.site-header.brembo ul.menu li.current_page_item a {
+  color: #fff;
+  background: #404040;
+}
+.site-header.brembo ul.menu li a {
+  padding: 15px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+.site-header.brembo ul.menu li a:hover {
+  color: #fff;
+  background: #404040;
+}
+.site-header.brembo ul.menu li a:after {
+  display: none;
+  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
+  content: '\f0d7';
+}
+.site-header.brembo ul.sub-menu {
+  padding: 12px 30px;
+}
+.site-header.brembo ul.sub-menu li {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.site-header.brembo ul.sub-menu li a {
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+.site-header.brembo ul.sub-menu li a:after {
+  display: none !important;
+}
+.site-header.brembo ul.sub-menu li a:hover {
+  background: none;
+}
+.site-header.brembo ul.sub-menu li.current_page_item a {
+  background: none;
+}
+@media only screen and (min-width: 360px) {
+  .page-template-page-brembo-company-php #header-outer .row,
+  .page-template-page-brembo-company-php #mobile-menu .row {
+    margin: 0 -15px;
+  }
+}
+@media only screen and (min-width: 690px) {
+  .page-template-page-brembo-company-php #header-outer .container,
+  .page-template-page-brembo-company-php #mobile-menu .container {
+    max-width: 600px !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .site-header.brembo {
+    position: relative;
+    max-width: 1170px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .site-header.brembo .menu-toggle {
+    display: none;
+  }
+  .site-header.brembo .btn-close {
+    display: none;
+  }
+  .site-header.brembo .site-nav {
+    position: relative;
+    width: auto;
+    background: transparent;
+    overflow: visible;
+  }
+  .site-header.brembo .site-nav .inner-container {
+    padding-top: 0;
+    width: auto;
+    height: 100%;
+  }
+  .site-header.brembo .site-nav.active {
+    width: auto;
+    background: transparent;
+  }
+  .site-header.brembo ul.menu {
+    margin-top: 0;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  .site-header.brembo ul.menu li {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .site-header.brembo ul.menu li:hover {
+    background: #404040;
+  }
+  .site-header.brembo ul.menu li:hover a {
+    color: #fff;
+  }
+  .site-header.brembo ul.menu li:hover a:after {
+    display: block;
+  }
+  .site-header.brembo ul.menu li.menu-item-has-children a:after {
+    display: none;
+  }
+  .site-header.brembo ul.menu li.menu-item-has-children:hover ul.sub-menu {
+    display: block;
+  }
+  .site-header.brembo ul.menu li.menu-item-has-children:hover a:after {
+    display: block;
+  }
+  .site-header.brembo ul.menu li.current_page_item a:after {
+    display: block;
+  }
+  .site-header.brembo ul.menu li a {
+    position: relative;
+    height: 100%;
+    color: #333;
+    text-shadow: none;
+    font-size: 14px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  .site-header.brembo ul.menu li a:after {
+    display: none;
+    position: absolute;
+    top: -6px;
+  }
+  .site-header.brembo ul.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background: #404040;
+    -webkit-box-shadow: 0px 0px 1px 0px #404040;
+    -moz-box-shadow: 0px 0px 1px 0px #404040;
+    box-shadow: 0px 0px 1px 0px #404040;
+  }
+  .site-header.brembo ul.sub-menu li.current_page_item a {
+    color: #fff !important;
+  }
+  .site-header.brembo ul.sub-menu li a {
+    display: block;
+    color: #929292 !important;
+    font-size: 14px;
+  }
+  .site-header.brembo ul.sub-menu li a:hover {
+    color: #fff !important;
+  }
+  .site-header.brembo ul.sub-menu li a:after {
+    display: none !important;
+  }
+  .site-header.brembo .menu-brembo-header-menu-container {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .page-template-page-brembo-company-php #header-outer .container,
+  .page-template-page-brembo-company-php #mobile-menu .container {
+    max-width: 1425px !important;
+    padding: 0 90px;
+  }
+}
+.page-template-page-brembo-company-php {
+  position: initial;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: lighter;
+}
+.page-template-page-brembo-company-php.active {
+  overflow-y: hidden;
+}
+.page-template-page-brembo-company-php a {
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+.page-template-page-brembo-company-php .container {
+  max-width: 1200px !important;
+  width: 100%;
+  padding: 0;
+  background: #fff;
+}
+.page-template-page-brembo-company-php .container.brembo {
+  right: 0;
+  width: auto;
+  max-width: none !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.page-template-page-brembo-company-php .container.brembo.active {
+  right: 250px;
+}
+.page-template-page-brembo-company-php .container.brembo.active .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.page-template-page-brembo-company-php .container.brembo .overlay {
+  display: none;
+}
+@media only screen and (min-width: 993px) {
+  .page-template-page-brembo-company-php.active {
+    overflow: visible;
+  }
+  .page-template-page-brembo-company-php .container.brembo.active {
+    right: 0;
+  }
+  .page-template-page-brembo-company-php .container.brembo.active .overlay {
+    display: none;
+  }
+}
+.page-template-page-brembo-company-php #footer-outer {
+  font-weight: normal;
+}
+.page-template-page-brembo-company-php #footer-outer .container {
+  max-width: 300px !important;
+  background: none;
+}
+.page-template-page-brembo-company-php #footer-outer #copyright {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+.page-template-page-brembo-company-php #footer-outer #copyright li a {
+  height: 85px;
+}
+.page-template-page-brembo-company-php #footer-outer .row {
+  margin: 0;
+}
+.page-template-page-brembo-company-php #footer-outer a {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.site-footer.brembo {
+  padding: 60px 15px 15px;
+  background: #404040;
+}
+.site-footer.brembo .footer-block {
+  margin-bottom: 20px;
+}
+.site-footer.brembo h3 {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: 'Titillium Web', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-size: 13px;
+  line-height: 14px;
+}
+.site-footer.brembo li {
+  position: relative;
+  padding: 0 0 2px 8px;
+}
+.site-footer.brembo a {
+  color: #ccc;
+}
+.site-footer.brembo a:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
+  content: '\f105';
+}
+@media only screen and (min-width: 360px) {
+  .page-template-page-brembo-company-php #footer-outer .row {
+    margin: 0 -15px;
+  }
+}
+@media only screen and (min-width: 690px) {
+  .page-template-page-brembo-company-php #footer-outer .container {
+    max-width: 600px !important;
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .page-template-page-brembo-company-php #footer-outer .container {
     max-width: 1425px !important;
     padding: 0 90px;
   }
