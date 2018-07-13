@@ -4162,7 +4162,7 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-technology-php article.post .news-articles p {
   margin: 0;
   padding: 9px 10px;
-  background: #f5f5f5;
+  background: #f6f5f5;
   font-size: 14px;
 }
 .page-template-page-dte-news-php article.post .news-articles .image-container,
@@ -5176,6 +5176,19 @@ a {
 .page-template-page-brembo-company-php .btn-close:hover {
   color: #fff;
 }
+.page-template-page-brembo-company-php .product-button {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  min-width: 170px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-template-page-brembo-company-php .product-button:hover {
+  color: #fff !important;
+  background: #333;
+}
 .page-template-page-brembo-company-php #header-outer,
 .page-template-page-brembo-company-php #mobile-menu {
   font-weight: normal;
@@ -5311,7 +5324,7 @@ a {
     max-width: 600px !important;
   }
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 990px) {
   .site-header.brembo {
     position: relative;
     max-width: 1170px;
@@ -5441,14 +5454,40 @@ a {
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: lighter;
 }
+.page-template-page-brembo-company-php #header-space {
+  background: #fff;
+}
 .page-template-page-brembo-company-php.active {
   overflow-y: hidden;
 }
-.page-template-page-brembo-company-php a {
+.page-template-page-brembo-company-php span.underline {
+  display: inline-block;
+  border-bottom: 0.5px solid #000;
+}
+.page-template-page-brembo-company-php a,
+.page-template-page-brembo-company-php span.button {
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -ms-transition: all 300ms;
   -o-transition: all 300ms;
+}
+.page-template-page-brembo-company-php h1,
+.page-template-page-brembo-company-php h2,
+.page-template-page-brembo-company-php h3,
+.page-template-page-brembo-company-php h4,
+.page-template-page-brembo-company-php h5,
+.page-template-page-brembo-company-php h6 {
+  line-height: 1.1;
+}
+.page-template-page-brembo-company-php h2 {
+  font-family: 'Titillium Web', Arial, sans-serif;
+  font-weight: 400;
+}
+.page-template-page-brembo-company-php .row {
+  margin: 0;
+}
+.page-template-page-brembo-company-php .carousel {
+  opacity: 1;
 }
 .page-template-page-brembo-company-php .container {
   max-width: 1200px !important;
@@ -5474,6 +5513,7 @@ a {
   top: 0;
   right: 0;
   overflow: hidden;
+  z-index: 100;
   height: 100%;
   width: 100%;
   background: #000;
@@ -5486,7 +5526,342 @@ a {
 .page-template-page-brembo-company-php .container.brembo .overlay {
   display: none;
 }
-@media only screen and (min-width: 993px) {
+.page-template-page-brembo-company-php article.post {
+  border: none;
+  padding: 0;
+}
+.page-template-page-brembo-company-php article.post a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+.page-template-page-brembo-company-php article.post h2.title {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.page-template-page-brembo-company-php article.post h2.title:after {
+  display: block;
+  width: 140px;
+  margin-top: -1px;
+  height: 0.8px;
+  background: #0e2127;
+  content: '';
+}
+.page-template-page-brembo-company-php article.post .inner-container {
+  padding: 0 15px;
+}
+.page-template-page-brembo-company-php article.post .main-section {
+  padding-top: 30px;
+  background: #f6f5f5;
+}
+.page-template-page-brembo-company-php article.post .row {
+  padding: 0 5px;
+}
+.page-template-page-brembo-company-php article.post .product-column {
+  margin-bottom: 25px;
+  background: #fff;
+}
+.page-template-page-brembo-company-php article.post .product-column img {
+  margin: 35px 0;
+}
+.page-template-page-brembo-company-php article.post .description {
+  position: relative;
+  padding: 0 24px;
+}
+.page-template-page-brembo-company-php article.post .description .product-line-label {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  width: 40%;
+  color: #fff;
+  background: #404040;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+}
+.page-template-page-brembo-company-php article.post .description a.product-name {
+  display: inline-block;
+  max-width: 50%;
+  margin-top: -4px;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.page-template-page-brembo-company-php article.post .description p.details {
+  margin-top: 20px;
+  text-align: justify;
+}
+.page-template-page-brembo-company-php .products-by-intended-use {
+  margin-bottom: 48px;
+}
+.page-template-page-brembo-company-php .products-by-intended-use h2.title {
+  padding: 0 15px;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .title-bar {
+  background: #404040;
+  color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container {
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container div {
+  width: 96.66px;
+  border-left: 0.5px solid #fff;
+  text-align: center;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container div:first-of-type {
+  border: none;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar {
+  padding: 0 15px;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar a {
+  color: #333;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar a:hover {
+  color: #f00;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar div {
+  border-bottom: 2px solid #f00;
+  margin-bottom: 7.5px;
+  text-align: right;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar div span {
+  display: block;
+  margin-bottom: 5px;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem {
+  width: 27%;
+  margin-top: 20px;
+  border-color: #929292;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem span {
+  margin-right: 8%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .sport {
+  width: 32%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt {
+  width: 76%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt span {
+  margin-right: 18%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r {
+  width: 91%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r span {
+  margin-right: 22%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .race {
+  width: 67%;
+  margin-left: 33%;
+}
+.page-template-page-brembo-company-php .products-by-intended-use .products-bar .race span {
+  margin-left: 8%;
+  text-align: left;
+}
+.page-template-page-brembo-company-php .owl-carousel {
+  margin-bottom: 5px;
+}
+.page-template-page-brembo-company-php .owl-carousel a:hover {
+  text-decoration: none;
+}
+.page-template-page-brembo-company-php .owl-carousel .owl-nav {
+  display: none;
+}
+.page-template-page-brembo-company-php .owl-carousel .next,
+.page-template-page-brembo-company-php .owl-carousel .previous {
+  display: none;
+}
+.page-template-page-brembo-company-php .owl-carousel .owl-item {
+  height: 340px;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-row {
+  height: 100%;
+}
+.page-template-page-brembo-company-php .owl-carousel .slide-main-content {
+  position: relative;
+}
+.page-template-page-brembo-company-php .owl-carousel .slide-main-content .container {
+  padding: 32px 15px !important;
+  height: 340px;
+  margin: auto;
+  background: transparent;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-field.views-field-nothing {
+  position: absolute;
+  height: 100%;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-field.views-field-nothing .field-content {
+  height: 100%;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title {
+  padding: 12px 18px;
+  max-height: 160px;
+  margin-bottom: 5px;
+  background: rgba(20, 20, 20, 0.7);
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-family: 'Titillium Web', Arial, sans-serif;
+  font-weight: 200;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title a {
+  color: #fff;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-field.views-field-field-teaser-text p {
+  padding: 12px 18px;
+  max-height: 160px;
+  background: rgba(20, 20, 20, 0.7);
+  color: #fff;
+  line-height: 1.25;
+  font-size: 20px;
+}
+.page-template-page-brembo-company-php .owl-carousel .views-field .field-content br {
+  display: none;
+}
+.page-template-page-brembo-company-php .owl-carousel .slideshow-image {
+  height: 100%;
+}
+.page-template-page-brembo-company-php .owl-carousel .slideshow-image img {
+  min-height: 500px;
+  min-width: 1417px;
+}
+@media only screen and (min-width: 640px) {
+  .page-template-page-brembo-company-php article.post .content.products {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  .page-template-page-brembo-company-php article.post .product-column {
+    margin: 0 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .page-template-page-brembo-company-php article.post .description {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .page-template-page-brembo-company-php article.post .description p.details {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .page-template-page-brembo-company-php article.post .product-button {
+    min-width: 40%;
+  }
+  .page-template-page-brembo-company-php .owl-carousel {
+    position: relative;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .owl-nav {
+    display: block;
+  }
+  .page-template-page-brembo-company-php .owl-carousel span.button {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 40px;
+    height: 100px;
+    padding: 32px 0;
+    margin-top: -50px;
+    background: #fff !important;
+    color: #000;
+    text-align: center;
+  }
+  .page-template-page-brembo-company-php .owl-carousel span.button:hover {
+    background: #333 !important;
+    color: #fff;
+  }
+  .page-template-page-brembo-company-php .owl-carousel span.button.owl-prev {
+    left: 0;
+  }
+  .page-template-page-brembo-company-php .owl-carousel span.button.owl-next {
+    right: 0;
+  }
+  .page-template-page-brembo-company-php .owl-carousel span.button span {
+    font-size: 45px;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title {
+    width: 425px;
+    margin-left: 42px;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-field-teaser-text p {
+    width: 425px;
+    margin-left: 42px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container {
+    width: 970px !important;
+  }
+  .page-template-page-brembo-company-php article.post h2.title {
+    margin: 0 auto 27px auto;
+    font-size: 30px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use h2.title {
+    width: 750px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container {
+    width: 750px;
+    margin: auto;
+    padding: 0 15px;
+    font-weight: 400;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container div {
+    width: 33.333%;
+    border-width: 2px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar {
+    padding: 0;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem span {
+    margin-right: 70px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .sport span {
+    margin-right: 48px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt span {
+    margin-right: 180px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r span {
+    margin-right: 190px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .race span {
+    margin-left: 75px;
+  }
+}
+@media only screen and (min-width: 990px) {
   .page-template-page-brembo-company-php.active {
     overflow: visible;
   }
@@ -5495,6 +5870,53 @@ a {
   }
   .page-template-page-brembo-company-php .container.brembo.active .overlay {
     display: none;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use h2.title {
+    width: 970px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container {
+    width: 970px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem span {
+    margin-right: 48px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .sport span {
+    margin-right: 48px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt span {
+    margin-right: 310px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r span {
+    margin-right: 365px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar .race span {
+    margin-left: 115px;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .owl-item {
+    height: 500px;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container {
+    height: 500px !important;
+    width: 970px !important;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title {
+    max-height: none;
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .page-template-page-brembo-company-php .products-by-intended-use h2.title {
+    width: 1170px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container {
+    width: 1170px;
+  }
+  .page-template-page-brembo-company-php .products-by-intended-use .products-bar {
+    max-width: none !important;
+  }
+  .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container {
+    width: 1170px !important;
   }
 }
 .page-template-page-brembo-company-php #footer-outer {
@@ -5522,8 +5944,10 @@ a {
   -o-transition: none;
 }
 .site-footer.brembo {
-  padding: 60px 15px 15px;
   background: #404040;
+}
+.site-footer.brembo .inner-container {
+  padding: 60px 15px 15px;
 }
 .site-footer.brembo .footer-block {
   margin-bottom: 20px;
@@ -5540,21 +5964,40 @@ a {
 }
 .site-footer.brembo li {
   position: relative;
-  padding: 0 0 2px 8px;
+  padding: 0 0 2px 0;
 }
 .site-footer.brembo a {
+  margin-left: 10px;
   color: #ccc;
 }
 .site-footer.brembo a:before {
   position: absolute;
   left: 0;
   top: 0;
-  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
-  content: '\f105';
+  margin-top: -2px;
+  font-family: 'Titillium Web', Arial, sans-serif;
+  font-size: 25px;
+  content: '› ';
 }
 @media only screen and (min-width: 360px) {
   .page-template-page-brembo-company-php #footer-outer .row {
     margin: 0 -15px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .site-footer .inner-container {
+    max-width: 760px;
+    margin: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .site-footer .footer-block {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 690px) {

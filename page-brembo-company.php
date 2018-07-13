@@ -24,19 +24,8 @@ if (have_posts()) :
     while (have_posts()) : the_post(); ?>
         <div class="page-container brembo-company">
             <div class="overlay"></div>
-            <div class="breadcrumbs">
-<!--                --><?php //bcn_display(); ?>
-            </div>
             <div class="main-content">
-                <div class="dte-sidebar">
-                    <?php
-                    $args = array(
-                        'theme_location' => 'dte-company'
-                    );
-                    ?>
-                    <?php wp_nav_menu($args); ?>
-                </div>
-                <article class="post page">
+                <article class="post page home">
 <!--                    <h1>--><?php //the_title(); ?><!--</h1>-->
                     <?php the_content(); ?>
                 </article>

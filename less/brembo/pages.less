@@ -9,12 +9,46 @@
     font-family: @brembo-primary-font;
     font-weight: lighter;
 
+    #header-space {
+        background: @white;
+    }
+
     &.active {
         overflow-y: hidden;
     }
 
-    a {
+    span.underline {
+        display: inline-block;
+
+        border-bottom: .5px solid @black;
+    }
+
+    a,
+    span.button {
         .transition(all 300ms);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-family: @brembo-secondary-font;
+        font-weight: 400;
+
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .carousel {
+        opacity: 1;
     }
 
     .container {
@@ -41,6 +75,7 @@
                     top: 0;
                     right: 0;
                     overflow: hidden;
+                    z-index: 100;
 
                     height: 100%;
                     width: 100%;
@@ -56,9 +91,452 @@
             }
         }
     }
+
+    article.post {
+        border: none;
+        padding: 0;
+
+        a {
+            &:hover {
+                color: @red;
+
+                text-decoration: none;
+            }
+        }
+
+        h2.title {
+            margin-bottom: 25px;
+
+            text-transform: uppercase;
+            font-size: 18px;
+
+            &:after {
+                display: block;
+
+                width: 140px;
+                margin-top: -1px;
+                height: .8px;
+
+                background: @firefly;
+
+                content: '';
+            }
+        }
+
+        .inner-container {
+            padding: 0 15px;
+        }
+
+        .main-section {
+            padding-top: 30px;
+
+            background: @wild-sand;
+        }
+
+        .row {
+            padding: 0 5px;
+        }
+
+        .product-column {
+            margin-bottom: 25px;
+
+            background: @white;
+
+            img {
+                margin: 35px 0;
+            }
+        }
+
+        .description {
+            position: relative;
+
+            padding: 0 24px;
+
+            .product-line-label {
+                position: absolute;
+                top: -12px;
+                right: 0;
+
+                width: 40%;
+
+                color: @white;
+                background: @tundora;
+
+                font-size: 12.5px;
+                font-weight: 400;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            a.product-name {
+                display: inline-block;
+
+                max-width: 50%;
+                margin-top: -4px;
+
+                color: @mine-shaft;
+
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            p.details {
+                margin-top: 20px;
+
+                text-align: justify;
+            }
+        }
+    }
+
+    //Homepage
+    .products-by-intended-use {
+        margin-bottom: 48px;
+
+        h2.title {
+            padding: 0 15px;
+        }
+
+        .title-bar {
+            background: @tundora;
+            color: @white;
+
+            font-family: @brembo-primary-font;
+            font-size: 20px;
+            line-height: 50px;
+
+            .inner-container {
+                padding: 0;
+
+                .flex-display();
+                .justify-content(center);
+
+                div {
+                    width: 96.66px;
+                    border-left: .5px solid @white;
+
+                    text-align: center;
+
+                    &:first-of-type {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .products-bar {
+            padding: 0 15px;
+
+            a {
+                color: @mine-shaft;
+
+                &:hover {
+                    color: @red;
+                }
+            }
+
+            div {
+                border-bottom: 2px solid @red;
+                margin-bottom: 7.5px;
+
+                text-align: right;
+
+                span {
+                    display: block;
+
+                    margin-bottom: 5px;
+                }
+            }
+
+            .oem {
+                width: 27%;
+                margin-top: 20px;
+                border-color: @gray;
+
+                span {
+                    margin-right: 8%;
+                }
+            }
+
+            .sport {
+                width: 32%;
+            }
+
+            .gt {
+                width: 76%;
+
+                span {
+                    margin-right: 18%;
+                }
+            }
+
+            .gt-r {
+                width: 91%;
+
+                span {
+                    margin-right: 22%;
+                }
+            }
+
+            .race {
+                width: 67%;
+                margin-left: 33%;
+
+                span {
+                    margin-left: 8%;
+
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    //Slideshow
+    .owl-carousel {
+        margin-bottom: 5px;
+        a:hover {
+            text-decoration: none;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+
+        .next,
+        .previous {
+            display: none;
+        }
+
+        .owl-item {
+            height: 340px;
+        }
+
+        .views-row {
+            height: 100%;
+        }
+
+        .slide-main-content {
+            position: relative;
+
+            .container {
+                padding: 32px 15px !important;
+                height: 340px;
+                margin: auto;
+                background: transparent;
+            }
+        }
+
+        .views-field {
+            &.views-field-nothing {
+                position: absolute;
+
+                height: 100%;
+
+                .field-content {
+                    height: 100%;
+                }
+            }
+
+            &.views-field-title {
+                padding: 12px 18px;
+                max-height: 160px;
+                margin-bottom: 5px;
+
+                background: @slider-text-background;
+                color: @white;
+
+                font-size: 40px;
+                text-transform: uppercase;
+                line-height: 40px;
+                font-family: @brembo-secondary-font;
+                font-weight: 200;
+
+                a {
+                    color: @white;
+                }
+            }
+
+            &.views-field-field-teaser-text p {
+                padding: 12px 18px;
+                max-height: 160px;
+
+                background: @slider-text-background;
+                color: @white;
+
+                line-height: 1.25;
+                font-size: 20px;
+            }
+
+            .field-content br {
+                display: none;
+            }
+        }
+
+        .slideshow-image {
+            height: 100%;
+
+            img {
+                min-height: 500px;
+                min-width: 1417px;
+            }
+        }
+    }
 }
 
-//Screens with a width of 1000px and up
+//Screens with a width of 640px and up
+@media only screen  and (min-width: @screen__s) {
+    @{brembo-pages} {
+        article.post {
+            .content.products {
+                .flex-display();
+            }
+
+            .product-column {
+                margin: 0 5px;
+
+                .flex-display();
+                .flex-direction(column);
+                .flex(1);
+            }
+
+            .description {
+                .flex-display();
+                .flex-direction(column);
+                .flex(1 0 auto);
+
+                p.details {
+                    .flex(1 0 auto);
+                }
+            }
+
+            .product-button {
+                min-width: 40%;
+            }
+        }
+
+        //Slideshow
+        .owl-carousel {
+            position: relative;
+
+            .owl-nav {
+                display: block;
+            }
+
+            span.button {
+                position: absolute;
+                display: block;
+                top: 50%;
+
+                width: 40px;
+                height: 100px;
+                padding: 32px 0;
+                margin-top: -50px;
+
+                background: @white !important;
+                color: @black;
+
+                text-align: center;
+
+                &:hover {
+                    background: @mine-shaft !important;
+                    color: @white;
+                }
+                &.owl-prev {
+                    left: 0;
+                }
+
+                &.owl-next {
+                    right: 0;
+                }
+
+                span {
+                    font-size: 45px;
+                }
+            }
+
+            .views-field {
+                &.views-field-title {
+                    width: 425px;
+                    margin-left: 42px;
+                }
+
+                &.views-field-field-teaser-text p {
+                    width: 425px;
+                    margin-left: 42px;
+                }
+
+            }
+        }
+    }
+}
+
+//iPad screen and up
+@media only screen  and (min-width: @screen__s) {
+    @{brembo-pages} {
+        //Slideshow
+        .owl-carousel {
+            .slide-main-content .container {
+                width: 970px !important;
+            }
+        }
+
+        article.post {
+            h2.title {
+                margin: 0 auto 27px auto;
+
+                font-size: 30px;
+            }
+        }
+
+        //Homepage
+        .products-by-intended-use {
+            h2.title {
+                width: 750px;
+            }
+
+            .title-bar {
+                .inner-container {
+                    width: 750px;
+                    margin: auto;
+                    padding: 0 15px;
+
+                    font-weight: 400;
+
+                    div {
+                        width: 33.333%;
+                        border-width: 2px;
+                    }
+                }
+            }
+
+            .products-bar {
+                padding: 0;
+
+                .oem span {
+                    margin-right: 70px;
+                }
+
+                .sport span {
+                    margin-right: 48px;
+                }
+
+                .gt span {
+                    margin-right: 180px;
+                }
+
+                .gt-r span {
+                    margin-right: 190px;
+                }
+
+                .race span {
+                    margin-left: 75px;
+                }
+            }
+        }
+    }
+}
+
+//Screens with a width of 990px and up
 @media only screen  and (min-width: @screen__xsl) {
     @{brembo-pages} {
         &.active {
@@ -75,6 +553,93 @@
                     }
                 }
             }
+        }
+
+        //Homepage
+        .products-by-intended-use {
+            h2.title {
+                width: 970px;
+            }
+
+            .title-bar {
+                .inner-container {
+                    width: 970px;
+                }
+            }
+
+            .products-bar {
+                .oem span {
+                    margin-right: 48px;
+                }
+
+                .sport span {
+                    margin-right: 48px;
+                }
+
+                .gt span {
+                    margin-right: 310px;
+                }
+
+                .gt-r span {
+                    margin-right: 365px;
+                }
+
+                .race span {
+                    margin-left: 115px;
+                }
+            }
+        }
+
+        //Slideshow
+        .owl-carousel {
+            .owl-item {
+                height: 500px;
+            }
+
+            .slide-main-content {
+                .container {
+                    height: 500px !important;
+                    width: 970px !important;
+                }
+            }
+
+            .views-field {
+                &.views-field-title {
+                    max-height: none;
+
+                    font-size: 55px;
+                    line-height: 55px;
+                }
+
+                &.views-field-field-teaser-text p {
+                }
+
+            }
+        }
+    }
+}
+
+//Screens with a width of 1200px and up
+@media only screen  and (min-width: @screen__sxl) {
+    @{brembo-pages} {
+        //Homepage
+        .products-by-intended-use {
+            h2.title {
+                width: 1170px;
+            }
+
+            .title-bar .inner-container {
+                width: 1170px;
+            }
+
+            .products-bar {
+                max-width: none !important;
+            }
+        }
+
+        //Slideshow
+        .owl-carousel .slide-main-content .container {
+            width: 1170px !important;
         }
     }
 }

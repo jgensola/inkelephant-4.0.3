@@ -36,8 +36,11 @@
 
 //Brembo Footer
 .site-footer.brembo {
-    padding: 60px 15px 15px;
     background: @tundora;
+
+    .inner-container {
+        padding: 60px 15px 15px;
+    }
 
     .footer-block {
         margin-bottom: 20px;
@@ -59,10 +62,11 @@
     li {
         position: relative;
 
-        padding: 0 0 2px 8px;
+        padding: 0 0 2px 0;
     }
 
     a {
+        margin-left: 10px;
         color: @silver;
 
         &:before {
@@ -70,9 +74,12 @@
             left: 0;
             top: 0;
 
-            font-family: @generic-icon-font;
+            margin-top: -2px;
 
-            content: @angle-right;
+            font-family: @brembo-secondary-font;
+            font-size: 25px;
+
+            content: '› ';
         }
     }
 }
@@ -85,6 +92,24 @@
             .row {
                 margin: 0 -15px;
             }
+        }
+    }
+}
+
+//Screens with a width of 360px and up
+@media only screen  and (min-width: @screen__s) {
+    //Brembo Footer
+    .site-footer {
+        .inner-container {
+            max-width: 760px;
+            margin: auto;
+
+            .flex-display();
+            .justify-content(space-between);
+        }
+
+        .footer-block {
+            margin-bottom: 30px;
         }
     }
 }
