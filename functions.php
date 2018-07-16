@@ -2982,7 +2982,9 @@ register_nav_menus(array(
     'brembo-product' => __( 'Brembo Product Menu'),
     'brembo-application-list' => __( 'Brembo Application List Menu'),
     'brembo-knowledgebase' => __( 'Brembo Knowledgebase Menu'),
-
+    'brembo-documentation' => __( 'Brembo Documentation Menu'),
+    'brembo-glossary' => __( 'Brembo Glossary Menu'),
+    'brembo-faq' => __( 'Brembo FAQ Menu'),
 ));
 ?>
 
