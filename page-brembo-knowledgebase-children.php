@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Brembo Default Page Template
+ * Template Name: Brembo Knowledgebase Children Page Template
  *
  * The template for displaying all pages
  *
@@ -25,16 +25,14 @@ if (have_posts()) :
         <div class="page-container brembo-company">
             <div class="overlay"></div>
             <div class="main-content">
-                <article class="post page default">
+                <article class="post page default knowledgebase-children">
                     <div class="title-container">
                         <h2 class="page-title"><?php the_title(); ?></h2>
                     </div>
                     <div class="content-container">
                         <div class="main-section">
-                            <div class="inner-container">
-                                <div class="row">
-                                    <?php the_content(); ?>
-                                </div>
+                            <div class="row">
+                                <?php get_child_pages($post->ID); ?>
                             </div>
                         </div>
                     </div>

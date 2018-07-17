@@ -5161,20 +5161,23 @@ a {
 .page-template-page-brembo-company-php .menu-toggle,
 .page-template-page-brembo-default-php .menu-toggle,
 .page-template-page-brembo-knowledgebase-php .menu-toggle,
-.page-template-page-brembo-documentation-php .menu-toggle {
+.page-template-page-brembo-knowledgebase-children-php .menu-toggle,
+.page-template-page-brembo-product-php .menu-toggle {
   color: #0e2127;
   cursor: pointer;
 }
 .page-template-page-brembo-company-php .menu-toggle i,
 .page-template-page-brembo-default-php .menu-toggle i,
 .page-template-page-brembo-knowledgebase-php .menu-toggle i,
-.page-template-page-brembo-documentation-php .menu-toggle i {
+.page-template-page-brembo-knowledgebase-children-php .menu-toggle i,
+.page-template-page-brembo-product-php .menu-toggle i {
   font-size: 27px;
 }
 .page-template-page-brembo-company-php .btn-close,
 .page-template-page-brembo-default-php .btn-close,
 .page-template-page-brembo-knowledgebase-php .btn-close,
-.page-template-page-brembo-documentation-php .btn-close {
+.page-template-page-brembo-knowledgebase-children-php .btn-close,
+.page-template-page-brembo-product-php .btn-close {
   display: block;
   margin-right: 15px;
   color: #aaa;
@@ -5185,13 +5188,15 @@ a {
 .page-template-page-brembo-company-php .btn-close:hover,
 .page-template-page-brembo-default-php .btn-close:hover,
 .page-template-page-brembo-knowledgebase-php .btn-close:hover,
-.page-template-page-brembo-documentation-php .btn-close:hover {
+.page-template-page-brembo-knowledgebase-children-php .btn-close:hover,
+.page-template-page-brembo-product-php .btn-close:hover {
   color: #fff;
 }
 .page-template-page-brembo-company-php .product-button,
 .page-template-page-brembo-default-php .product-button,
 .page-template-page-brembo-knowledgebase-php .product-button,
-.page-template-page-brembo-documentation-php .product-button {
+.page-template-page-brembo-knowledgebase-children-php .product-button,
+.page-template-page-brembo-product-php .product-button {
   display: inline-block;
   border: 1px solid #333;
   padding: 10px 15px;
@@ -5203,49 +5208,111 @@ a {
 .page-template-page-brembo-company-php .product-button:hover,
 .page-template-page-brembo-default-php .product-button:hover,
 .page-template-page-brembo-knowledgebase-php .product-button:hover,
-.page-template-page-brembo-documentation-php .product-button:hover {
+.page-template-page-brembo-knowledgebase-children-php .product-button:hover,
+.page-template-page-brembo-product-php .product-button:hover {
   color: #fff !important;
   background: #333;
+}
+.page-template-page-brembo-company-php .product-button:focus,
+.page-template-page-brembo-default-php .product-button:focus,
+.page-template-page-brembo-knowledgebase-php .product-button:focus,
+.page-template-page-brembo-knowledgebase-children-php .product-button:focus,
+.page-template-page-brembo-product-php .product-button:focus {
+  color: #fff !important;
+  text-decoration: none;
+}
+.page-template-page-brembo-company-php .brembo-pagination,
+.page-template-page-brembo-default-php .brembo-pagination,
+.page-template-page-brembo-knowledgebase-php .brembo-pagination,
+.page-template-page-brembo-knowledgebase-children-php .brembo-pagination,
+.page-template-page-brembo-product-php .brembo-pagination {
+  text-align: center;
+  font-size: 0;
+}
+.page-template-page-brembo-company-php .brembo-pagination a,
+.page-template-page-brembo-default-php .brembo-pagination a,
+.page-template-page-brembo-knowledgebase-php .brembo-pagination a,
+.page-template-page-brembo-knowledgebase-children-php .brembo-pagination a,
+.page-template-page-brembo-product-php .brembo-pagination a {
+  display: inline-block;
+  padding: 11px;
+  min-width: 40px;
+  margin: 5px 2.5px 0;
+  background: #fff;
+  color: #333 !important;
+  font-size: 14px;
+}
+.page-template-page-brembo-company-php .brembo-pagination a.current,
+.page-template-page-brembo-default-php .brembo-pagination a.current,
+.page-template-page-brembo-knowledgebase-php .brembo-pagination a.current,
+.page-template-page-brembo-knowledgebase-children-php .brembo-pagination a.current,
+.page-template-page-brembo-product-php .brembo-pagination a.current {
+  color: #fff !important;
+  background: #333;
+  font-weight: 600;
+  pointer-events: none;
+}
+.page-template-page-brembo-company-php .brembo-pagination a:hover,
+.page-template-page-brembo-default-php .brembo-pagination a:hover,
+.page-template-page-brembo-knowledgebase-php .brembo-pagination a:hover,
+.page-template-page-brembo-knowledgebase-children-php .brembo-pagination a:hover,
+.page-template-page-brembo-product-php .brembo-pagination a:hover,
+.page-template-page-brembo-company-php .brembo-pagination a:focus,
+.page-template-page-brembo-default-php .brembo-pagination a:focus,
+.page-template-page-brembo-knowledgebase-php .brembo-pagination a:focus,
+.page-template-page-brembo-knowledgebase-children-php .brembo-pagination a:focus,
+.page-template-page-brembo-product-php .brembo-pagination a:focus {
+  color: #fff !important;
+  background: #333;
+  text-decoration: none;
 }
 .page-template-page-brembo-company-php #header-outer,
 .page-template-page-brembo-default-php #header-outer,
 .page-template-page-brembo-knowledgebase-php #header-outer,
-.page-template-page-brembo-documentation-php #header-outer,
+.page-template-page-brembo-knowledgebase-children-php #header-outer,
+.page-template-page-brembo-product-php #header-outer,
 .page-template-page-brembo-company-php #mobile-menu,
 .page-template-page-brembo-default-php #mobile-menu,
 .page-template-page-brembo-knowledgebase-php #mobile-menu,
-.page-template-page-brembo-documentation-php #mobile-menu {
+.page-template-page-brembo-knowledgebase-children-php #mobile-menu,
+.page-template-page-brembo-product-php #mobile-menu {
   font-weight: normal;
 }
 .page-template-page-brembo-company-php #header-outer .container,
 .page-template-page-brembo-default-php #header-outer .container,
 .page-template-page-brembo-knowledgebase-php #header-outer .container,
-.page-template-page-brembo-documentation-php #header-outer .container,
+.page-template-page-brembo-knowledgebase-children-php #header-outer .container,
+.page-template-page-brembo-product-php #header-outer .container,
 .page-template-page-brembo-company-php #mobile-menu .container,
 .page-template-page-brembo-default-php #mobile-menu .container,
 .page-template-page-brembo-knowledgebase-php #mobile-menu .container,
-.page-template-page-brembo-documentation-php #mobile-menu .container {
+.page-template-page-brembo-knowledgebase-children-php #mobile-menu .container,
+.page-template-page-brembo-product-php #mobile-menu .container {
   max-width: 300px !important;
   background: none;
 }
 .page-template-page-brembo-company-php #header-outer .row,
 .page-template-page-brembo-default-php #header-outer .row,
 .page-template-page-brembo-knowledgebase-php #header-outer .row,
-.page-template-page-brembo-documentation-php #header-outer .row,
+.page-template-page-brembo-knowledgebase-children-php #header-outer .row,
+.page-template-page-brembo-product-php #header-outer .row,
 .page-template-page-brembo-company-php #mobile-menu .row,
 .page-template-page-brembo-default-php #mobile-menu .row,
 .page-template-page-brembo-knowledgebase-php #mobile-menu .row,
-.page-template-page-brembo-documentation-php #mobile-menu .row {
+.page-template-page-brembo-knowledgebase-children-php #mobile-menu .row,
+.page-template-page-brembo-product-php #mobile-menu .row {
   margin: 0;
 }
 .page-template-page-brembo-company-php #header-outer a,
 .page-template-page-brembo-default-php #header-outer a,
 .page-template-page-brembo-knowledgebase-php #header-outer a,
-.page-template-page-brembo-documentation-php #header-outer a,
+.page-template-page-brembo-knowledgebase-children-php #header-outer a,
+.page-template-page-brembo-product-php #header-outer a,
 .page-template-page-brembo-company-php #mobile-menu a,
 .page-template-page-brembo-default-php #mobile-menu a,
 .page-template-page-brembo-knowledgebase-php #mobile-menu a,
-.page-template-page-brembo-documentation-php #mobile-menu a {
+.page-template-page-brembo-knowledgebase-children-php #mobile-menu a,
+.page-template-page-brembo-product-php #mobile-menu a {
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -5304,7 +5371,8 @@ a {
 .site-header.brembo ul.menu li.menu-item-has-children a:after {
   display: block;
 }
-.site-header.brembo ul.menu li.current_page_item a {
+.site-header.brembo ul.menu li.current_page_item a,
+.site-header.brembo ul.menu li.current-page-ancestor a {
   color: #fff;
   background: #404040;
 }
@@ -5351,18 +5419,21 @@ a {
 .site-header.brembo ul.sub-menu li a:hover {
   background: none;
 }
-.site-header.brembo ul.sub-menu li.current_page_item a {
+.site-header.brembo ul.sub-menu li.current_page_item a,
+.site-header.brembo ul.sub-menu li.current-page-ancestor a {
   background: none;
 }
 @media only screen and (min-width: 360px) {
   .page-template-page-brembo-company-php #header-outer .row,
   .page-template-page-brembo-default-php #header-outer .row,
   .page-template-page-brembo-knowledgebase-php #header-outer .row,
-  .page-template-page-brembo-documentation-php #header-outer .row,
+  .page-template-page-brembo-knowledgebase-children-php #header-outer .row,
+  .page-template-page-brembo-product-php #header-outer .row,
   .page-template-page-brembo-company-php #mobile-menu .row,
   .page-template-page-brembo-default-php #mobile-menu .row,
   .page-template-page-brembo-knowledgebase-php #mobile-menu .row,
-  .page-template-page-brembo-documentation-php #mobile-menu .row {
+  .page-template-page-brembo-knowledgebase-children-php #mobile-menu .row,
+  .page-template-page-brembo-product-php #mobile-menu .row {
     margin: 0 -15px;
   }
 }
@@ -5370,11 +5441,13 @@ a {
   .page-template-page-brembo-company-php #header-outer .container,
   .page-template-page-brembo-default-php #header-outer .container,
   .page-template-page-brembo-knowledgebase-php #header-outer .container,
-  .page-template-page-brembo-documentation-php #header-outer .container,
+  .page-template-page-brembo-knowledgebase-children-php #header-outer .container,
+  .page-template-page-brembo-product-php #header-outer .container,
   .page-template-page-brembo-company-php #mobile-menu .container,
   .page-template-page-brembo-default-php #mobile-menu .container,
   .page-template-page-brembo-knowledgebase-php #mobile-menu .container,
-  .page-template-page-brembo-documentation-php #mobile-menu .container {
+  .page-template-page-brembo-knowledgebase-children-php #mobile-menu .container,
+  .page-template-page-brembo-product-php #mobile-menu .container {
     max-width: 600px !important;
   }
 }
@@ -5444,7 +5517,8 @@ a {
   .site-header.brembo ul.menu li.menu-item-has-children:hover a:after {
     display: block;
   }
-  .site-header.brembo ul.menu li.current_page_item a:after {
+  .site-header.brembo ul.menu li.current_page_item a:after,
+  .site-header.brembo ul.menu li.current-page-ancestor a:after {
     display: block;
   }
   .site-header.brembo ul.menu li a {
@@ -5478,7 +5552,8 @@ a {
     -moz-box-shadow: 0px 0px 1px 0px #404040;
     box-shadow: 0px 0px 1px 0px #404040;
   }
-  .site-header.brembo ul.sub-menu li.current_page_item a {
+  .site-header.brembo ul.sub-menu li.current_page_item a,
+  .site-header.brembo ul.sub-menu li.current-page-ancestor a {
     color: #fff !important;
   }
   .site-header.brembo ul.sub-menu li a {
@@ -5500,11 +5575,13 @@ a {
   .page-template-page-brembo-company-php #header-outer .container,
   .page-template-page-brembo-default-php #header-outer .container,
   .page-template-page-brembo-knowledgebase-php #header-outer .container,
-  .page-template-page-brembo-documentation-php #header-outer .container,
+  .page-template-page-brembo-knowledgebase-children-php #header-outer .container,
+  .page-template-page-brembo-product-php #header-outer .container,
   .page-template-page-brembo-company-php #mobile-menu .container,
   .page-template-page-brembo-default-php #mobile-menu .container,
   .page-template-page-brembo-knowledgebase-php #mobile-menu .container,
-  .page-template-page-brembo-documentation-php #mobile-menu .container {
+  .page-template-page-brembo-knowledgebase-children-php #mobile-menu .container,
+  .page-template-page-brembo-product-php #mobile-menu .container {
     max-width: 1425px !important;
     padding: 0 90px;
   }
@@ -5512,7 +5589,8 @@ a {
 .page-template-page-brembo-company-php,
 .page-template-page-brembo-default-php,
 .page-template-page-brembo-knowledgebase-php,
-.page-template-page-brembo-documentation-php {
+.page-template-page-brembo-knowledgebase-children-php,
+.page-template-page-brembo-product-php {
   position: initial;
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: lighter;
@@ -5520,30 +5598,35 @@ a {
 .page-template-page-brembo-company-php #header-space,
 .page-template-page-brembo-default-php #header-space,
 .page-template-page-brembo-knowledgebase-php #header-space,
-.page-template-page-brembo-documentation-php #header-space {
+.page-template-page-brembo-knowledgebase-children-php #header-space,
+.page-template-page-brembo-product-php #header-space {
   background: #fff;
 }
 .page-template-page-brembo-company-php.active,
 .page-template-page-brembo-default-php.active,
 .page-template-page-brembo-knowledgebase-php.active,
-.page-template-page-brembo-documentation-php.active {
+.page-template-page-brembo-knowledgebase-children-php.active,
+.page-template-page-brembo-product-php.active {
   overflow-y: hidden;
 }
 .page-template-page-brembo-company-php span.underline,
 .page-template-page-brembo-default-php span.underline,
 .page-template-page-brembo-knowledgebase-php span.underline,
-.page-template-page-brembo-documentation-php span.underline {
+.page-template-page-brembo-knowledgebase-children-php span.underline,
+.page-template-page-brembo-product-php span.underline {
   display: inline-block;
   border-bottom: 0.5px solid #000;
 }
 .page-template-page-brembo-company-php a,
 .page-template-page-brembo-default-php a,
 .page-template-page-brembo-knowledgebase-php a,
-.page-template-page-brembo-documentation-php a,
+.page-template-page-brembo-knowledgebase-children-php a,
+.page-template-page-brembo-product-php a,
 .page-template-page-brembo-company-php span.button,
 .page-template-page-brembo-default-php span.button,
 .page-template-page-brembo-knowledgebase-php span.button,
-.page-template-page-brembo-documentation-php span.button {
+.page-template-page-brembo-knowledgebase-children-php span.button,
+.page-template-page-brembo-product-php span.button {
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -ms-transition: all 300ms;
@@ -5552,27 +5635,33 @@ a {
 .page-template-page-brembo-company-php h1,
 .page-template-page-brembo-default-php h1,
 .page-template-page-brembo-knowledgebase-php h1,
-.page-template-page-brembo-documentation-php h1,
+.page-template-page-brembo-knowledgebase-children-php h1,
+.page-template-page-brembo-product-php h1,
 .page-template-page-brembo-company-php h2,
 .page-template-page-brembo-default-php h2,
 .page-template-page-brembo-knowledgebase-php h2,
-.page-template-page-brembo-documentation-php h2,
+.page-template-page-brembo-knowledgebase-children-php h2,
+.page-template-page-brembo-product-php h2,
 .page-template-page-brembo-company-php h3,
 .page-template-page-brembo-default-php h3,
 .page-template-page-brembo-knowledgebase-php h3,
-.page-template-page-brembo-documentation-php h3,
+.page-template-page-brembo-knowledgebase-children-php h3,
+.page-template-page-brembo-product-php h3,
 .page-template-page-brembo-company-php h4,
 .page-template-page-brembo-default-php h4,
 .page-template-page-brembo-knowledgebase-php h4,
-.page-template-page-brembo-documentation-php h4,
+.page-template-page-brembo-knowledgebase-children-php h4,
+.page-template-page-brembo-product-php h4,
 .page-template-page-brembo-company-php h5,
 .page-template-page-brembo-default-php h5,
 .page-template-page-brembo-knowledgebase-php h5,
-.page-template-page-brembo-documentation-php h5,
+.page-template-page-brembo-knowledgebase-children-php h5,
+.page-template-page-brembo-product-php h5,
 .page-template-page-brembo-company-php h6,
 .page-template-page-brembo-default-php h6,
 .page-template-page-brembo-knowledgebase-php h6,
-.page-template-page-brembo-documentation-php h6 {
+.page-template-page-brembo-knowledgebase-children-php h6,
+.page-template-page-brembo-product-php h6 {
   color: #333;
   line-height: 1.1;
   font-family: 'Titillium Web', Arial, sans-serif;
@@ -5581,44 +5670,51 @@ a {
 .page-template-page-brembo-company-php p,
 .page-template-page-brembo-default-php p,
 .page-template-page-brembo-knowledgebase-php p,
-.page-template-page-brembo-documentation-php p {
+.page-template-page-brembo-knowledgebase-children-php p,
+.page-template-page-brembo-product-php p {
   color: #333;
 }
 .page-template-page-brembo-company-php p.has-image,
 .page-template-page-brembo-default-php p.has-image,
 .page-template-page-brembo-knowledgebase-php p.has-image,
-.page-template-page-brembo-documentation-php p.has-image {
+.page-template-page-brembo-knowledgebase-children-php p.has-image,
+.page-template-page-brembo-product-php p.has-image {
   padding-bottom: 0;
 }
 .page-template-page-brembo-company-php p.has-button,
 .page-template-page-brembo-default-php p.has-button,
 .page-template-page-brembo-knowledgebase-php p.has-button,
-.page-template-page-brembo-documentation-php p.has-button {
+.page-template-page-brembo-knowledgebase-children-php p.has-button,
+.page-template-page-brembo-product-php p.has-button {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 .page-template-page-brembo-company-php h2,
 .page-template-page-brembo-default-php h2,
 .page-template-page-brembo-knowledgebase-php h2,
-.page-template-page-brembo-documentation-php h2 {
+.page-template-page-brembo-knowledgebase-children-php h2,
+.page-template-page-brembo-product-php h2 {
   font-weight: 400;
 }
 .page-template-page-brembo-company-php .row,
 .page-template-page-brembo-default-php .row,
 .page-template-page-brembo-knowledgebase-php .row,
-.page-template-page-brembo-documentation-php .row {
+.page-template-page-brembo-knowledgebase-children-php .row,
+.page-template-page-brembo-product-php .row {
   margin: 0;
 }
 .page-template-page-brembo-company-php .carousel,
 .page-template-page-brembo-default-php .carousel,
 .page-template-page-brembo-knowledgebase-php .carousel,
-.page-template-page-brembo-documentation-php .carousel {
+.page-template-page-brembo-knowledgebase-children-php .carousel,
+.page-template-page-brembo-product-php .carousel {
   opacity: 1;
 }
 .page-template-page-brembo-company-php .container,
 .page-template-page-brembo-default-php .container,
 .page-template-page-brembo-knowledgebase-php .container,
-.page-template-page-brembo-documentation-php .container {
+.page-template-page-brembo-knowledgebase-children-php .container,
+.page-template-page-brembo-product-php .container {
   max-width: 1200px !important;
   width: 100%;
   padding: 0;
@@ -5627,7 +5723,8 @@ a {
 .page-template-page-brembo-company-php .container.brembo,
 .page-template-page-brembo-default-php .container.brembo,
 .page-template-page-brembo-knowledgebase-php .container.brembo,
-.page-template-page-brembo-documentation-php .container.brembo {
+.page-template-page-brembo-knowledgebase-children-php .container.brembo,
+.page-template-page-brembo-product-php .container.brembo {
   right: 0;
   width: auto;
   max-width: none !important;
@@ -5639,13 +5736,15 @@ a {
 .page-template-page-brembo-company-php .container.brembo.active,
 .page-template-page-brembo-default-php .container.brembo.active,
 .page-template-page-brembo-knowledgebase-php .container.brembo.active,
-.page-template-page-brembo-documentation-php .container.brembo.active {
+.page-template-page-brembo-knowledgebase-children-php .container.brembo.active,
+.page-template-page-brembo-product-php .container.brembo.active {
   right: 250px;
 }
 .page-template-page-brembo-company-php .container.brembo.active .overlay,
 .page-template-page-brembo-default-php .container.brembo.active .overlay,
 .page-template-page-brembo-knowledgebase-php .container.brembo.active .overlay,
-.page-template-page-brembo-documentation-php .container.brembo.active .overlay {
+.page-template-page-brembo-knowledgebase-children-php .container.brembo.active .overlay,
+.page-template-page-brembo-product-php .container.brembo.active .overlay {
   display: block;
   position: absolute;
   top: 0;
@@ -5664,49 +5763,120 @@ a {
 .page-template-page-brembo-company-php .container.brembo .overlay,
 .page-template-page-brembo-default-php .container.brembo .overlay,
 .page-template-page-brembo-knowledgebase-php .container.brembo .overlay,
-.page-template-page-brembo-documentation-php .container.brembo .overlay {
+.page-template-page-brembo-knowledgebase-children-php .container.brembo .overlay,
+.page-template-page-brembo-product-php .container.brembo .overlay {
   display: none;
 }
 .page-template-page-brembo-company-php article.post,
 .page-template-page-brembo-default-php article.post,
 .page-template-page-brembo-knowledgebase-php article.post,
-.page-template-page-brembo-documentation-php article.post {
+.page-template-page-brembo-knowledgebase-children-php article.post,
+.page-template-page-brembo-product-php article.post {
   border: none;
   border-radius: unset;
   padding: 0;
   margin-bottom: 0;
   line-height: 1.6;
 }
+.page-template-page-brembo-company-php article.post table,
+.page-template-page-brembo-default-php article.post table,
+.page-template-page-brembo-knowledgebase-php article.post table,
+.page-template-page-brembo-knowledgebase-children-php article.post table,
+.page-template-page-brembo-product-php article.post table {
+  max-width: 100%;
+  color: #000;
+  font-size: 14px;
+}
+.page-template-page-brembo-company-php article.post table tbody,
+.page-template-page-brembo-default-php article.post table tbody,
+.page-template-page-brembo-knowledgebase-php article.post table tbody,
+.page-template-page-brembo-knowledgebase-children-php article.post table tbody,
+.page-template-page-brembo-product-php article.post table tbody {
+  border-top: 1px solid #ccc;
+}
+.page-template-page-brembo-company-php article.post table tbody td,
+.page-template-page-brembo-default-php article.post table tbody td,
+.page-template-page-brembo-knowledgebase-php article.post table tbody td,
+.page-template-page-brembo-knowledgebase-children-php article.post table tbody td,
+.page-template-page-brembo-product-php article.post table tbody td {
+  border: none !important;
+  padding: 5px;
+}
+.page-template-page-brembo-company-php article.post table tbody td.rtecenter,
+.page-template-page-brembo-default-php article.post table tbody td.rtecenter,
+.page-template-page-brembo-knowledgebase-php article.post table tbody td.rtecenter,
+.page-template-page-brembo-knowledgebase-children-php article.post table tbody td.rtecenter,
+.page-template-page-brembo-product-php article.post table tbody td.rtecenter {
+  vertical-align: middle;
+}
+.page-template-page-brembo-company-php article.post table p,
+.page-template-page-brembo-default-php article.post table p,
+.page-template-page-brembo-knowledgebase-php article.post table p,
+.page-template-page-brembo-knowledgebase-children-php article.post table p,
+.page-template-page-brembo-product-php article.post table p {
+  text-align: left;
+  font-weight: lighter;
+}
+.page-template-page-brembo-company-php article.post table ul,
+.page-template-page-brembo-default-php article.post table ul,
+.page-template-page-brembo-knowledgebase-php article.post table ul,
+.page-template-page-brembo-knowledgebase-children-php article.post table ul,
+.page-template-page-brembo-product-php article.post table ul {
+  margin-left: 0;
+  text-align: left;
+  font-weight: lighter;
+}
+.page-template-page-brembo-company-php article.post table li,
+.page-template-page-brembo-default-php article.post table li,
+.page-template-page-brembo-knowledgebase-php article.post table li,
+.page-template-page-brembo-knowledgebase-children-php article.post table li,
+.page-template-page-brembo-product-php article.post table li {
+  color: #000;
+}
 .page-template-page-brembo-company-php article.post.default,
 .page-template-page-brembo-default-php article.post.default,
 .page-template-page-brembo-knowledgebase-php article.post.default,
-.page-template-page-brembo-documentation-php article.post.default {
+.page-template-page-brembo-knowledgebase-children-php article.post.default,
+.page-template-page-brembo-product-php article.post.default {
   background: #ebebeb;
+  color: #000;
+}
+.page-template-page-brembo-company-php article.post.default .headline h2,
+.page-template-page-brembo-default-php article.post.default .headline h2,
+.page-template-page-brembo-knowledgebase-php article.post.default .headline h2,
+.page-template-page-brembo-knowledgebase-children-php article.post.default .headline h2,
+.page-template-page-brembo-product-php article.post.default .headline h2 {
+  text-align: left;
 }
 .page-template-page-brembo-company-php article.post.default h2,
 .page-template-page-brembo-default-php article.post.default h2,
 .page-template-page-brembo-knowledgebase-php article.post.default h2,
-.page-template-page-brembo-documentation-php article.post.default h2 {
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2,
+.page-template-page-brembo-product-php article.post.default h2 {
   margin-bottom: 25px;
   font-size: 30px;
+  text-align: center;
 }
 .page-template-page-brembo-company-php article.post.default h2.page-title,
 .page-template-page-brembo-default-php article.post.default h2.page-title,
 .page-template-page-brembo-knowledgebase-php article.post.default h2.page-title,
-.page-template-page-brembo-documentation-php article.post.default h2.page-title {
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2.page-title,
+.page-template-page-brembo-product-php article.post.default h2.page-title {
   margin-bottom: 0;
   font-size: 18px;
 }
 .page-template-page-brembo-company-php article.post.default h2.col-1,
 .page-template-page-brembo-default-php article.post.default h2.col-1,
 .page-template-page-brembo-knowledgebase-php article.post.default h2.col-1,
-.page-template-page-brembo-documentation-php article.post.default h2.col-1 {
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-1,
+.page-template-page-brembo-product-php article.post.default h2.col-1 {
   font-size: 80px;
 }
 .page-template-page-brembo-company-php article.post.default h2.col-2,
 .page-template-page-brembo-default-php article.post.default h2.col-2,
 .page-template-page-brembo-knowledgebase-php article.post.default h2.col-2,
-.page-template-page-brembo-documentation-php article.post.default h2.col-2 {
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-2,
+.page-template-page-brembo-product-php article.post.default h2.col-2 {
   margin-top: 100px;
   font-size: 20px;
   font-weight: 600;
@@ -5714,41 +5884,99 @@ a {
 .page-template-page-brembo-company-php article.post.default h2.col-3,
 .page-template-page-brembo-default-php article.post.default h2.col-3,
 .page-template-page-brembo-knowledgebase-php article.post.default h2.col-3,
-.page-template-page-brembo-documentation-php article.post.default h2.col-3 {
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-3,
+.page-template-page-brembo-product-php article.post.default h2.col-3 {
   margin: 50px 0 40px;
   font-size: 25px;
 }
 .page-template-page-brembo-company-php article.post.default h2.col-3 span,
 .page-template-page-brembo-default-php article.post.default h2.col-3 span,
 .page-template-page-brembo-knowledgebase-php article.post.default h2.col-3 span,
-.page-template-page-brembo-documentation-php article.post.default h2.col-3 span {
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-3 span,
+.page-template-page-brembo-product-php article.post.default h2.col-3 span {
   display: block;
+}
+.page-template-page-brembo-company-php article.post.default h2 a,
+.page-template-page-brembo-default-php article.post.default h2 a,
+.page-template-page-brembo-knowledgebase-php article.post.default h2 a,
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2 a,
+.page-template-page-brembo-product-php article.post.default h2 a {
+  color: #333;
+}
+.page-template-page-brembo-company-php article.post.default h2 a:hover,
+.page-template-page-brembo-default-php article.post.default h2 a:hover,
+.page-template-page-brembo-knowledgebase-php article.post.default h2 a:hover,
+.page-template-page-brembo-knowledgebase-children-php article.post.default h2 a:hover,
+.page-template-page-brembo-product-php article.post.default h2 a:hover {
+  color: #f00;
+}
+.page-template-page-brembo-company-php article.post.default .has-button a,
+.page-template-page-brembo-default-php article.post.default .has-button a,
+.page-template-page-brembo-knowledgebase-php article.post.default .has-button a,
+.page-template-page-brembo-knowledgebase-children-php article.post.default .has-button a,
+.page-template-page-brembo-product-php article.post.default .has-button a {
+  color: #333;
+}
+.page-template-page-brembo-company-php article.post.default .two-column img,
+.page-template-page-brembo-default-php article.post.default .two-column img,
+.page-template-page-brembo-knowledgebase-php article.post.default .two-column img,
+.page-template-page-brembo-knowledgebase-children-php article.post.default .two-column img,
+.page-template-page-brembo-product-php article.post.default .two-column img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.page-template-page-brembo-company-php article.post.default ul,
+.page-template-page-brembo-default-php article.post.default ul,
+.page-template-page-brembo-knowledgebase-php article.post.default ul,
+.page-template-page-brembo-knowledgebase-children-php article.post.default ul,
+.page-template-page-brembo-product-php article.post.default ul {
+  padding-left: 40px;
 }
 .page-template-page-brembo-company-php article.post.default p.title-info,
 .page-template-page-brembo-default-php article.post.default p.title-info,
 .page-template-page-brembo-knowledgebase-php article.post.default p.title-info,
-.page-template-page-brembo-documentation-php article.post.default p.title-info {
+.page-template-page-brembo-knowledgebase-children-php article.post.default p.title-info,
+.page-template-page-brembo-product-php article.post.default p.title-info {
   font-size: 23px;
 }
 .page-template-page-brembo-company-php article.post.default p.has-image,
 .page-template-page-brembo-default-php article.post.default p.has-image,
 .page-template-page-brembo-knowledgebase-php article.post.default p.has-image,
-.page-template-page-brembo-documentation-php article.post.default p.has-image {
+.page-template-page-brembo-knowledgebase-children-php article.post.default p.has-image,
+.page-template-page-brembo-product-php article.post.default p.has-image {
   text-align: center;
+}
+.page-template-page-brembo-company-php article.post.default a,
+.page-template-page-brembo-default-php article.post.default a,
+.page-template-page-brembo-knowledgebase-php article.post.default a,
+.page-template-page-brembo-knowledgebase-children-php article.post.default a,
+.page-template-page-brembo-product-php article.post.default a {
+  color: #f00;
+}
+.page-template-page-brembo-company-php article.post.default strong,
+.page-template-page-brembo-default-php article.post.default strong,
+.page-template-page-brembo-knowledgebase-php article.post.default strong,
+.page-template-page-brembo-knowledgebase-children-php article.post.default strong,
+.page-template-page-brembo-product-php article.post.default strong {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 500;
 }
 .page-template-page-brembo-company-php article.post.default .three-column,
 .page-template-page-brembo-default-php article.post.default .three-column,
 .page-template-page-brembo-knowledgebase-php article.post.default .three-column,
-.page-template-page-brembo-documentation-php article.post.default .three-column {
+.page-template-page-brembo-knowledgebase-children-php article.post.default .three-column,
+.page-template-page-brembo-product-php article.post.default .three-column {
   margin: 40px 0 70px;
   padding: 0 15px;
 }
 .page-template-page-brembo-company-php article.post.default .title-container,
 .page-template-page-brembo-default-php article.post.default .title-container,
 .page-template-page-brembo-knowledgebase-php article.post.default .title-container,
-.page-template-page-brembo-documentation-php article.post.default .title-container {
+.page-template-page-brembo-knowledgebase-children-php article.post.default .title-container,
+.page-template-page-brembo-product-php article.post.default .title-container {
   height: 150px;
   border-bottom: 1px solid #fff;
+  padding: 0 15px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -5763,27 +5991,31 @@ a {
 .page-template-page-brembo-company-php article.post.default .main-section,
 .page-template-page-brembo-default-php article.post.default .main-section,
 .page-template-page-brembo-knowledgebase-php article.post.default .main-section,
-.page-template-page-brembo-documentation-php article.post.default .main-section {
+.page-template-page-brembo-knowledgebase-children-php article.post.default .main-section,
+.page-template-page-brembo-product-php article.post.default .main-section {
   padding: 30px 15px 50px 15px;
 }
 .page-template-page-brembo-company-php article.post.default .inner-container,
 .page-template-page-brembo-default-php article.post.default .inner-container,
 .page-template-page-brembo-knowledgebase-php article.post.default .inner-container,
-.page-template-page-brembo-documentation-php article.post.default .inner-container {
+.page-template-page-brembo-knowledgebase-children-php article.post.default .inner-container,
+.page-template-page-brembo-product-php article.post.default .inner-container {
   padding: 30px 20px;
   background: #fff;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase .inner-container,
 .page-template-page-brembo-default-php article.post.knowledgebase .inner-container,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .inner-container,
-.page-template-page-brembo-documentation-php article.post.knowledgebase .inner-container {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .inner-container,
+.page-template-page-brembo-product-php article.post.knowledgebase .inner-container {
   padding: 0;
   background: transparent;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase .column,
 .page-template-page-brembo-default-php article.post.knowledgebase .column,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .column,
-.page-template-page-brembo-documentation-php article.post.knowledgebase .column {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .column,
+.page-template-page-brembo-product-php article.post.knowledgebase .column {
   padding: 15px;
   margin-bottom: 10px;
   background: #fff;
@@ -5792,34 +6024,39 @@ a {
 .page-template-page-brembo-company-php article.post.knowledgebase h2,
 .page-template-page-brembo-default-php article.post.knowledgebase h2,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase h2,
-.page-template-page-brembo-documentation-php article.post.knowledgebase h2 {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase h2,
+.page-template-page-brembo-product-php article.post.knowledgebase h2 {
   margin: 12px 0 0 0;
   font-size: 25px;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase h2.page-title,
 .page-template-page-brembo-default-php article.post.knowledgebase h2.page-title,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase h2.page-title,
-.page-template-page-brembo-documentation-php article.post.knowledgebase h2.page-title {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase h2.page-title,
+.page-template-page-brembo-product-php article.post.knowledgebase h2.page-title {
   margin: 0;
   font-size: 18px;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase h2 a,
 .page-template-page-brembo-default-php article.post.knowledgebase h2 a,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase h2 a,
-.page-template-page-brembo-documentation-php article.post.knowledgebase h2 a {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase h2 a,
+.page-template-page-brembo-product-php article.post.knowledgebase h2 a {
   display: inline;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase span,
 .page-template-page-brembo-default-php article.post.knowledgebase span,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase span,
-.page-template-page-brembo-documentation-php article.post.knowledgebase span {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase span,
+.page-template-page-brembo-product-php article.post.knowledgebase span {
   display: block;
   margin-bottom: 25px;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase ul,
 .page-template-page-brembo-default-php article.post.knowledgebase ul,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase ul,
-.page-template-page-brembo-documentation-php article.post.knowledgebase ul {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase ul,
+.page-template-page-brembo-product-php article.post.knowledgebase ul {
   padding-left: 25px;
   margin-left: 0;
   text-align: left;
@@ -5827,13 +6064,15 @@ a {
 .page-template-page-brembo-company-php article.post.knowledgebase ul li,
 .page-template-page-brembo-default-php article.post.knowledgebase ul li,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase ul li,
-.page-template-page-brembo-documentation-php article.post.knowledgebase ul li {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase ul li,
+.page-template-page-brembo-product-php article.post.knowledgebase ul li {
   list-style: decimal;
 }
 .page-template-page-brembo-company-php article.post.knowledgebase a,
 .page-template-page-brembo-default-php article.post.knowledgebase a,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase a,
-.page-template-page-brembo-documentation-php article.post.knowledgebase a {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase a,
+.page-template-page-brembo-product-php article.post.knowledgebase a {
   display: block;
   color: #333;
   text-align: left;
@@ -5841,65 +6080,160 @@ a {
 .page-template-page-brembo-company-php article.post.knowledgebase a:hover,
 .page-template-page-brembo-default-php article.post.knowledgebase a:hover,
 .page-template-page-brembo-knowledgebase-php article.post.knowledgebase a:hover,
-.page-template-page-brembo-documentation-php article.post.knowledgebase a:hover {
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase a:hover,
+.page-template-page-brembo-product-php article.post.knowledgebase a:hover {
   color: #f00;
 }
-.page-template-page-brembo-company-php article.post.documentation .inner-container,
-.page-template-page-brembo-default-php article.post.documentation .inner-container,
-.page-template-page-brembo-knowledgebase-php article.post.documentation .inner-container,
-.page-template-page-brembo-documentation-php article.post.documentation .inner-container {
+.page-template-page-brembo-company-php article.post.knowledgebase-children .inner-container,
+.page-template-page-brembo-default-php article.post.knowledgebase-children .inner-container,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .inner-container,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .inner-container,
+.page-template-page-brembo-product-php article.post.knowledgebase-children .inner-container {
+  overflow: hidden;
   margin-bottom: 30px;
   padding-bottom: 0;
 }
-.page-template-page-brembo-company-php article.post.documentation h2,
-.page-template-page-brembo-default-php article.post.documentation h2,
-.page-template-page-brembo-knowledgebase-php article.post.documentation h2,
-.page-template-page-brembo-documentation-php article.post.documentation h2 {
-  margin: 0 10px 25px;
+.page-template-page-brembo-company-php article.post.knowledgebase-children h2,
+.page-template-page-brembo-default-php article.post.knowledgebase-children h2,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children h2,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children h2,
+.page-template-page-brembo-product-php article.post.knowledgebase-children h2 {
+  margin: 0 0 25px;
 }
-.page-template-page-brembo-company-php article.post.documentation .product-button,
-.page-template-page-brembo-default-php article.post.documentation .product-button,
-.page-template-page-brembo-knowledgebase-php article.post.documentation .product-button,
-.page-template-page-brembo-documentation-php article.post.documentation .product-button {
-  margin: 30px 0 25px 10px;
+.page-template-page-brembo-company-php article.post.knowledgebase-children .product-button,
+.page-template-page-brembo-default-php article.post.knowledgebase-children .product-button,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .product-button,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .product-button,
+.page-template-page-brembo-product-php article.post.knowledgebase-children .product-button {
+  margin: 30px 0 25px;
   min-width: 120px;
 }
-.page-template-page-brembo-company-php article.post.documentation p.has-button,
-.page-template-page-brembo-default-php article.post.documentation p.has-button,
-.page-template-page-brembo-knowledgebase-php article.post.documentation p.has-button,
-.page-template-page-brembo-documentation-php article.post.documentation p.has-button {
+.page-template-page-brembo-company-php article.post.knowledgebase-children p.has-button,
+.page-template-page-brembo-default-php article.post.knowledgebase-children p.has-button,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children p.has-button,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children p.has-button,
+.page-template-page-brembo-product-php article.post.knowledgebase-children p.has-button {
   margin-bottom: 0;
 }
-.page-template-page-brembo-company-php article.post.documentation .content a,
-.page-template-page-brembo-default-php article.post.documentation .content a,
-.page-template-page-brembo-knowledgebase-php article.post.documentation .content a,
-.page-template-page-brembo-documentation-php article.post.documentation .content a {
+.page-template-page-brembo-company-php article.post.knowledgebase-children .content a,
+.page-template-page-brembo-default-php article.post.knowledgebase-children .content a,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .content a,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .content a,
+.page-template-page-brembo-product-php article.post.knowledgebase-children .content a {
   color: #f00;
+}
+.page-template-page-brembo-company-php article.post.knowledgebase-children .brembo-pagination,
+.page-template-page-brembo-default-php article.post.knowledgebase-children .brembo-pagination,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .brembo-pagination,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .brembo-pagination,
+.page-template-page-brembo-product-php article.post.knowledgebase-children .brembo-pagination {
+  margin: 55px auto 50px;
+}
+.page-template-page-brembo-company-php article.post.knowledgebase-children .two-column,
+.page-template-page-brembo-default-php article.post.knowledgebase-children .two-column,
+.page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .two-column,
+.page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .two-column,
+.page-template-page-brembo-product-php article.post.knowledgebase-children .two-column {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.page-template-page-brembo-company-php article.post.product .inner-container,
+.page-template-page-brembo-default-php article.post.product .inner-container,
+.page-template-page-brembo-knowledgebase-php article.post.product .inner-container,
+.page-template-page-brembo-knowledgebase-children-php article.post.product .inner-container,
+.page-template-page-brembo-product-php article.post.product .inner-container {
+  padding: 0 15px;
+  background: transparent;
+}
+.page-template-page-brembo-company-php article.post.product .product-column,
+.page-template-page-brembo-default-php article.post.product .product-column,
+.page-template-page-brembo-knowledgebase-php article.post.product .product-column,
+.page-template-page-brembo-knowledgebase-children-php article.post.product .product-column,
+.page-template-page-brembo-product-php article.post.product .product-column {
+  position: relative;
+  height: 913px;
+}
+.page-template-page-brembo-company-php article.post.product .description .product-line-label,
+.page-template-page-brembo-default-php article.post.product .description .product-line-label,
+.page-template-page-brembo-knowledgebase-php article.post.product .description .product-line-label,
+.page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-line-label,
+.page-template-page-brembo-product-php article.post.product .description .product-line-label {
+  width: 50px;
+  height: 50px;
+}
+.page-template-page-brembo-company-php article.post.product .description .product-name a,
+.page-template-page-brembo-default-php article.post.product .description .product-name a,
+.page-template-page-brembo-knowledgebase-php article.post.product .description .product-name a,
+.page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-name a,
+.page-template-page-brembo-product-php article.post.product .description .product-name a {
+  max-width: 80%;
+}
+.page-template-page-brembo-company-php article.post.product .description p.details,
+.page-template-page-brembo-default-php article.post.product .description p.details,
+.page-template-page-brembo-knowledgebase-php article.post.product .description p.details,
+.page-template-page-brembo-knowledgebase-children-php article.post.product .description p.details,
+.page-template-page-brembo-product-php article.post.product .description p.details {
+  text-align: left;
+}
+.page-template-page-brembo-company-php article.post.product .description ol,
+.page-template-page-brembo-default-php article.post.product .description ol,
+.page-template-page-brembo-knowledgebase-php article.post.product .description ol,
+.page-template-page-brembo-knowledgebase-children-php article.post.product .description ol,
+.page-template-page-brembo-product-php article.post.product .description ol {
+  padding-left: 40px;
+  margin: 0 0 20px;
+}
+.page-template-page-brembo-company-php article.post.product a.product-button,
+.page-template-page-brembo-default-php article.post.product a.product-button,
+.page-template-page-brembo-knowledgebase-php article.post.product a.product-button,
+.page-template-page-brembo-knowledgebase-children-php article.post.product a.product-button,
+.page-template-page-brembo-product-php article.post.product a.product-button {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+  color: #333;
 }
 .page-template-page-brembo-company-php article.post a,
 .page-template-page-brembo-default-php article.post a,
 .page-template-page-brembo-knowledgebase-php article.post a,
-.page-template-page-brembo-documentation-php article.post a {
+.page-template-page-brembo-knowledgebase-children-php article.post a,
+.page-template-page-brembo-product-php article.post a {
   color: #333;
 }
 .page-template-page-brembo-company-php article.post a:hover,
 .page-template-page-brembo-default-php article.post a:hover,
 .page-template-page-brembo-knowledgebase-php article.post a:hover,
-.page-template-page-brembo-documentation-php article.post a:hover {
+.page-template-page-brembo-knowledgebase-children-php article.post a:hover,
+.page-template-page-brembo-product-php article.post a:hover {
   color: #f00;
+  text-decoration: none;
+}
+.page-template-page-brembo-company-php article.post a:focus,
+.page-template-page-brembo-default-php article.post a:focus,
+.page-template-page-brembo-knowledgebase-php article.post a:focus,
+.page-template-page-brembo-knowledgebase-children-php article.post a:focus,
+.page-template-page-brembo-product-php article.post a:focus {
+  color: #ccc;
   text-decoration: none;
 }
 .page-template-page-brembo-company-php article.post p,
 .page-template-page-brembo-default-php article.post p,
 .page-template-page-brembo-knowledgebase-php article.post p,
-.page-template-page-brembo-documentation-php article.post p {
+.page-template-page-brembo-knowledgebase-children-php article.post p,
+.page-template-page-brembo-product-php article.post p {
   padding-bottom: 0;
   margin-bottom: 20px;
 }
 .page-template-page-brembo-company-php article.post h2.title,
 .page-template-page-brembo-default-php article.post h2.title,
 .page-template-page-brembo-knowledgebase-php article.post h2.title,
-.page-template-page-brembo-documentation-php article.post h2.title {
+.page-template-page-brembo-knowledgebase-children-php article.post h2.title,
+.page-template-page-brembo-product-php article.post h2.title {
   margin-bottom: 25px;
   text-transform: uppercase;
   font-size: 18px;
@@ -5907,7 +6241,8 @@ a {
 .page-template-page-brembo-company-php article.post h2.title:after,
 .page-template-page-brembo-default-php article.post h2.title:after,
 .page-template-page-brembo-knowledgebase-php article.post h2.title:after,
-.page-template-page-brembo-documentation-php article.post h2.title:after {
+.page-template-page-brembo-knowledgebase-children-php article.post h2.title:after,
+.page-template-page-brembo-product-php article.post h2.title:after {
   display: block;
   width: 140px;
   margin-top: 1px;
@@ -5918,52 +6253,60 @@ a {
 .page-template-page-brembo-company-php article.post h2.title-2,
 .page-template-page-brembo-default-php article.post h2.title-2,
 .page-template-page-brembo-knowledgebase-php article.post h2.title-2,
-.page-template-page-brembo-documentation-php article.post h2.title-2 {
+.page-template-page-brembo-knowledgebase-children-php article.post h2.title-2,
+.page-template-page-brembo-product-php article.post h2.title-2 {
   font-size: 30px;
 }
 .page-template-page-brembo-company-php article.post h2.title-2:after,
 .page-template-page-brembo-default-php article.post h2.title-2:after,
 .page-template-page-brembo-knowledgebase-php article.post h2.title-2:after,
-.page-template-page-brembo-documentation-php article.post h2.title-2:after {
+.page-template-page-brembo-knowledgebase-children-php article.post h2.title-2:after,
+.page-template-page-brembo-product-php article.post h2.title-2:after {
   margin-top: 3px;
 }
 .page-template-page-brembo-company-php article.post .inner-container,
 .page-template-page-brembo-default-php article.post .inner-container,
 .page-template-page-brembo-knowledgebase-php article.post .inner-container,
-.page-template-page-brembo-documentation-php article.post .inner-container {
+.page-template-page-brembo-knowledgebase-children-php article.post .inner-container,
+.page-template-page-brembo-product-php article.post .inner-container {
   padding: 0 15px;
 }
 .page-template-page-brembo-company-php article.post .main-section,
 .page-template-page-brembo-default-php article.post .main-section,
 .page-template-page-brembo-knowledgebase-php article.post .main-section,
-.page-template-page-brembo-documentation-php article.post .main-section {
+.page-template-page-brembo-knowledgebase-children-php article.post .main-section,
+.page-template-page-brembo-product-php article.post .main-section {
   padding-top: 30px;
   background: #f6f5f5;
 }
 .page-template-page-brembo-company-php article.post .product-column,
 .page-template-page-brembo-default-php article.post .product-column,
 .page-template-page-brembo-knowledgebase-php article.post .product-column,
-.page-template-page-brembo-documentation-php article.post .product-column {
+.page-template-page-brembo-knowledgebase-children-php article.post .product-column,
+.page-template-page-brembo-product-php article.post .product-column {
   margin-bottom: 25px;
   background: #fff;
 }
 .page-template-page-brembo-company-php article.post .product-column img,
 .page-template-page-brembo-default-php article.post .product-column img,
 .page-template-page-brembo-knowledgebase-php article.post .product-column img,
-.page-template-page-brembo-documentation-php article.post .product-column img {
+.page-template-page-brembo-knowledgebase-children-php article.post .product-column img,
+.page-template-page-brembo-product-php article.post .product-column img {
   margin: 35px 0;
 }
 .page-template-page-brembo-company-php article.post .description,
 .page-template-page-brembo-default-php article.post .description,
 .page-template-page-brembo-knowledgebase-php article.post .description,
-.page-template-page-brembo-documentation-php article.post .description {
+.page-template-page-brembo-knowledgebase-children-php article.post .description,
+.page-template-page-brembo-product-php article.post .description {
   position: relative;
   padding: 0 24px;
 }
 .page-template-page-brembo-company-php article.post .description .product-line-label,
 .page-template-page-brembo-default-php article.post .description .product-line-label,
 .page-template-page-brembo-knowledgebase-php article.post .description .product-line-label,
-.page-template-page-brembo-documentation-php article.post .description .product-line-label {
+.page-template-page-brembo-knowledgebase-children-php article.post .description .product-line-label,
+.page-template-page-brembo-product-php article.post .description .product-line-label {
   position: absolute;
   top: -12px;
   right: 0;
@@ -5978,7 +6321,8 @@ a {
 .page-template-page-brembo-company-php article.post .description .product-name a,
 .page-template-page-brembo-default-php article.post .description .product-name a,
 .page-template-page-brembo-knowledgebase-php article.post .description .product-name a,
-.page-template-page-brembo-documentation-php article.post .description .product-name a {
+.page-template-page-brembo-knowledgebase-children-php article.post .description .product-name a,
+.page-template-page-brembo-product-php article.post .description .product-name a {
   display: inline-block;
   max-width: 50%;
   margin-top: -4px;
@@ -5990,45 +6334,53 @@ a {
 .page-template-page-brembo-company-php article.post .description .product-name a:hover,
 .page-template-page-brembo-default-php article.post .description .product-name a:hover,
 .page-template-page-brembo-knowledgebase-php article.post .description .product-name a:hover,
-.page-template-page-brembo-documentation-php article.post .description .product-name a:hover {
+.page-template-page-brembo-knowledgebase-children-php article.post .description .product-name a:hover,
+.page-template-page-brembo-product-php article.post .description .product-name a:hover {
   color: #f00;
 }
 .page-template-page-brembo-company-php article.post .description p.details,
 .page-template-page-brembo-default-php article.post .description p.details,
 .page-template-page-brembo-knowledgebase-php article.post .description p.details,
-.page-template-page-brembo-documentation-php article.post .description p.details {
+.page-template-page-brembo-knowledgebase-children-php article.post .description p.details,
+.page-template-page-brembo-product-php article.post .description p.details {
   margin-top: 20px;
   text-align: justify;
 }
 .page-template-page-brembo-company-php article.post .who-we-are,
 .page-template-page-brembo-default-php article.post .who-we-are,
 .page-template-page-brembo-knowledgebase-php article.post .who-we-are,
-.page-template-page-brembo-documentation-php article.post .who-we-are,
+.page-template-page-brembo-knowledgebase-children-php article.post .who-we-are,
+.page-template-page-brembo-product-php article.post .who-we-are,
 .page-template-page-brembo-company-php article.post .second-section,
 .page-template-page-brembo-default-php article.post .second-section,
 .page-template-page-brembo-knowledgebase-php article.post .second-section,
-.page-template-page-brembo-documentation-php article.post .second-section {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section,
+.page-template-page-brembo-product-php article.post .second-section {
   margin-top: 80px;
 }
 .page-template-page-brembo-company-php article.post .who-we-are .content,
 .page-template-page-brembo-default-php article.post .who-we-are .content,
 .page-template-page-brembo-knowledgebase-php article.post .who-we-are .content,
-.page-template-page-brembo-documentation-php article.post .who-we-are .content,
+.page-template-page-brembo-knowledgebase-children-php article.post .who-we-are .content,
+.page-template-page-brembo-product-php article.post .who-we-are .content,
 .page-template-page-brembo-company-php article.post .second-section .content,
 .page-template-page-brembo-default-php article.post .second-section .content,
 .page-template-page-brembo-knowledgebase-php article.post .second-section .content,
-.page-template-page-brembo-documentation-php article.post .second-section .content {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section .content,
+.page-template-page-brembo-product-php article.post .second-section .content {
   padding-bottom: 20px;
   text-align: center;
 }
 .page-template-page-brembo-company-php article.post .who-we-are h2.rtcenter,
 .page-template-page-brembo-default-php article.post .who-we-are h2.rtcenter,
 .page-template-page-brembo-knowledgebase-php article.post .who-we-are h2.rtcenter,
-.page-template-page-brembo-documentation-php article.post .who-we-are h2.rtcenter,
+.page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h2.rtcenter,
+.page-template-page-brembo-product-php article.post .who-we-are h2.rtcenter,
 .page-template-page-brembo-company-php article.post .second-section h2.rtcenter,
 .page-template-page-brembo-default-php article.post .second-section h2.rtcenter,
 .page-template-page-brembo-knowledgebase-php article.post .second-section h2.rtcenter,
-.page-template-page-brembo-documentation-php article.post .second-section h2.rtcenter {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section h2.rtcenter,
+.page-template-page-brembo-product-php article.post .second-section h2.rtcenter {
   margin-bottom: 5px;
   font-size: 40px;
   text-transform: uppercase;
@@ -6036,11 +6388,13 @@ a {
 .page-template-page-brembo-company-php article.post .who-we-are h3,
 .page-template-page-brembo-default-php article.post .who-we-are h3,
 .page-template-page-brembo-knowledgebase-php article.post .who-we-are h3,
-.page-template-page-brembo-documentation-php article.post .who-we-are h3,
+.page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h3,
+.page-template-page-brembo-product-php article.post .who-we-are h3,
 .page-template-page-brembo-company-php article.post .second-section h3,
 .page-template-page-brembo-default-php article.post .second-section h3,
 .page-template-page-brembo-knowledgebase-php article.post .second-section h3,
-.page-template-page-brembo-documentation-php article.post .second-section h3 {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section h3,
+.page-template-page-brembo-product-php article.post .second-section h3 {
   margin-bottom: 25px;
   font-size: 20px;
   line-height: 1.3;
@@ -6051,11 +6405,13 @@ a {
 .page-template-page-brembo-company-php article.post .who-we-are h4,
 .page-template-page-brembo-default-php article.post .who-we-are h4,
 .page-template-page-brembo-knowledgebase-php article.post .who-we-are h4,
-.page-template-page-brembo-documentation-php article.post .who-we-are h4,
+.page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h4,
+.page-template-page-brembo-product-php article.post .who-we-are h4,
 .page-template-page-brembo-company-php article.post .second-section h4,
 .page-template-page-brembo-default-php article.post .second-section h4,
 .page-template-page-brembo-knowledgebase-php article.post .second-section h4,
-.page-template-page-brembo-documentation-php article.post .second-section h4 {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section h4,
+.page-template-page-brembo-product-php article.post .second-section h4 {
   margin-bottom: 0;
   font-size: 14px;
   letter-spacing: normal;
@@ -6063,7 +6419,8 @@ a {
 .page-template-page-brembo-company-php article.post .second-section,
 .page-template-page-brembo-default-php article.post .second-section,
 .page-template-page-brembo-knowledgebase-php article.post .second-section,
-.page-template-page-brembo-documentation-php article.post .second-section {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section,
+.page-template-page-brembo-product-php article.post .second-section {
   margin-top: 0;
   padding: 60px 0 40px;
   background: #fff;
@@ -6071,45 +6428,52 @@ a {
 .page-template-page-brembo-company-php article.post .second-section h2.title,
 .page-template-page-brembo-default-php article.post .second-section h2.title,
 .page-template-page-brembo-knowledgebase-php article.post .second-section h2.title,
-.page-template-page-brembo-documentation-php article.post .second-section h2.title {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section h2.title,
+.page-template-page-brembo-product-php article.post .second-section h2.title {
   margin-bottom: 0;
   padding-bottom: 4px;
 }
 .page-template-page-brembo-company-php article.post .second-section h3,
 .page-template-page-brembo-default-php article.post .second-section h3,
 .page-template-page-brembo-knowledgebase-php article.post .second-section h3,
-.page-template-page-brembo-documentation-php article.post .second-section h3 {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section h3,
+.page-template-page-brembo-product-php article.post .second-section h3 {
   margin: 20px 0 10px;
   font-size: 30px !important;
 }
 .page-template-page-brembo-company-php article.post .second-section .content,
 .page-template-page-brembo-default-php article.post .second-section .content,
 .page-template-page-brembo-knowledgebase-php article.post .second-section .content,
-.page-template-page-brembo-documentation-php article.post .second-section .content {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section .content,
+.page-template-page-brembo-product-php article.post .second-section .content {
   padding-bottom: 0;
 }
 .page-template-page-brembo-company-php article.post .second-section p,
 .page-template-page-brembo-default-php article.post .second-section p,
 .page-template-page-brembo-knowledgebase-php article.post .second-section p,
-.page-template-page-brembo-documentation-php article.post .second-section p {
+.page-template-page-brembo-knowledgebase-children-php article.post .second-section p,
+.page-template-page-brembo-product-php article.post .second-section p {
   text-align: center;
 }
 .page-template-page-brembo-company-php .products-by-intended-use,
 .page-template-page-brembo-default-php .products-by-intended-use,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use,
-.page-template-page-brembo-documentation-php .products-by-intended-use {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use,
+.page-template-page-brembo-product-php .products-by-intended-use {
   margin-bottom: 48px;
 }
 .page-template-page-brembo-company-php .products-by-intended-use h2.title,
 .page-template-page-brembo-default-php .products-by-intended-use h2.title,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use h2.title,
-.page-template-page-brembo-documentation-php .products-by-intended-use h2.title {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use h2.title,
+.page-template-page-brembo-product-php .products-by-intended-use h2.title {
   padding: 0 15px;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .title-bar,
 .page-template-page-brembo-default-php .products-by-intended-use .title-bar,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar,
-.page-template-page-brembo-documentation-php .products-by-intended-use .title-bar {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar,
+.page-template-page-brembo-product-php .products-by-intended-use .title-bar {
   background: #404040;
   color: #fff;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -6119,7 +6483,8 @@ a {
 .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container,
 .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container,
-.page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container,
+.page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container {
   padding: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6132,7 +6497,8 @@ a {
 .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container div,
 .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container div,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container div,
-.page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container div {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container div,
+.page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container div {
   width: 96.66px;
   border-left: 0.5px solid #fff;
   text-align: center;
@@ -6140,31 +6506,36 @@ a {
 .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container div:first-of-type,
 .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container div:first-of-type,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container div:first-of-type,
-.page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container div:first-of-type {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container div:first-of-type,
+.page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container div:first-of-type {
   border: none;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar {
   padding: 0 15px;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar a,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar a,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar a,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar a {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar a,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar a {
   color: #333;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar a:hover,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar a:hover,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar a:hover,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar a:hover {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar a:hover,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar a:hover {
   color: #f00;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar div,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar div,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar div,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar div {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar div,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar div {
   border-bottom: 2px solid #f00;
   margin-bottom: 7.5px;
   text-align: right;
@@ -6172,14 +6543,16 @@ a {
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar div span,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar div span,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar div span,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar div span {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar div span,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar div span {
   display: block;
   margin-bottom: 5px;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .oem,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .oem,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .oem {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .oem,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .oem {
   width: 27%;
   margin-top: 20px;
   border-color: #929292;
@@ -6187,104 +6560,121 @@ a {
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem span,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .oem span,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .oem span,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .oem span {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .oem span,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .oem span {
   margin-right: 8%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .sport,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .sport,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .sport,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .sport {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .sport,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .sport {
   width: 32%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt {
   width: 76%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt span,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt span,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt span,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt span {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt span,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt span {
   margin-right: 18%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt-r,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt-r,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt-r {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt-r,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt-r {
   width: 91%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r span,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt-r span,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt-r span,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt-r span {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt-r span,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt-r span {
   margin-right: 22%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .race,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .race,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .race,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .race {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .race,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .race {
   width: 67%;
   margin-left: 33%;
 }
 .page-template-page-brembo-company-php .products-by-intended-use .products-bar .race span,
 .page-template-page-brembo-default-php .products-by-intended-use .products-bar .race span,
 .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .race span,
-.page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .race span {
+.page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .race span,
+.page-template-page-brembo-product-php .products-by-intended-use .products-bar .race span {
   margin-left: 8%;
   text-align: left;
 }
 .page-template-page-brembo-company-php .owl-carousel,
 .page-template-page-brembo-default-php .owl-carousel,
 .page-template-page-brembo-knowledgebase-php .owl-carousel,
-.page-template-page-brembo-documentation-php .owl-carousel {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel,
+.page-template-page-brembo-product-php .owl-carousel {
   margin-bottom: 5px;
 }
 .page-template-page-brembo-company-php .owl-carousel a:hover,
 .page-template-page-brembo-default-php .owl-carousel a:hover,
 .page-template-page-brembo-knowledgebase-php .owl-carousel a:hover,
-.page-template-page-brembo-documentation-php .owl-carousel a:hover {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel a:hover,
+.page-template-page-brembo-product-php .owl-carousel a:hover {
   text-decoration: none;
 }
 .page-template-page-brembo-company-php .owl-carousel .owl-nav,
 .page-template-page-brembo-default-php .owl-carousel .owl-nav,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .owl-nav,
-.page-template-page-brembo-documentation-php .owl-carousel .owl-nav {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .owl-nav,
+.page-template-page-brembo-product-php .owl-carousel .owl-nav {
   display: none;
   line-height: 0.5;
 }
 .page-template-page-brembo-company-php .owl-carousel .next,
 .page-template-page-brembo-default-php .owl-carousel .next,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .next,
-.page-template-page-brembo-documentation-php .owl-carousel .next,
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .next,
+.page-template-page-brembo-product-php .owl-carousel .next,
 .page-template-page-brembo-company-php .owl-carousel .previous,
 .page-template-page-brembo-default-php .owl-carousel .previous,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .previous,
-.page-template-page-brembo-documentation-php .owl-carousel .previous {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .previous,
+.page-template-page-brembo-product-php .owl-carousel .previous {
   display: none;
 }
 .page-template-page-brembo-company-php .owl-carousel .owl-item,
 .page-template-page-brembo-default-php .owl-carousel .owl-item,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .owl-item,
-.page-template-page-brembo-documentation-php .owl-carousel .owl-item {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .owl-item,
+.page-template-page-brembo-product-php .owl-carousel .owl-item {
   height: 340px;
 }
 .page-template-page-brembo-company-php .owl-carousel .views-row,
 .page-template-page-brembo-default-php .owl-carousel .views-row,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-row,
-.page-template-page-brembo-documentation-php .owl-carousel .views-row {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-row,
+.page-template-page-brembo-product-php .owl-carousel .views-row {
   height: 100%;
 }
 .page-template-page-brembo-company-php .owl-carousel .slide-main-content,
 .page-template-page-brembo-default-php .owl-carousel .slide-main-content,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .slide-main-content,
-.page-template-page-brembo-documentation-php .owl-carousel .slide-main-content {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .slide-main-content,
+.page-template-page-brembo-product-php .owl-carousel .slide-main-content {
   position: relative;
 }
 .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container,
 .page-template-page-brembo-default-php .owl-carousel .slide-main-content .container,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .slide-main-content .container,
-.page-template-page-brembo-documentation-php .owl-carousel .slide-main-content .container {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .slide-main-content .container,
+.page-template-page-brembo-product-php .owl-carousel .slide-main-content .container {
   padding: 32px 15px !important;
   height: 340px;
   margin: auto;
@@ -6293,7 +6683,8 @@ a {
 .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-nothing,
 .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-nothing,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-nothing,
-.page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-nothing {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-nothing,
+.page-template-page-brembo-product-php .owl-carousel .views-field.views-field-nothing {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -6301,13 +6692,15 @@ a {
 .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-nothing .field-content,
 .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-nothing .field-content,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-nothing .field-content,
-.page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-nothing .field-content {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-nothing .field-content,
+.page-template-page-brembo-product-php .owl-carousel .views-field.views-field-nothing .field-content {
   height: 100%;
 }
 .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title,
 .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-title,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-title,
-.page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-title {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-title,
+.page-template-page-brembo-product-php .owl-carousel .views-field.views-field-title {
   padding: 12px 18px;
   max-height: 160px;
   margin-bottom: 5px;
@@ -6322,13 +6715,15 @@ a {
 .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title a,
 .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-title a,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-title a,
-.page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-title a {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-title a,
+.page-template-page-brembo-product-php .owl-carousel .views-field.views-field-title a {
   color: #fff;
 }
 .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-field-teaser-text p,
 .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-field-teaser-text p,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-field-teaser-text p,
-.page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-field-teaser-text p {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-field-teaser-text p,
+.page-template-page-brembo-product-php .owl-carousel .views-field.views-field-field-teaser-text p {
   padding: 12px 18px;
   max-height: 160px;
   background: rgba(20, 20, 20, 0.7);
@@ -6339,19 +6734,22 @@ a {
 .page-template-page-brembo-company-php .owl-carousel .views-field .field-content br,
 .page-template-page-brembo-default-php .owl-carousel .views-field .field-content br,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field .field-content br,
-.page-template-page-brembo-documentation-php .owl-carousel .views-field .field-content br {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field .field-content br,
+.page-template-page-brembo-product-php .owl-carousel .views-field .field-content br {
   display: none;
 }
 .page-template-page-brembo-company-php .owl-carousel .slideshow-image,
 .page-template-page-brembo-default-php .owl-carousel .slideshow-image,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .slideshow-image,
-.page-template-page-brembo-documentation-php .owl-carousel .slideshow-image {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .slideshow-image,
+.page-template-page-brembo-product-php .owl-carousel .slideshow-image {
   height: 100%;
 }
 .page-template-page-brembo-company-php .owl-carousel .slideshow-image img,
 .page-template-page-brembo-default-php .owl-carousel .slideshow-image img,
 .page-template-page-brembo-knowledgebase-php .owl-carousel .slideshow-image img,
-.page-template-page-brembo-documentation-php .owl-carousel .slideshow-image img {
+.page-template-page-brembo-knowledgebase-children-php .owl-carousel .slideshow-image img,
+.page-template-page-brembo-product-php .owl-carousel .slideshow-image img {
   min-height: 500px;
   min-width: 1417px;
 }
@@ -6359,65 +6757,176 @@ a {
   .page-template-page-brembo-company-php article.post h2.title,
   .page-template-page-brembo-default-php article.post h2.title,
   .page-template-page-brembo-knowledgebase-php article.post h2.title,
-  .page-template-page-brembo-documentation-php article.post h2.title {
+  .page-template-page-brembo-knowledgebase-children-php article.post h2.title,
+  .page-template-page-brembo-product-php article.post h2.title {
     font-size: 24px;
+  }
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .two-column,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .two-column,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .two-column,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .two-column,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .two-column {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .two-column img,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .two-column img,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .two-column img,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .two-column img,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .two-column img {
+    margin-right: 10px;
   }
 }
 @media only screen and (min-width: 640px) {
   .page-template-page-brembo-company-php article.post.default h2.page-title,
   .page-template-page-brembo-default-php article.post.default h2.page-title,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.page-title,
-  .page-template-page-brembo-documentation-php article.post.default h2.page-title {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.page-title,
+  .page-template-page-brembo-product-php article.post.default h2.page-title {
     font-size: 30px;
   }
   .page-template-page-brembo-company-php article.post.default h2.col-3,
   .page-template-page-brembo-default-php article.post.default h2.col-3,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-3,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-3,
+  .page-template-page-brembo-product-php article.post.default h2.col-3 {
     margin-top: 100px;
   }
   .page-template-page-brembo-company-php article.post.default .inner-container,
   .page-template-page-brembo-default-php article.post.default .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post.default .inner-container,
-  .page-template-page-brembo-documentation-php article.post.default .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .inner-container,
+  .page-template-page-brembo-product-php article.post.default .inner-container {
     padding: 30px;
     margin: auto;
   }
   .page-template-page-brembo-company-php article.post.knowledgebase .inner-container,
   .page-template-page-brembo-default-php article.post.knowledgebase .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .inner-container,
-  .page-template-page-brembo-documentation-php article.post.knowledgebase .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .inner-container,
+  .page-template-page-brembo-product-php article.post.knowledgebase .inner-container {
     padding: 0;
   }
   .page-template-page-brembo-company-php article.post.knowledgebase .main-section,
   .page-template-page-brembo-default-php article.post.knowledgebase .main-section,
   .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .main-section,
-  .page-template-page-brembo-documentation-php article.post.knowledgebase .main-section {
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .main-section,
+  .page-template-page-brembo-product-php article.post.knowledgebase .main-section {
     padding: 15px;
+  }
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .brembo-pagination,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .brembo-pagination,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .brembo-pagination,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .brembo-pagination,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .brembo-pagination {
+    margin: 55px auto 10px;
+  }
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .inner-container {
+    margin-bottom: 30px;
+  }
+  .page-template-page-brembo-company-php article.post.product .main-section,
+  .page-template-page-brembo-default-php article.post.product .main-section,
+  .page-template-page-brembo-knowledgebase-php article.post.product .main-section,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .main-section,
+  .page-template-page-brembo-product-php article.post.product .main-section {
+    padding: 60px 0;
+  }
+  .page-template-page-brembo-company-php article.post.product .inner-container,
+  .page-template-page-brembo-default-php article.post.product .inner-container,
+  .page-template-page-brembo-knowledgebase-php article.post.product .inner-container,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .inner-container,
+  .page-template-page-brembo-product-php article.post.product .inner-container {
+    padding: 0 15px;
+  }
+  .page-template-page-brembo-company-php article.post.product .product-column,
+  .page-template-page-brembo-default-php article.post.product .product-column,
+  .page-template-page-brembo-knowledgebase-php article.post.product .product-column,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .product-column,
+  .page-template-page-brembo-product-php article.post.product .product-column {
+    margin: 0 15px;
+    height: auto;
+  }
+  .page-template-page-brembo-company-php article.post.product .description,
+  .page-template-page-brembo-default-php article.post.product .description,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description,
+  .page-template-page-brembo-product-php article.post.product .description {
+    padding: 0 30px;
+  }
+  .page-template-page-brembo-company-php article.post.product .description .product-line-label,
+  .page-template-page-brembo-default-php article.post.product .description .product-line-label,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description .product-line-label,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-line-label,
+  .page-template-page-brembo-product-php article.post.product .description .product-line-label {
+    height: 50px;
+    min-width: 50px;
+  }
+  .page-template-page-brembo-company-php article.post.product .description .product-name,
+  .page-template-page-brembo-default-php article.post.product .description .product-name,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description .product-name,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-name,
+  .page-template-page-brembo-product-php article.post.product .description .product-name {
+    position: absolute;
+    top: 0;
+  }
+  .page-template-page-brembo-company-php article.post.product .description .product-name span,
+  .page-template-page-brembo-default-php article.post.product .description .product-name span,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description .product-name span,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-name span,
+  .page-template-page-brembo-product-php article.post.product .description .product-name span {
+    display: block;
+    margin-top: 15px;
+  }
+  .page-template-page-brembo-company-php article.post.product .description p.details,
+  .page-template-page-brembo-default-php article.post.product .description p.details,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description p.details,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description p.details,
+  .page-template-page-brembo-product-php article.post.product .description p.details {
+    margin-top: 70px;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+  .page-template-page-brembo-company-php article.post.product a.product-button,
+  .page-template-page-brembo-default-php article.post.product a.product-button,
+  .page-template-page-brembo-knowledgebase-php article.post.product a.product-button,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product a.product-button,
+  .page-template-page-brembo-product-php article.post.product a.product-button {
+    position: unset;
+    margin-left: 30px;
   }
   .page-template-page-brembo-company-php article.post .main-section,
   .page-template-page-brembo-default-php article.post .main-section,
   .page-template-page-brembo-knowledgebase-php article.post .main-section,
-  .page-template-page-brembo-documentation-php article.post .main-section {
+  .page-template-page-brembo-knowledgebase-children-php article.post .main-section,
+  .page-template-page-brembo-product-php article.post .main-section {
     padding-top: 60px;
   }
   .page-template-page-brembo-company-php article.post h2.title,
   .page-template-page-brembo-default-php article.post h2.title,
   .page-template-page-brembo-knowledgebase-php article.post h2.title,
-  .page-template-page-brembo-documentation-php article.post h2.title {
+  .page-template-page-brembo-knowledgebase-children-php article.post h2.title,
+  .page-template-page-brembo-product-php article.post h2.title {
     margin: 0 auto 27px auto;
     font-size: 30px;
   }
   .page-template-page-brembo-company-php article.post h2.title:after,
   .page-template-page-brembo-default-php article.post h2.title:after,
   .page-template-page-brembo-knowledgebase-php article.post h2.title:after,
-  .page-template-page-brembo-documentation-php article.post h2.title:after {
+  .page-template-page-brembo-knowledgebase-children-php article.post h2.title:after,
+  .page-template-page-brembo-product-php article.post h2.title:after {
     margin-top: 3px;
   }
   .page-template-page-brembo-company-php article.post .content.products,
   .page-template-page-brembo-default-php article.post .content.products,
   .page-template-page-brembo-knowledgebase-php article.post .content.products,
-  .page-template-page-brembo-documentation-php article.post .content.products {
+  .page-template-page-brembo-knowledgebase-children-php article.post .content.products,
+  .page-template-page-brembo-product-php article.post .content.products {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: -ms-flex;
@@ -6426,7 +6935,8 @@ a {
   .page-template-page-brembo-company-php article.post .product-column,
   .page-template-page-brembo-default-php article.post .product-column,
   .page-template-page-brembo-knowledgebase-php article.post .product-column,
-  .page-template-page-brembo-documentation-php article.post .product-column {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-column,
+  .page-template-page-brembo-product-php article.post .product-column {
     margin: 0 5px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6442,13 +6952,15 @@ a {
   .page-template-page-brembo-company-php article.post .product-column img,
   .page-template-page-brembo-default-php article.post .product-column img,
   .page-template-page-brembo-knowledgebase-php article.post .product-column img,
-  .page-template-page-brembo-documentation-php article.post .product-column img {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-column img,
+  .page-template-page-brembo-product-php article.post .product-column img {
     margin-top: 0;
   }
   .page-template-page-brembo-company-php article.post .description,
   .page-template-page-brembo-default-php article.post .description,
   .page-template-page-brembo-knowledgebase-php article.post .description,
-  .page-template-page-brembo-documentation-php article.post .description {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description,
+  .page-template-page-brembo-product-php article.post .description {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: -ms-flex;
@@ -6463,7 +6975,8 @@ a {
   .page-template-page-brembo-company-php article.post .description p.details,
   .page-template-page-brembo-default-php article.post .description p.details,
   .page-template-page-brembo-knowledgebase-php article.post .description p.details,
-  .page-template-page-brembo-documentation-php article.post .description p.details {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description p.details,
+  .page-template-page-brembo-product-php article.post .description p.details {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
@@ -6471,20 +6984,23 @@ a {
   .page-template-page-brembo-company-php article.post .description .product-name,
   .page-template-page-brembo-default-php article.post .description .product-name,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-name,
-  .page-template-page-brembo-documentation-php article.post .description .product-name {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-name,
+  .page-template-page-brembo-product-php article.post .description .product-name {
     padding-bottom: 0;
   }
   .page-template-page-brembo-company-php article.post .description .product-name a,
   .page-template-page-brembo-default-php article.post .description .product-name a,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-name a,
-  .page-template-page-brembo-documentation-php article.post .description .product-name a {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-name a,
+  .page-template-page-brembo-product-php article.post .description .product-name a {
     font-size: 20px;
     line-height: 1.4;
   }
   .page-template-page-brembo-company-php article.post .description .product-line-label,
   .page-template-page-brembo-default-php article.post .description .product-line-label,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-line-label,
-  .page-template-page-brembo-documentation-php article.post .description .product-line-label {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-line-label,
+  .page-template-page-brembo-product-php article.post .description .product-line-label {
     position: relative;
     float: left;
     width: auto;
@@ -6495,50 +7011,59 @@ a {
   .page-template-page-brembo-company-php article.post .product-button,
   .page-template-page-brembo-default-php article.post .product-button,
   .page-template-page-brembo-knowledgebase-php article.post .product-button,
-  .page-template-page-brembo-documentation-php article.post .product-button {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-button,
+  .page-template-page-brembo-product-php article.post .product-button {
     min-width: 40%;
   }
   .page-template-page-brembo-company-php article.post .who-we-are .content,
   .page-template-page-brembo-default-php article.post .who-we-are .content,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are .content,
-  .page-template-page-brembo-documentation-php article.post .who-we-are .content,
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are .content,
+  .page-template-page-brembo-product-php article.post .who-we-are .content,
   .page-template-page-brembo-company-php article.post .second-section .content,
   .page-template-page-brembo-default-php article.post .second-section .content,
   .page-template-page-brembo-knowledgebase-php article.post .second-section .content,
-  .page-template-page-brembo-documentation-php article.post .second-section .content {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section .content,
+  .page-template-page-brembo-product-php article.post .second-section .content {
     padding: 0 78px 20px;
   }
   .page-template-page-brembo-company-php article.post .who-we-are h2.rtcenter,
   .page-template-page-brembo-default-php article.post .who-we-are h2.rtcenter,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are h2.rtcenter,
-  .page-template-page-brembo-documentation-php article.post .who-we-are h2.rtcenter,
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h2.rtcenter,
+  .page-template-page-brembo-product-php article.post .who-we-are h2.rtcenter,
   .page-template-page-brembo-company-php article.post .second-section h2.rtcenter,
   .page-template-page-brembo-default-php article.post .second-section h2.rtcenter,
   .page-template-page-brembo-knowledgebase-php article.post .second-section h2.rtcenter,
-  .page-template-page-brembo-documentation-php article.post .second-section h2.rtcenter {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section h2.rtcenter,
+  .page-template-page-brembo-product-php article.post .second-section h2.rtcenter {
     font-size: 60px;
   }
   .page-template-page-brembo-company-php article.post .who-we-are h3,
   .page-template-page-brembo-default-php article.post .who-we-are h3,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are h3,
-  .page-template-page-brembo-documentation-php article.post .who-we-are h3,
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h3,
+  .page-template-page-brembo-product-php article.post .who-we-are h3,
   .page-template-page-brembo-company-php article.post .second-section h3,
   .page-template-page-brembo-default-php article.post .second-section h3,
   .page-template-page-brembo-knowledgebase-php article.post .second-section h3,
-  .page-template-page-brembo-documentation-php article.post .second-section h3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section h3,
+  .page-template-page-brembo-product-php article.post .second-section h3 {
     font-size: 27.5px;
     line-height: 1.5;
   }
   .page-template-page-brembo-company-php article.post .second-section .content,
   .page-template-page-brembo-default-php article.post .second-section .content,
   .page-template-page-brembo-knowledgebase-php article.post .second-section .content,
-  .page-template-page-brembo-documentation-php article.post .second-section .content {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section .content,
+  .page-template-page-brembo-product-php article.post .second-section .content {
     padding-bottom: 0;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container,
   .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container,
+  .page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container {
     margin: auto;
     padding: 0 15px;
     font-weight: 400;
@@ -6546,68 +7071,79 @@ a {
   .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container div,
   .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container div,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container div,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container div {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container div,
+  .page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container div {
     width: 33.333%;
     border-width: 2px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar {
     padding: 0;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .oem span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .oem span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .oem span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .oem span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .oem span {
     margin-right: 70px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .sport span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .sport span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .sport span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .sport span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .sport span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .sport span {
     margin-right: 48px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt span {
     margin-right: 180px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt-r span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt-r span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt-r span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt-r span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt-r span {
     margin-right: 190px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .race span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .race span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .race span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .race span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .race span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .race span {
     margin-left: 75px;
   }
   .page-template-page-brembo-company-php .owl-carousel,
   .page-template-page-brembo-default-php .owl-carousel,
   .page-template-page-brembo-knowledgebase-php .owl-carousel,
-  .page-template-page-brembo-documentation-php .owl-carousel {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel,
+  .page-template-page-brembo-product-php .owl-carousel {
     position: relative;
   }
   .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container,
   .page-template-page-brembo-default-php .owl-carousel .slide-main-content .container,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .slide-main-content .container,
-  .page-template-page-brembo-documentation-php .owl-carousel .slide-main-content .container {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .slide-main-content .container,
+  .page-template-page-brembo-product-php .owl-carousel .slide-main-content .container {
     width: 970px !important;
   }
   .page-template-page-brembo-company-php .owl-carousel .owl-nav,
   .page-template-page-brembo-default-php .owl-carousel .owl-nav,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .owl-nav,
-  .page-template-page-brembo-documentation-php .owl-carousel .owl-nav {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .owl-nav,
+  .page-template-page-brembo-product-php .owl-carousel .owl-nav {
     display: block;
   }
   .page-template-page-brembo-company-php .owl-carousel span.button,
   .page-template-page-brembo-default-php .owl-carousel span.button,
   .page-template-page-brembo-knowledgebase-php .owl-carousel span.button,
-  .page-template-page-brembo-documentation-php .owl-carousel span.button {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel span.button,
+  .page-template-page-brembo-product-php .owl-carousel span.button {
     position: absolute;
     display: block;
     top: 50%;
@@ -6622,39 +7158,45 @@ a {
   .page-template-page-brembo-company-php .owl-carousel span.button:hover,
   .page-template-page-brembo-default-php .owl-carousel span.button:hover,
   .page-template-page-brembo-knowledgebase-php .owl-carousel span.button:hover,
-  .page-template-page-brembo-documentation-php .owl-carousel span.button:hover {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel span.button:hover,
+  .page-template-page-brembo-product-php .owl-carousel span.button:hover {
     background: #333 !important;
     color: #fff;
   }
   .page-template-page-brembo-company-php .owl-carousel span.button.owl-prev,
   .page-template-page-brembo-default-php .owl-carousel span.button.owl-prev,
   .page-template-page-brembo-knowledgebase-php .owl-carousel span.button.owl-prev,
-  .page-template-page-brembo-documentation-php .owl-carousel span.button.owl-prev {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel span.button.owl-prev,
+  .page-template-page-brembo-product-php .owl-carousel span.button.owl-prev {
     left: 0;
   }
   .page-template-page-brembo-company-php .owl-carousel span.button.owl-next,
   .page-template-page-brembo-default-php .owl-carousel span.button.owl-next,
   .page-template-page-brembo-knowledgebase-php .owl-carousel span.button.owl-next,
-  .page-template-page-brembo-documentation-php .owl-carousel span.button.owl-next {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel span.button.owl-next,
+  .page-template-page-brembo-product-php .owl-carousel span.button.owl-next {
     right: 0;
   }
   .page-template-page-brembo-company-php .owl-carousel span.button span,
   .page-template-page-brembo-default-php .owl-carousel span.button span,
   .page-template-page-brembo-knowledgebase-php .owl-carousel span.button span,
-  .page-template-page-brembo-documentation-php .owl-carousel span.button span {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel span.button span,
+  .page-template-page-brembo-product-php .owl-carousel span.button span {
     font-size: 45px;
   }
   .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title,
   .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-title,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-title,
-  .page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-title {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-title,
+  .page-template-page-brembo-product-php .owl-carousel .views-field.views-field-title {
     width: 425px;
     margin-left: 42px;
   }
   .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-field-teaser-text p,
   .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-field-teaser-text p,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-field-teaser-text p,
-  .page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-field-teaser-text p {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-field-teaser-text p,
+  .page-template-page-brembo-product-php .owl-carousel .views-field.views-field-field-teaser-text p {
     width: 425px;
     margin-left: 42px;
   }
@@ -6663,7 +7205,8 @@ a {
   .page-template-page-brembo-company-php article.post.default .column,
   .page-template-page-brembo-default-php article.post.default .column,
   .page-template-page-brembo-knowledgebase-php article.post.default .column,
-  .page-template-page-brembo-documentation-php article.post.default .column {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .column,
+  .page-template-page-brembo-product-php article.post.default .column {
     padding: 15px;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -6672,7 +7215,8 @@ a {
   .page-template-page-brembo-company-php article.post.default .headline,
   .page-template-page-brembo-default-php article.post.default .headline,
   .page-template-page-brembo-knowledgebase-php article.post.default .headline,
-  .page-template-page-brembo-documentation-php article.post.default .headline {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .headline,
+  .page-template-page-brembo-product-php article.post.default .headline {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -6680,15 +7224,18 @@ a {
   .page-template-page-brembo-company-php article.post.default h2.col-1,
   .page-template-page-brembo-default-php article.post.default h2.col-1,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-1,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-1,
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-1,
+  .page-template-page-brembo-product-php article.post.default h2.col-1,
   .page-template-page-brembo-company-php article.post.default h2.col-2,
   .page-template-page-brembo-default-php article.post.default h2.col-2,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-2,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-2,
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-2,
+  .page-template-page-brembo-product-php article.post.default h2.col-2,
   .page-template-page-brembo-company-php article.post.default h2.col-3,
   .page-template-page-brembo-default-php article.post.default h2.col-3,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-3,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-3,
+  .page-template-page-brembo-product-php article.post.default h2.col-3 {
     margin: 0;
     height: 170px;
     -webkit-flex: 1;
@@ -6698,19 +7245,22 @@ a {
   .page-template-page-brembo-company-php article.post.default h2.col-1,
   .page-template-page-brembo-default-php article.post.default h2.col-1,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-1,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-1 {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-1,
+  .page-template-page-brembo-product-php article.post.default h2.col-1 {
     line-height: 55px;
   }
   .page-template-page-brembo-company-php article.post.default .main-section,
   .page-template-page-brembo-default-php article.post.default .main-section,
   .page-template-page-brembo-knowledgebase-php article.post.default .main-section,
-  .page-template-page-brembo-documentation-php article.post.default .main-section {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .main-section,
+  .page-template-page-brembo-product-php article.post.default .main-section {
     padding: 60px 24px 90px;
   }
   .page-template-page-brembo-company-php article.post.default .three-column,
   .page-template-page-brembo-default-php article.post.default .three-column,
   .page-template-page-brembo-knowledgebase-php article.post.default .three-column,
-  .page-template-page-brembo-documentation-php article.post.default .three-column {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .three-column,
+  .page-template-page-brembo-product-php article.post.default .three-column {
     padding: 0;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6720,46 +7270,109 @@ a {
   .page-template-page-brembo-company-php article.post.default .inner-container,
   .page-template-page-brembo-default-php article.post.default .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post.default .inner-container,
-  .page-template-page-brembo-documentation-php article.post.default .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .inner-container,
+  .page-template-page-brembo-product-php article.post.default .inner-container {
     max-width: 750px;
   }
-  .page-template-page-brembo-company-php article.post.documentation .inner-container,
-  .page-template-page-brembo-default-php article.post.documentation .inner-container,
-  .page-template-page-brembo-knowledgebase-php article.post.documentation .inner-container,
-  .page-template-page-brembo-documentation-php article.post.documentation .inner-container {
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .inner-container,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .inner-container {
     margin-bottom: 30px;
     padding-bottom: 0;
   }
-  .page-template-page-brembo-company-php article.post.documentation h2,
-  .page-template-page-brembo-default-php article.post.documentation h2,
-  .page-template-page-brembo-knowledgebase-php article.post.documentation h2,
-  .page-template-page-brembo-documentation-php article.post.documentation h2 {
+  .page-template-page-brembo-company-php article.post.knowledgebase-children h2,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children h2,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children h2,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children h2,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children h2 {
     margin-left: 0;
   }
-  .page-template-page-brembo-company-php article.post.documentation .product-button,
-  .page-template-page-brembo-default-php article.post.documentation .product-button,
-  .page-template-page-brembo-knowledgebase-php article.post.documentation .product-button,
-  .page-template-page-brembo-documentation-php article.post.documentation .product-button {
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .product-button,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .product-button,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .product-button,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .product-button,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .product-button {
     margin-left: 0;
     min-width: 170px;
+  }
+  .page-template-page-brembo-company-php article.post.knowledgebase-children .main-section,
+  .page-template-page-brembo-default-php article.post.knowledgebase-children .main-section,
+  .page-template-page-brembo-knowledgebase-php article.post.knowledgebase-children .main-section,
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase-children .main-section,
+  .page-template-page-brembo-product-php article.post.knowledgebase-children .main-section {
+    padding: 60px 24px 50px;
+  }
+  .page-template-page-brembo-company-php article.post.product .main-section,
+  .page-template-page-brembo-default-php article.post.product .main-section,
+  .page-template-page-brembo-knowledgebase-php article.post.product .main-section,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .main-section,
+  .page-template-page-brembo-product-php article.post.product .main-section {
+    padding: 60px 15px 90px;
+  }
+  .page-template-page-brembo-company-php article.post.product .inner-container,
+  .page-template-page-brembo-default-php article.post.product .inner-container,
+  .page-template-page-brembo-knowledgebase-php article.post.product .inner-container,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .inner-container,
+  .page-template-page-brembo-product-php article.post.product .inner-container {
+    padding: 0 10px;
+  }
+  .page-template-page-brembo-company-php article.post.product .product-column img,
+  .page-template-page-brembo-default-php article.post.product .product-column img,
+  .page-template-page-brembo-knowledgebase-php article.post.product .product-column img,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .product-column img,
+  .page-template-page-brembo-product-php article.post.product .product-column img {
+    margin-bottom: 12px;
+  }
+  .page-template-page-brembo-company-php article.post.product .description .product-name,
+  .page-template-page-brembo-default-php article.post.product .description .product-name,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description .product-name,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-name,
+  .page-template-page-brembo-product-php article.post.product .description .product-name {
+    position: unset;
+  }
+  .page-template-page-brembo-company-php article.post.product .description .product-name a,
+  .page-template-page-brembo-default-php article.post.product .description .product-name a,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description .product-name a,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-name a,
+  .page-template-page-brembo-product-php article.post.product .description .product-name a {
+    line-height: 1.4;
+  }
+  .page-template-page-brembo-company-php article.post.product .description p.details,
+  .page-template-page-brembo-default-php article.post.product .description p.details,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description p.details,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description p.details,
+  .page-template-page-brembo-product-php article.post.product .description p.details {
+    margin-top: 0;
+  }
+  .page-template-page-brembo-company-php article.post.product p.has-button,
+  .page-template-page-brembo-default-php article.post.product p.has-button,
+  .page-template-page-brembo-knowledgebase-php article.post.product p.has-button,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product p.has-button,
+  .page-template-page-brembo-product-php article.post.product p.has-button {
+    margin-bottom: 30px;
   }
   .page-template-page-brembo-company-php article.post .description .product-line-label,
   .page-template-page-brembo-default-php article.post .description .product-line-label,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-line-label,
-  .page-template-page-brembo-documentation-php article.post .description .product-line-label {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-line-label,
+  .page-template-page-brembo-product-php article.post .description .product-line-label {
     position: absolute;
     margin: auto;
   }
   .page-template-page-brembo-company-php article.post .description .product-name a,
   .page-template-page-brembo-default-php article.post .description .product-name a,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-name a,
-  .page-template-page-brembo-documentation-php article.post .description .product-name a {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-name a,
+  .page-template-page-brembo-product-php article.post .description .product-name a {
     line-height: 2;
   }
   .page-template-page-brembo-company-php article.post .who-we-are .content,
   .page-template-page-brembo-default-php article.post .who-we-are .content,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are .content,
-  .page-template-page-brembo-documentation-php article.post .who-we-are .content {
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are .content,
+  .page-template-page-brembo-product-php article.post .who-we-are .content {
     padding-bottom: 50px;
   }
 }
@@ -6767,52 +7380,68 @@ a {
   .page-template-page-brembo-company-php.active,
   .page-template-page-brembo-default-php.active,
   .page-template-page-brembo-knowledgebase-php.active,
-  .page-template-page-brembo-documentation-php.active {
+  .page-template-page-brembo-knowledgebase-children-php.active,
+  .page-template-page-brembo-product-php.active {
     overflow: visible;
   }
   .page-template-page-brembo-company-php .container.brembo.active,
   .page-template-page-brembo-default-php .container.brembo.active,
   .page-template-page-brembo-knowledgebase-php .container.brembo.active,
-  .page-template-page-brembo-documentation-php .container.brembo.active {
+  .page-template-page-brembo-knowledgebase-children-php .container.brembo.active,
+  .page-template-page-brembo-product-php .container.brembo.active {
     right: 0;
   }
   .page-template-page-brembo-company-php .container.brembo.active .overlay,
   .page-template-page-brembo-default-php .container.brembo.active .overlay,
   .page-template-page-brembo-knowledgebase-php .container.brembo.active .overlay,
-  .page-template-page-brembo-documentation-php .container.brembo.active .overlay {
+  .page-template-page-brembo-knowledgebase-children-php .container.brembo.active .overlay,
+  .page-template-page-brembo-product-php .container.brembo.active .overlay {
     display: none;
+  }
+  .page-template-page-brembo-company-php article.post table tbody td,
+  .page-template-page-brembo-default-php article.post table tbody td,
+  .page-template-page-brembo-knowledgebase-php article.post table tbody td,
+  .page-template-page-brembo-knowledgebase-children-php article.post table tbody td,
+  .page-template-page-brembo-product-php article.post table tbody td {
+    vertical-align: middle;
   }
   .page-template-page-brembo-company-php article.post.default h2.col-1,
   .page-template-page-brembo-default-php article.post.default h2.col-1,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-1,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-1,
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-1,
+  .page-template-page-brembo-product-php article.post.default h2.col-1,
   .page-template-page-brembo-company-php article.post.default h2.col-2,
   .page-template-page-brembo-default-php article.post.default h2.col-2,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-2,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-2,
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-2,
+  .page-template-page-brembo-product-php article.post.default h2.col-2,
   .page-template-page-brembo-company-php article.post.default h2.col-3,
   .page-template-page-brembo-default-php article.post.default h2.col-3,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-3,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-3,
+  .page-template-page-brembo-product-php article.post.default h2.col-3 {
     height: 115px;
   }
   .page-template-page-brembo-company-php article.post.default .three-column,
   .page-template-page-brembo-default-php article.post.default .three-column,
   .page-template-page-brembo-knowledgebase-php article.post.default .three-column,
-  .page-template-page-brembo-documentation-php article.post.default .three-column {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .three-column,
+  .page-template-page-brembo-product-php article.post.default .three-column {
     margin-bottom: 50px;
   }
   .page-template-page-brembo-company-php article.post.default .inner-container,
   .page-template-page-brembo-default-php article.post.default .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post.default .inner-container,
-  .page-template-page-brembo-documentation-php article.post.default .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .inner-container,
+  .page-template-page-brembo-product-php article.post.default .inner-container {
     width: unset;
     max-width: 940px;
   }
   .page-template-page-brembo-company-php article.post.knowledgebase .inner-container,
   .page-template-page-brembo-default-php article.post.knowledgebase .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .inner-container,
-  .page-template-page-brembo-documentation-php article.post.knowledgebase .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .inner-container,
+  .page-template-page-brembo-product-php article.post.knowledgebase .inner-container {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: -ms-flex;
@@ -6821,7 +7450,8 @@ a {
   .page-template-page-brembo-company-php article.post.knowledgebase .column,
   .page-template-page-brembo-default-php article.post.knowledgebase .column,
   .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .column,
-  .page-template-page-brembo-documentation-php article.post.knowledgebase .column {
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .column,
+  .page-template-page-brembo-product-php article.post.knowledgebase .column {
     margin-left: 10px;
     -webkit-align-self: flex-start;
     -ms-align-self: flex-start;
@@ -6830,168 +7460,224 @@ a {
   .page-template-page-brembo-company-php article.post.knowledgebase .column:first-of-type,
   .page-template-page-brembo-default-php article.post.knowledgebase .column:first-of-type,
   .page-template-page-brembo-knowledgebase-php article.post.knowledgebase .column:first-of-type,
-  .page-template-page-brembo-documentation-php article.post.knowledgebase .column:first-of-type {
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase .column:first-of-type,
+  .page-template-page-brembo-product-php article.post.knowledgebase .column:first-of-type {
     margin-left: 0;
   }
   .page-template-page-brembo-company-php article.post.knowledgebase ul,
   .page-template-page-brembo-default-php article.post.knowledgebase ul,
   .page-template-page-brembo-knowledgebase-php article.post.knowledgebase ul,
-  .page-template-page-brembo-documentation-php article.post.knowledgebase ul {
+  .page-template-page-brembo-knowledgebase-children-php article.post.knowledgebase ul,
+  .page-template-page-brembo-product-php article.post.knowledgebase ul {
     min-height: 320px;
+  }
+  .page-template-page-brembo-company-php article.post.product .inner-container,
+  .page-template-page-brembo-default-php article.post.product .inner-container,
+  .page-template-page-brembo-knowledgebase-php article.post.product .inner-container,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .inner-container,
+  .page-template-page-brembo-product-php article.post.product .inner-container {
+    padding: 0;
+  }
+  .page-template-page-brembo-company-php article.post.product .description,
+  .page-template-page-brembo-default-php article.post.product .description,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description,
+  .page-template-page-brembo-product-php article.post.product .description {
+    padding: 0 20px;
+  }
+  .page-template-page-brembo-company-php article.post.product .description .product-name span,
+  .page-template-page-brembo-default-php article.post.product .description .product-name span,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description .product-name span,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description .product-name span,
+  .page-template-page-brembo-product-php article.post.product .description .product-name span {
+    margin-top: 0;
+  }
+  .page-template-page-brembo-company-php article.post.product a.product-button,
+  .page-template-page-brembo-default-php article.post.product a.product-button,
+  .page-template-page-brembo-knowledgebase-php article.post.product a.product-button,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product a.product-button,
+  .page-template-page-brembo-product-php article.post.product a.product-button {
+    margin: 0 0 10px 20px;
   }
   .page-template-page-brembo-company-php article.post .inner-container,
   .page-template-page-brembo-default-php article.post .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post .inner-container,
-  .page-template-page-brembo-documentation-php article.post .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post .inner-container,
+  .page-template-page-brembo-product-php article.post .inner-container {
     width: 970px;
     margin: auto;
   }
   .page-template-page-brembo-company-php article.post .product-column img,
   .page-template-page-brembo-default-php article.post .product-column img,
   .page-template-page-brembo-knowledgebase-php article.post .product-column img,
-  .page-template-page-brembo-documentation-php article.post .product-column img {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-column img,
+  .page-template-page-brembo-product-php article.post .product-column img {
     margin-bottom: 20px;
   }
   .page-template-page-brembo-company-php article.post .description,
   .page-template-page-brembo-default-php article.post .description,
   .page-template-page-brembo-knowledgebase-php article.post .description,
-  .page-template-page-brembo-documentation-php article.post .description {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description,
+  .page-template-page-brembo-product-php article.post .description {
     padding: 0 20px;
   }
   .page-template-page-brembo-company-php article.post .description .product-line-label,
   .page-template-page-brembo-default-php article.post .description .product-line-label,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-line-label,
-  .page-template-page-brembo-documentation-php article.post .description .product-line-label {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-line-label,
+  .page-template-page-brembo-product-php article.post .description .product-line-label {
     width: 40%;
     font-size: 16px;
   }
   .page-template-page-brembo-company-php article.post .description .product-name,
   .page-template-page-brembo-default-php article.post .description .product-name,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-name,
-  .page-template-page-brembo-documentation-php article.post .description .product-name {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-name,
+  .page-template-page-brembo-product-php article.post .description .product-name {
     min-height: 55px;
   }
   .page-template-page-brembo-company-php article.post .description .product-name a,
   .page-template-page-brembo-default-php article.post .description .product-name a,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-name a,
-  .page-template-page-brembo-documentation-php article.post .description .product-name a {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-name a,
+  .page-template-page-brembo-product-php article.post .description .product-name a {
     max-width: 60%;
     line-height: 1.4;
   }
   .page-template-page-brembo-company-php article.post .description p.details,
   .page-template-page-brembo-default-php article.post .description p.details,
   .page-template-page-brembo-knowledgebase-php article.post .description p.details,
-  .page-template-page-brembo-documentation-php article.post .description p.details {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description p.details,
+  .page-template-page-brembo-product-php article.post .description p.details {
     margin: 10px 0 25px;
   }
   .page-template-page-brembo-company-php article.post .product-button,
   .page-template-page-brembo-default-php article.post .product-button,
   .page-template-page-brembo-knowledgebase-php article.post .product-button,
-  .page-template-page-brembo-documentation-php article.post .product-button {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-button,
+  .page-template-page-brembo-product-php article.post .product-button {
     min-width: 150px;
   }
   .page-template-page-brembo-company-php article.post .who-we-are .content,
   .page-template-page-brembo-default-php article.post .who-we-are .content,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are .content,
-  .page-template-page-brembo-documentation-php article.post .who-we-are .content,
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are .content,
+  .page-template-page-brembo-product-php article.post .who-we-are .content,
   .page-template-page-brembo-company-php article.post .second-section .content,
   .page-template-page-brembo-default-php article.post .second-section .content,
   .page-template-page-brembo-knowledgebase-php article.post .second-section .content,
-  .page-template-page-brembo-documentation-php article.post .second-section .content {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section .content,
+  .page-template-page-brembo-product-php article.post .second-section .content {
     padding: 0 160px 50px;
   }
   .page-template-page-brembo-company-php article.post .who-we-are h2.rtcenter,
   .page-template-page-brembo-default-php article.post .who-we-are h2.rtcenter,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are h2.rtcenter,
-  .page-template-page-brembo-documentation-php article.post .who-we-are h2.rtcenter,
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h2.rtcenter,
+  .page-template-page-brembo-product-php article.post .who-we-are h2.rtcenter,
   .page-template-page-brembo-company-php article.post .second-section h2.rtcenter,
   .page-template-page-brembo-default-php article.post .second-section h2.rtcenter,
   .page-template-page-brembo-knowledgebase-php article.post .second-section h2.rtcenter,
-  .page-template-page-brembo-documentation-php article.post .second-section h2.rtcenter {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section h2.rtcenter,
+  .page-template-page-brembo-product-php article.post .second-section h2.rtcenter {
     font-size: 80px;
   }
   .page-template-page-brembo-company-php article.post .who-we-are h3,
   .page-template-page-brembo-default-php article.post .who-we-are h3,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are h3,
-  .page-template-page-brembo-documentation-php article.post .who-we-are h3,
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are h3,
+  .page-template-page-brembo-product-php article.post .who-we-are h3,
   .page-template-page-brembo-company-php article.post .second-section h3,
   .page-template-page-brembo-default-php article.post .second-section h3,
   .page-template-page-brembo-knowledgebase-php article.post .second-section h3,
-  .page-template-page-brembo-documentation-php article.post .second-section h3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section h3,
+  .page-template-page-brembo-product-php article.post .second-section h3 {
     font-size: 27.5px;
     line-height: 1.5;
   }
   .page-template-page-brembo-company-php article.post .second-section .content,
   .page-template-page-brembo-default-php article.post .second-section .content,
   .page-template-page-brembo-knowledgebase-php article.post .second-section .content,
-  .page-template-page-brembo-documentation-php article.post .second-section .content {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section .content,
+  .page-template-page-brembo-product-php article.post .second-section .content {
     padding-bottom: 0;
   }
   .page-template-page-brembo-company-php article.post .second-section h3,
   .page-template-page-brembo-default-php article.post .second-section h3,
   .page-template-page-brembo-knowledgebase-php article.post .second-section h3,
-  .page-template-page-brembo-documentation-php article.post .second-section h3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post .second-section h3,
+  .page-template-page-brembo-product-php article.post .second-section h3 {
     line-height: 1.25;
   }
   .page-template-page-brembo-company-php .products-by-intended-use h2.title,
   .page-template-page-brembo-default-php .products-by-intended-use h2.title,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use h2.title,
-  .page-template-page-brembo-documentation-php .products-by-intended-use h2.title {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use h2.title,
+  .page-template-page-brembo-product-php .products-by-intended-use h2.title {
     width: 970px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container,
   .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container,
+  .page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container {
     width: 970px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .oem span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .oem span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .oem span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .oem span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .oem span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .oem span {
     margin-right: 48px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .sport span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .sport span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .sport span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .sport span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .sport span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .sport span {
     margin-right: 48px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt span {
     margin-right: 310px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .gt-r span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .gt-r span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .gt-r span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .gt-r span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .gt-r span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .gt-r span {
     margin-right: 365px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar .race span,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar .race span,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar .race span,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar .race span {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar .race span,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar .race span {
     margin-left: 115px;
   }
   .page-template-page-brembo-company-php .owl-carousel .owl-item,
   .page-template-page-brembo-default-php .owl-carousel .owl-item,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .owl-item,
-  .page-template-page-brembo-documentation-php .owl-carousel .owl-item {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .owl-item,
+  .page-template-page-brembo-product-php .owl-carousel .owl-item {
     height: 500px;
   }
   .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container,
   .page-template-page-brembo-default-php .owl-carousel .slide-main-content .container,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .slide-main-content .container,
-  .page-template-page-brembo-documentation-php .owl-carousel .slide-main-content .container {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .slide-main-content .container,
+  .page-template-page-brembo-product-php .owl-carousel .slide-main-content .container {
     height: 500px !important;
     width: 970px !important;
   }
   .page-template-page-brembo-company-php .owl-carousel .views-field.views-field-title,
   .page-template-page-brembo-default-php .owl-carousel .views-field.views-field-title,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .views-field.views-field-title,
-  .page-template-page-brembo-documentation-php .owl-carousel .views-field.views-field-title {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .views-field.views-field-title,
+  .page-template-page-brembo-product-php .owl-carousel .views-field.views-field-title {
     max-height: none;
     font-size: 55px;
     line-height: 55px;
@@ -7001,102 +7687,140 @@ a {
   .page-template-page-brembo-company-php article.post.default .inner-container,
   .page-template-page-brembo-default-php article.post.default .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post.default .inner-container,
-  .page-template-page-brembo-documentation-php article.post.default .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default .inner-container,
+  .page-template-page-brembo-product-php article.post.default .inner-container {
     max-width: 1140px;
   }
   .page-template-page-brembo-company-php article.post.default h2.col-1,
   .page-template-page-brembo-default-php article.post.default h2.col-1,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-1,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-1,
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-1,
+  .page-template-page-brembo-product-php article.post.default h2.col-1,
   .page-template-page-brembo-company-php article.post.default h2.col-2,
   .page-template-page-brembo-default-php article.post.default h2.col-2,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-2,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-2,
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-2,
+  .page-template-page-brembo-product-php article.post.default h2.col-2,
   .page-template-page-brembo-company-php article.post.default h2.col-3,
   .page-template-page-brembo-default-php article.post.default h2.col-3,
   .page-template-page-brembo-knowledgebase-php article.post.default h2.col-3,
-  .page-template-page-brembo-documentation-php article.post.default h2.col-3 {
+  .page-template-page-brembo-knowledgebase-children-php article.post.default h2.col-3,
+  .page-template-page-brembo-product-php article.post.default h2.col-3 {
     height: 90px;
+  }
+  .page-template-page-brembo-company-php article.post.product .description,
+  .page-template-page-brembo-default-php article.post.product .description,
+  .page-template-page-brembo-knowledgebase-php article.post.product .description,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .description,
+  .page-template-page-brembo-product-php article.post.product .description {
+    padding: 10px 30px 0;
+  }
+  .page-template-page-brembo-company-php article.post.product .product-column img,
+  .page-template-page-brembo-default-php article.post.product .product-column img,
+  .page-template-page-brembo-knowledgebase-php article.post.product .product-column img,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product .product-column img,
+  .page-template-page-brembo-product-php article.post.product .product-column img {
+    margin-bottom: 0;
+  }
+  .page-template-page-brembo-company-php article.post.product a.product-button,
+  .page-template-page-brembo-default-php article.post.product a.product-button,
+  .page-template-page-brembo-knowledgebase-php article.post.product a.product-button,
+  .page-template-page-brembo-knowledgebase-children-php article.post.product a.product-button,
+  .page-template-page-brembo-product-php article.post.product a.product-button {
+    margin: 15px 0 20px 30px;
   }
   .page-template-page-brembo-company-php article.post .inner-container,
   .page-template-page-brembo-default-php article.post .inner-container,
   .page-template-page-brembo-knowledgebase-php article.post .inner-container,
-  .page-template-page-brembo-documentation-php article.post .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php article.post .inner-container,
+  .page-template-page-brembo-product-php article.post .inner-container {
     width: 1170px;
   }
   .page-template-page-brembo-company-php article.post .product-column img,
   .page-template-page-brembo-default-php article.post .product-column img,
   .page-template-page-brembo-knowledgebase-php article.post .product-column img,
-  .page-template-page-brembo-documentation-php article.post .product-column img {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-column img,
+  .page-template-page-brembo-product-php article.post .product-column img {
     margin-bottom: 0;
   }
   .page-template-page-brembo-company-php article.post .description,
   .page-template-page-brembo-default-php article.post .description,
   .page-template-page-brembo-knowledgebase-php article.post .description,
-  .page-template-page-brembo-documentation-php article.post .description {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description,
+  .page-template-page-brembo-product-php article.post .description {
     padding: 17px 30px 0;
   }
   .page-template-page-brembo-company-php article.post .description .product-line-label,
   .page-template-page-brembo-default-php article.post .description .product-line-label,
   .page-template-page-brembo-knowledgebase-php article.post .description .product-line-label,
-  .page-template-page-brembo-documentation-php article.post .description .product-line-label {
+  .page-template-page-brembo-knowledgebase-children-php article.post .description .product-line-label,
+  .page-template-page-brembo-product-php article.post .description .product-line-label {
     top: 0;
     margin-top: 0;
   }
   .page-template-page-brembo-company-php article.post .product-button,
   .page-template-page-brembo-default-php article.post .product-button,
   .page-template-page-brembo-knowledgebase-php article.post .product-button,
-  .page-template-page-brembo-documentation-php article.post .product-button {
+  .page-template-page-brembo-knowledgebase-children-php article.post .product-button,
+  .page-template-page-brembo-product-php article.post .product-button {
     min-width: 170px;
   }
   .page-template-page-brembo-company-php article.post .who-we-are .content,
   .page-template-page-brembo-default-php article.post .who-we-are .content,
   .page-template-page-brembo-knowledgebase-php article.post .who-we-are .content,
-  .page-template-page-brembo-documentation-php article.post .who-we-are .content {
+  .page-template-page-brembo-knowledgebase-children-php article.post .who-we-are .content,
+  .page-template-page-brembo-product-php article.post .who-we-are .content {
     padding: 0 200px 50px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use h2.title,
   .page-template-page-brembo-default-php .products-by-intended-use h2.title,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use h2.title,
-  .page-template-page-brembo-documentation-php .products-by-intended-use h2.title {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use h2.title,
+  .page-template-page-brembo-product-php .products-by-intended-use h2.title {
     width: 1170px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .title-bar .inner-container,
   .page-template-page-brembo-default-php .products-by-intended-use .title-bar .inner-container,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .title-bar .inner-container,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .title-bar .inner-container {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .title-bar .inner-container,
+  .page-template-page-brembo-product-php .products-by-intended-use .title-bar .inner-container {
     width: 1170px;
   }
   .page-template-page-brembo-company-php .products-by-intended-use .products-bar,
   .page-template-page-brembo-default-php .products-by-intended-use .products-bar,
   .page-template-page-brembo-knowledgebase-php .products-by-intended-use .products-bar,
-  .page-template-page-brembo-documentation-php .products-by-intended-use .products-bar {
+  .page-template-page-brembo-knowledgebase-children-php .products-by-intended-use .products-bar,
+  .page-template-page-brembo-product-php .products-by-intended-use .products-bar {
     max-width: none !important;
   }
   .page-template-page-brembo-company-php .owl-carousel .slide-main-content .container,
   .page-template-page-brembo-default-php .owl-carousel .slide-main-content .container,
   .page-template-page-brembo-knowledgebase-php .owl-carousel .slide-main-content .container,
-  .page-template-page-brembo-documentation-php .owl-carousel .slide-main-content .container {
+  .page-template-page-brembo-knowledgebase-children-php .owl-carousel .slide-main-content .container,
+  .page-template-page-brembo-product-php .owl-carousel .slide-main-content .container {
     width: 1170px !important;
   }
 }
 .page-template-page-brembo-company-php #footer-outer,
 .page-template-page-brembo-default-php #footer-outer,
 .page-template-page-brembo-knowledgebase-php #footer-outer,
-.page-template-page-brembo-documentation-php #footer-outer {
+.page-template-page-brembo-knowledgebase-children-php #footer-outer,
+.page-template-page-brembo-product-php #footer-outer {
   font-weight: normal;
 }
 .page-template-page-brembo-company-php #footer-outer .container,
 .page-template-page-brembo-default-php #footer-outer .container,
 .page-template-page-brembo-knowledgebase-php #footer-outer .container,
-.page-template-page-brembo-documentation-php #footer-outer .container {
+.page-template-page-brembo-knowledgebase-children-php #footer-outer .container,
+.page-template-page-brembo-product-php #footer-outer .container {
   max-width: 300px !important;
   background: none;
 }
 .page-template-page-brembo-company-php #footer-outer #copyright,
 .page-template-page-brembo-default-php #footer-outer #copyright,
 .page-template-page-brembo-knowledgebase-php #footer-outer #copyright,
-.page-template-page-brembo-documentation-php #footer-outer #copyright {
+.page-template-page-brembo-knowledgebase-children-php #footer-outer #copyright,
+.page-template-page-brembo-product-php #footer-outer #copyright {
   width: 100%;
   padding: 20px 0;
   margin: 0;
@@ -7104,19 +7828,22 @@ a {
 .page-template-page-brembo-company-php #footer-outer #copyright li a,
 .page-template-page-brembo-default-php #footer-outer #copyright li a,
 .page-template-page-brembo-knowledgebase-php #footer-outer #copyright li a,
-.page-template-page-brembo-documentation-php #footer-outer #copyright li a {
+.page-template-page-brembo-knowledgebase-children-php #footer-outer #copyright li a,
+.page-template-page-brembo-product-php #footer-outer #copyright li a {
   height: 85px;
 }
 .page-template-page-brembo-company-php #footer-outer .row,
 .page-template-page-brembo-default-php #footer-outer .row,
 .page-template-page-brembo-knowledgebase-php #footer-outer .row,
-.page-template-page-brembo-documentation-php #footer-outer .row {
+.page-template-page-brembo-knowledgebase-children-php #footer-outer .row,
+.page-template-page-brembo-product-php #footer-outer .row {
   margin: 0;
 }
 .page-template-page-brembo-company-php #footer-outer a,
 .page-template-page-brembo-default-php #footer-outer a,
 .page-template-page-brembo-knowledgebase-php #footer-outer a,
-.page-template-page-brembo-documentation-php #footer-outer a {
+.page-template-page-brembo-knowledgebase-children-php #footer-outer a,
+.page-template-page-brembo-product-php #footer-outer a {
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -7162,7 +7889,8 @@ a {
   .page-template-page-brembo-company-php #footer-outer .row,
   .page-template-page-brembo-default-php #footer-outer .row,
   .page-template-page-brembo-knowledgebase-php #footer-outer .row,
-  .page-template-page-brembo-documentation-php #footer-outer .row {
+  .page-template-page-brembo-knowledgebase-children-php #footer-outer .row,
+  .page-template-page-brembo-product-php #footer-outer .row {
     margin: 0 -15px;
   }
 }
@@ -7186,7 +7914,8 @@ a {
   .page-template-page-brembo-company-php #footer-outer .container,
   .page-template-page-brembo-default-php #footer-outer .container,
   .page-template-page-brembo-knowledgebase-php #footer-outer .container,
-  .page-template-page-brembo-documentation-php #footer-outer .container {
+  .page-template-page-brembo-knowledgebase-children-php #footer-outer .container,
+  .page-template-page-brembo-product-php #footer-outer .container {
     max-width: 600px !important;
     padding: 0 15px;
   }
@@ -7195,7 +7924,8 @@ a {
   .page-template-page-brembo-company-php #footer-outer .container,
   .page-template-page-brembo-default-php #footer-outer .container,
   .page-template-page-brembo-knowledgebase-php #footer-outer .container,
-  .page-template-page-brembo-documentation-php #footer-outer .container {
+  .page-template-page-brembo-knowledgebase-children-php #footer-outer .container,
+  .page-template-page-brembo-product-php #footer-outer .container {
     max-width: 1425px !important;
     padding: 0 90px;
   }

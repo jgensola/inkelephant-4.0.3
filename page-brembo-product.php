@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Brembo Documentation Page Template
+ * Template Name: Brembo Product Page Template
  *
  * The template for displaying all pages
  *
@@ -25,22 +25,14 @@ if (have_posts()) :
         <div class="page-container brembo-company">
             <div class="overlay"></div>
             <div class="main-content">
-                <article class="post page default documentation">
+                <article class="post page default product">
                     <div class="title-container">
                         <h2 class="page-title"><?php the_title(); ?></h2>
                     </div>
                     <div class="content-container">
                         <div class="main-section">
-                            <div class="row">
-                                <?php $mypages = get_pages(array('child_of' => $post->ID, 'sort_column' => 'post_title', 'sort_order' => 'asc'));
-                                foreach ($mypages as $page) {
-                                    $content = $page->post_content; ?>
-                                    <div class="inner-container">
-                                        <h2><a href="<?php echo get_page_link($page->ID); ?>" title="<?php echo $page->post_title; ?>"><?php echo $page->post_title; ?></a></h2>
-                                        <div class="content"><?php echo get_post_meta($page->ID, 'Description', TRUE); ?></div>
-                                        <p class="has-button"><a href="<?php echo get_page_link($page->ID); ?>" class="product-button">Read More</a></p>
-                                    </div>
-                                <?php } ?>
+                            <div class="inner-container">
+                                    <?php the_content(); ?>
                             </div>
                         </div>
                     </div>
