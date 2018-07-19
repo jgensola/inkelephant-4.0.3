@@ -2962,15 +2962,18 @@ register_nav_menus(array(
 function brembo_resources() {
     wp_register_style('wp-owl-carousel', get_template_directory_uri() . '/css/owl.theme.default.min.css');
     wp_register_style('wp-owl-carousel-2', get_template_directory_uri() . '/css/owl.carousel.min.css');
+    wp_register_style('wp-datatables-css', 'https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css');
 
     wp_enqueue_style('wp-owl-carousel');
     wp_enqueue_style('wp-owl-carousel-2');
+    wp_enqueue_style('wp-datatables-css');
     wp_enqueue_style( 'wpb-google-fonts-open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400', false );
     wp_enqueue_style( 'wpb-google-fonts-titillium-web', 'https://fonts.googleapis.com/css?family=Titillium+Web:200,400', false );
     wp_enqueue_style( 'wpb-google-fonts-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', false );
     wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
     wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/brembo.js', array(), true );
     wp_enqueue_script( 'custom-scripts-slider', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), true );
+    wp_enqueue_script( 'wp-datatables-js', get_template_directory_uri() . '/js/dataTables.js', array(), true );
 }
 
 add_action('wp_enqueue_scripts', 'brembo_resources');

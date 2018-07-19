@@ -86,4 +86,69 @@
             }
         }
     }
+
+    #applist_table_wrapper {
+        .dataTables_paginate {
+            float: none;
+
+            text-align: center;
+
+            .paginate_button {
+                min-width: 40px;
+                padding: 11px;
+                margin: 0 2px 5px;
+                border: none;
+                border-radius: unset;
+
+                background: @white;
+
+                font-size: 14px;
+
+                &.current {
+                    color: @white !important;
+                    background: @mine-shaft;
+
+                    font-weight: 600;
+
+                    pointer-events: none;
+                }
+
+                &:hover,
+                &:focus {
+                    color: @white !important;
+                    background: @mine-shaft;
+
+                    text-decoration: none;
+                }
+
+                &.disabled {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .search-submit {
+        display: block;
+
+        height: 44px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        border: 1px solid @gray;
+
+        background: @gray;
+        color: @white;
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid @mine-shaft;
+
+            background: @mine-shaft;
+        }
+    }
 }

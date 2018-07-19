@@ -52,6 +52,10 @@
             margin-bottom: 0;
             padding-bottom: 0;
         }
+
+        &.center-align {
+            text-align: center;
+        }
     }
 
     h2 {
@@ -65,6 +69,81 @@
 
     .carousel {
         opacity: 1;
+    }
+
+    .intended-use {
+        display: block;
+
+        padding: 0;
+        margin: 0 0 10px;
+
+        background: @white;
+
+        line-height: 5px;
+        text-align: center;
+
+        span {
+            display: inline-block;
+
+            margin-bottom: 2px;
+            padding-left: 7.5px;
+
+            font-size: 10px;
+            font-family: @brembo-tertiary-font;
+            line-height: 1;
+
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:last-of-type {
+                padding-left: 8px;
+            }
+        }
+
+        i {
+            display: inline-block;
+
+            width: 20px;
+            height: 5px;
+            margin-right: 2px;
+
+            background: @tundora;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        &.u1 {
+            i.u1 {
+                background: @red;
+            }
+        }
+
+        &.u2 {
+            i.u2 {
+                background: @red;
+            }
+        }
+
+        &.u3 {
+            i.u3 {
+                background: @red;
+            }
+        }
+
+        &.u4 {
+            i.u4 {
+                background: @red;
+            }
+        }
+
+        &.u5 {
+            i.u5 {
+                background: @red;
+            }
+        }
     }
 
     .container {
@@ -214,6 +293,29 @@
                 }
             }
 
+            //Brake Fluid Page
+            .brake-fluid {
+                .intended-use {
+                    margin-bottom: 40px;
+                }
+
+                .description {
+                    padding: 0;
+                }
+
+                img {
+                    float: none;
+                    display: block;
+
+                    margin: auto;
+                }
+
+                .img-ctr {
+                    display: block;
+
+                    margin: auto;
+                }
+            }
 
             ul {
                 padding-left: 40px;
@@ -380,11 +482,13 @@
                 .product-line-label {
                     width: 50px;
                     height: 50px;
+
+                    font-size: 16px;
                 }
 
                 .product-name a {
-                     max-width: 80%;
-                 }
+                    max-width: 80%;
+                }
 
                 p.details {
                     text-align: left;
@@ -404,7 +508,46 @@
                 color: @mine-shaft;
             }
 
+            .children {
+                .product-column {
+                    height: auto;
+                    padding: 0 0 20px;
+                }
 
+                .product-name {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+
+                .description {
+                    padding: 0 20px;
+
+                    .product-name {
+                        margin-top: 12px;
+                    }
+
+                    p.details {
+                        margin-top: 40px;
+                    }
+                }
+
+                .center-align {
+                    margin-left: 20px;
+
+                    text-align: left;
+                }
+
+                p.has-button {
+                    margin: 10px 0 0 20px;
+                }
+
+                a.product-button {
+                    position: unset;
+
+                    padding: 10px 30px;
+                }
+            }
         }
 
         a {
@@ -581,6 +724,332 @@
 
             p {
                 text-align: center;
+            }
+        }
+
+        //Application List Pages
+        &.application-list {
+            .inner-container {
+                padding: 0;
+
+                background: transparent;
+            }
+
+            h2.title {
+                text-align: left;
+                font-size: 26px;
+
+                &:after {
+                    height: 1.5px;
+                    margin-top: 5px;
+                }
+            }
+
+            .table-filter {
+                position: relative;
+
+                width: 100%;
+
+                .flex-display(inline-flex);
+                .flex-direction(column);
+
+                &:after {
+                    //position: absolute;
+                    //top: 50%;
+                    //right: 4px;
+                    //visibility: visible;
+                    //
+                    //margin-top: -20px;
+                    //
+                    //font-family: @google-icon-font;
+                    //font-size: 25px;
+                    //
+                    //content: 'arrow_drop_down';
+                    //pointer-events: none;
+                }
+
+                &.sport-discs {
+                    select {
+                        &:first-child {
+                            display: block;
+                        }
+                    }
+                }
+
+                &.sport-pads,
+                &.race-systems {
+                    select {
+                        &:first-child,
+                        &:nth-child(4),
+                        &:nth-child(2) {
+                            display: block;
+                        }
+
+                        &:nth-child(4),
+                        &:nth-child(3) {
+                            .flex-order(1);
+                        }
+
+                        &:first-child {
+                            .flex-order(2);
+                        }
+
+                        &:nth-child(2) {
+                            .flex-order(3);
+                        }
+                    }
+                }
+
+                &.race-systems {
+                    select {
+                        &:nth-child(3) {
+                            display: block;
+                        }
+
+                        &:nth-child(4) {
+                            display: none;
+                        }
+                    }
+                }
+
+                select {
+                    display: none;
+
+                    border: 1px solid @mine-shaft !important;
+                    margin-bottom: 10px;
+
+                    font-size: 15px;
+                    font-weight: lighter;
+                    font-family: inherit;
+
+                    .box-shadow(none) !important;
+                    //.appearance(none);
+                }
+            }
+
+            p.has-button {
+                margin-bottom: 30px;
+            }
+
+            .search {
+                cursor: pointer;
+            }
+            .dataTables_filter {
+                display: none;
+            }
+
+            table {
+                margin-top: 80px;
+                font-weight: 400;
+
+                thead {
+                    display: none;
+                }
+
+                tbody {
+                    border-top: none;
+                }
+
+                tr {
+                    border: 1px solid @silver-chalice;
+                    border-bottom: none;
+                    padding: 1.4px 8.4px;
+
+                    .flex-display();
+                    .flex-direction(column);
+
+                    &:last-of-type {
+                        border-bottom: 1px solid @silver-chalice;
+                    }
+
+                    &.even {
+                        background: @white;
+                    }
+
+                    &.odd {
+                        background: @gallery;
+
+                        td {
+                            border-bottom-color: @white !important;
+                        }
+
+                        td.dataTables_empty  {
+                            border-bottom-color: @wild-sand !important;
+                        }
+                    }
+                }
+
+                td {
+                    min-height: 26px;
+                    border-bottom: 1px solid @gallery !important;
+                    padding: 4px 4px 0px 50%;
+
+                    text-align: left;
+                    font-weight: lighter;
+                    text-transform: capitalize;
+                    line-height: 1.7;
+
+                    &:before {
+                        position: absolute;
+                        left: 15px;
+
+                        width: 45%;
+
+                        font-weight: normal;
+                    }
+
+                    &.views-field-make:before {
+                        content: "Make:";
+                    }
+
+                    &.views-field-model:before {
+                        content: "Model:";
+                    }
+
+                    &.views-field-variant:before {
+                        content: "Variant:";
+                    }
+
+                    &.views-field-year:before {
+                        content: "Year:";
+                    }
+
+                    &.views-field-axle:before {
+                        content: "Axle:";
+                    }
+
+                    &.views-field-diameter:before {
+                        content: "Disc Diameter:";
+                    }
+
+                    &.views-field-thickness:before {
+                        content: "Disc Thickness:";
+                    }
+
+                    &.views-field-partslotted:before {
+                        content: "Slotted Part #:";
+                    }
+
+                    &.views-field-partdrilled:before {
+                        content: "Drilled Part #:";
+                    }
+
+                    &.views-field-notes {
+                        &:before {
+                            content: "Notes:";
+                        }
+
+                        &:hover {
+                            div {
+                                display: block;
+                            }
+                        }
+
+                        div {
+                            display: none;
+                            z-index: 9;
+                            position: absolute;
+
+                            padding: 10px;
+                            max-width: 180px;
+                            margin-top: -15px;
+
+                            background: @white;
+
+                            .box-shadow(0px 0px 4px 2px rgba(0, 0, 0, 0.4));
+
+                            &.active {
+                                display: block;
+                            }
+                        }
+
+                        .icn-note {
+                            display: block;
+
+                            width: 30px;
+                            height: 30px;
+                            margin-bottom: 3px;
+
+                            background: url('@{image-path}brembo/note-9.png') no-repeat 0 0;
+                            background-size: 30px 30px;
+
+                            font-size: 0;
+
+                            cursor: pointer;
+
+                            .opacity(.6);
+                        }
+                    }
+
+                    &.views-field-compound:before {
+                        content: "Pad Compound:";
+                    }
+
+                    &.views-field-partnumber:before {
+                        content: "Part Number:";
+                    }
+
+                    &.views-field-category:before {
+                        content: "Category:";
+                    }
+
+                    &.views-field-pistons-1:before {
+                        content: "Caliper Pistons:";
+                    }
+
+                    &.views-field-body:before {
+                        content: "Caliper Body:";
+                    }
+
+                    &.views-field-material:before {
+                        content: "Disc Material:";
+                    }
+
+                    &.views-field-construction:before {
+                        content: "Disc Type:";
+                    }
+
+                    &.views-field-parttype3:before {
+                        content: "Type 3 Part #:";
+                    }
+
+                    &.dataTables_empty,
+                    &.dataTables_empty {
+                        margin: -15px;
+                        border-bottom-color: @wild-sand !important;
+                        padding: 25px 0;
+
+                        color: @mine-shaft;
+                        background: @wild-sand;
+
+                        text-align: center;
+                        font-size: 26px;
+                        text-transform: uppercase;
+                        font-family: @brembo-secondary-font;
+                        font-weight: 400;
+                    }
+
+                    .caliper-piston {
+                        font-size: 0;
+
+                        &.pistons-4:before {
+                            content: url('@{image-path}brembo/icon-pistons-4.png');
+                        }
+
+                        &.pistons-6:before {
+                            content: url('@{image-path}brembo/icon-pistons-6.png');
+                        }
+                    }
+
+                    a {
+                        color: @mine-shaft;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .dataTables_paginate {
+                padding-top: 25px;
             }
         }
     }
@@ -823,6 +1292,22 @@
                     padding: 30px;
                     margin: auto;
                 }
+
+                .two-column.brake-fluid {
+                    .flex-display();
+
+                    .right-ctr {
+                        width: 50%;
+
+                        .flex-order(2);
+                    }
+
+                    .left-ctr {
+                        width: 50%;
+
+                        .flex-order(1);
+                    }
+                }
             }
 
             //Knowledgebase
@@ -892,6 +1377,57 @@
                     position: unset;
 
                     margin-left: 30px;
+                }
+
+                .children {
+                    .flex-wrap(wrap);
+
+                    .center-align {
+                        margin: 0;
+
+                        text-align: center;
+                    }
+
+                    .product-column {
+                        padding-bottom: 30px;
+                        margin-bottom: 20px;
+
+                        .flex-basis(25%);
+                    }
+
+                    a.product-button {
+                        margin: 10px 0;
+                        padding: 10px 20px
+                    }
+
+                    .description {
+                        padding: 0 30px 0;
+                        .flex(none);
+
+                        .product-line-label {
+                            position: absolute;
+                            right: 0;
+
+                            margin-right: 0;
+                        }
+
+                        .product-name {
+                            position: relative;
+
+                            margin-top: 0;
+                            max-width: 50%;
+
+                            font-size: 20px;
+                        }
+
+                        p.details {
+                            margin-top: 0;
+                        }
+                    }
+
+                    p.has-button {
+                        margin: 10px 20px 0;
+                    }
                 }
             }
 
@@ -978,6 +1514,13 @@
             .second-section {
                 .content {
                     padding-bottom: 0;
+                }
+            }
+
+            //Application List
+            &.application-list {
+                .inner-container {
+                    padding: 0;
                 }
             }
         }
@@ -1180,6 +1723,39 @@
                 p.has-button {
                     margin-bottom: 30px;
                 }
+
+                .children {
+                    margin-bottom: -20px;
+
+                    .product-column {
+                        padding-bottom: 30px;
+                    }
+
+                    .description {
+                        .product-line-label {
+                            right: 0;
+
+                            margin: 0;
+                        }
+
+                        p.details {
+                            margin: 0;
+                        }
+
+                        .product-name {
+                            margin-top: 0;
+                            max-width: 85%;
+                        }
+                    }
+
+                    p.has-button {
+                        margin: 10px 30px 0;
+                    }
+
+                    a.product-button {
+                        padding: 10px 30px;
+                    }
+                }
             }
 
             //Homepage
@@ -1198,6 +1774,13 @@
             .who-we-are {
                 .content {
                     padding-bottom: 50px;
+                }
+            }
+
+            //Application List
+            &.application-list {
+                .main-section {
+                    padding-bottom: 60px;
                 }
             }
         }
@@ -1287,12 +1870,175 @@
                 a.product-button {
                     margin: 0 0 10px 20px;
                 }
+
+                .children {
+                    .description {
+                        padding: 0 20px;
+
+                        .flex(1 0 auto);
+
+                        .product-name {
+                            margin-top: 0;
+                            min-height: auto;
+                        }
+
+                        .temporary {
+                            display: none;
+                        }
+                    }
+                }
             }
 
             //Homepage
             .inner-container {
                 width: 970px;
                 margin: auto;
+            }
+
+            //Application List
+            &.application-list {
+                .table-filter {
+                    margin: 0 10px 0 -10px;
+                    width: auto;
+
+                    .flex-direction(row);
+                    .flex-display(inline-flex);
+
+                    select {
+                        margin: 0 0 0 10px;
+                        width: 180px;
+                    }
+                }
+
+                .search-submit {
+                    position: absolute;
+                    top: 2.5px;
+                    width: 150px;
+                    margin-bottom: 0;
+                }
+
+                p.has-button {
+                    position: absolute;
+                    display: inline-block;
+
+                    margin: -3px 0 0;
+                }
+
+                table {
+                    border-bottom: none;
+
+                    font-size: 9px;
+
+                    thead {
+                        display: table-header-group;
+
+                        &.hide {
+                            display: none;
+                        }
+                    }
+
+                    tr {
+                        display: table-row;
+
+                        border: none;
+                        border-bottom: 4px solid @wild-sand;
+
+                        &:last-of-type {
+                            border-bottom: 4px solid @wild-sand;
+                        }
+
+                        &.odd,
+                        &.even {
+                            background: @gallery;
+
+                            td {
+                                border-bottom-color: @wild-sand !important;
+                            }
+                        }
+                    }
+
+                    th {
+                        position: relative;
+
+                        padding: 4px 4px 8px 4px;
+                        border: none;
+                        border-bottom: 4px solid @wild-sand;
+
+                        background: none;
+                        color: @black;
+
+                        font-weight: bold;
+                        vertical-align: bottom;
+
+                        a {
+                            color: @mine-shaft;
+
+                            &:hover {
+                                color: @red;
+                            }
+                        }
+
+                        &:hover {
+                            color: @red;
+                        }
+
+                        &:after {
+                            display: inline-block;
+                            bottom: 0;
+                            position: absolute;
+
+                            margin-left: -3px;
+
+                            color: @silver;
+
+                            font-size: 18px;
+                            font-family: @google-icon-font;
+                        }
+
+                        &.sorting_asc,
+                        &.sorting_desc {
+                            border-right: 7px solid transparent;
+                        }
+
+                        &.sorting_asc:after {
+                            content: 'arrow_drop_up';
+                        }
+
+                        &.sorting_desc:after {
+                            content: 'arrow_drop_down';
+                        }
+                    }
+
+                    td {
+                        padding: 4px;
+                        border: none;
+                        max-width: 200px;
+                        border-bottom: 4px solid @wild-sand !important;
+
+                        background: @white;
+                        color: @black;
+
+                        text-align: center;
+
+                        &:before {
+                            display: none;
+                        }
+
+                        &.views-field-notes div {
+                            margin-left: -175px;
+                        }
+
+                        &.dataTables_empty {
+                            &:after {
+                                display: block;
+                                height: 30px;
+                                width: 100%;
+
+                                background: red;
+                            }
+                        }
+                    }
+                }
             }
 
             .product-column {
@@ -1451,6 +2197,14 @@
                 a.product-button {
                     margin: 15px 0 20px 30px;
                 }
+
+                .children {
+                    .description {
+                        .product-name {
+                            margin-top: 10px;
+                        }
+                    }
+                }
             }
 
             //Homepage
@@ -1480,6 +2234,19 @@
             .who-we-are {
                 .content {
                     padding: 0 200px 50px;
+                }
+            }
+
+            //Application List
+            &.application-list {
+                table {
+                    font-size: 12.5px;
+                    line-height: 1.25;
+
+                    th:after {
+                        //top: -1px;
+                        font-size: 24px;
+                    }
                 }
             }
         }
