@@ -753,77 +753,101 @@
                 .flex-display(inline-flex);
                 .flex-direction(column);
 
-                &:after {
-                    //position: absolute;
-                    //top: 50%;
-                    //right: 4px;
-                    //visibility: visible;
-                    //
-                    //margin-top: -20px;
-                    //
-                    //font-family: @google-icon-font;
-                    //font-size: 25px;
-                    //
-                    //content: 'arrow_drop_down';
-                    //pointer-events: none;
-                }
-
-                &.sport-discs {
-                    select {
-                        &:first-child {
-                            display: block;
-                        }
-                    }
-                }
-
-                &.sport-pads,
-                &.race-systems {
-                    select {
-                        &:first-child,
-                        &:nth-child(4),
-                        &:nth-child(2) {
-                            display: block;
-                        }
-
-                        &:nth-child(4),
-                        &:nth-child(3) {
-                            .flex-order(1);
-                        }
-
-                        &:first-child {
-                            .flex-order(2);
-                        }
-
-                        &:nth-child(2) {
-                            .flex-order(3);
-                        }
-                    }
-                }
-
-                &.race-systems {
-                    select {
-                        &:nth-child(3) {
-                            display: block;
-                        }
-
-                        &:nth-child(4) {
-                            display: none;
-                        }
-                    }
-                }
-
-                select {
+                .select-container {
                     display: none;
+                    position: relative;
 
                     border: 1px solid @mine-shaft !important;
                     margin-bottom: 10px;
 
-                    font-size: 15px;
-                    font-weight: lighter;
-                    font-family: inherit;
+                    background: @white;
 
-                    .box-shadow(none) !important;
-                    //.appearance(none);
+                    &:after {
+                        position: absolute;
+                        top: 50%;
+                        right: 4px;
+                        visibility: visible;
+
+                        margin-top: -20px;
+
+                        font-family: @google-icon-font;
+                        font-size: 25px;
+
+                        content: 'arrow_drop_down';
+                        pointer-events: none;
+                    }
+
+                    select {
+                        border: none;
+                        padding: 10px 12px !important;
+
+                        background: transparent;
+
+                        font-size: 15px;
+                        font-weight: lighter;
+                        font-family: inherit;
+
+                        .box-shadow(none) !important;
+                        .appearance(none);
+                    }
+                }
+
+                &.sport-discs .select-container {
+                    &.make {
+                        display: block;
+                    }
+                }
+
+                &.sport-pads .select-container {
+                    &.make {
+                        display: block;
+                    }
+                }
+
+                &.race-systems .select-container {
+                    &.year {
+                        display: block;
+
+                        .flex-order(1);
+                    }
+
+                    &.make {
+                        display: block;
+
+                        .flex-order(2);
+                    }
+
+                    &.model {
+                        display: block;
+
+                        .flex-order(3);
+                    }
+                }
+
+                &.performance-systems .select-container {
+                    &.product-category {
+                        display: block;
+
+                        .flex-order(1);
+                    }
+
+                    &.year {
+                        display: block;
+
+                        .flex-order(2);
+                    }
+
+                    &.make {
+                        display: block;
+
+                        .flex-order(4);
+                    }
+
+                    &.model {
+                        display: block;
+
+                        .flex-order(5);
+                    }
                 }
             }
 
@@ -834,6 +858,7 @@
             .search {
                 cursor: pointer;
             }
+
             .dataTables_filter {
                 display: none;
             }
@@ -841,6 +866,7 @@
             table {
                 margin-top: 80px;
                 font-weight: 400;
+                min-width: 100%;
 
                 thead {
                     display: none;
@@ -864,6 +890,10 @@
 
                     &.even {
                         background: @white;
+
+                        td .color span {
+                            background: @white;
+                        }
                     }
 
                     &.odd {
@@ -871,9 +901,13 @@
 
                         td {
                             border-bottom-color: @white !important;
+
+                            .color span {
+                                background: @gallery;
+                            }
                         }
 
-                        td.dataTables_empty  {
+                        td.dataTables_empty {
                             border-bottom-color: @wild-sand !important;
                         }
                     }
@@ -1039,11 +1073,61 @@
                         &.pistons-6:before {
                             content: url('@{image-path}brembo/icon-pistons-6.png');
                         }
+
+                        &.pistons-2:before {
+                            content: url('@{image-path}brembo/icon-pistons-2.png');
+                        }
+
+                        &.pistons-8:before {
+                            content: url('@{image-path}brembo/icon-pistons-8.png');
+                        }
+
+                        &.pistons-1:before {
+                            content: url('@{image-path}brembo/icon_1piston.png');
+                        }
                     }
 
                     a {
+                        display: block;
                         color: @mine-shaft;
+
+                        line-height: 1.25;
+
                         pointer-events: none;
+                    }
+
+                    .color {
+                        position: relative;
+
+                        max-width: 75px;
+                        margin-bottom: 2px;
+
+                        &.red {
+                            background: @red;
+                        }
+
+                        &.black {
+                            background: @black;
+                        }
+
+                        &.silver {
+                            background: @heather;
+                        }
+
+                        &.yellow {
+                            background: @yellow;
+                        }
+
+                        &.fluo-yellow {
+                            background: @golden-fizz;
+                        }
+
+                        span {
+                            display: block;
+
+                            margin-left: 6px;
+                            padding-left: 2px;
+                        }
                     }
                 }
             }
@@ -1904,9 +1988,13 @@
                     .flex-direction(row);
                     .flex-display(inline-flex);
 
-                    select {
+                    .select-container {
                         margin: 0 0 0 10px;
                         width: 180px;
+
+                        select {
+                            padding: 10px 32px 10px 12px !important;
+                        }
                     }
                 }
 
@@ -1953,6 +2041,10 @@
 
                             td {
                                 border-bottom-color: @wild-sand !important;
+
+                                .color span {
+                                    background: @white;
+                                }
                             }
                         }
                     }
@@ -2007,6 +2099,10 @@
                         &.sorting_desc:after {
                             content: 'arrow_drop_down';
                         }
+
+                        .hide {
+                            font-size: 0;
+                        }
                     }
 
                     td {
@@ -2026,6 +2122,10 @@
 
                         &.views-field-notes div {
                             margin-left: -175px;
+
+                            .icn-note {
+                                margin: 0 auto 3px auto;
+                            }
                         }
 
                         &.dataTables_empty {
@@ -2036,6 +2136,10 @@
 
                                 background: red;
                             }
+                        }
+
+                        .color {
+                            margin: 0 auto 2px auto;
                         }
                     }
                 }

@@ -34,9 +34,6 @@ $(document).ready(function () {
     $("#applist_table").DataTable({
         "lengthChange": false,
         "info": false,
-        "language": {
-            "zeroRecords": "No records to display"
-        },
         pagingType: 'full_numbers',
         language: {
             paginate: {
@@ -59,7 +56,9 @@ $(document).ready(function () {
         initComplete: function () {
             this.api().columns().every(function () {
                 var column = this;
-                var select = $('<select><option value="" >' + $(this.header()).html() + '</option></select>').appendTo($(".table-filter"));
+                // var select = $('<div class="select-container ' + $(this.header()).html().split(" ").join("-").toLowerCase().replace('#', 'no') + '"><select><option value="" >' + $(this.header()).html() + '</option></select></div>').appendTo($(".table-filter"));
+                var select_container = $('<div class="select-container ' + $(this.header()).html().split(" ").join("-").toLowerCase().replace('#', 'no') + '"></div>').prependTo($(".table-filter"));
+                var select = $('<select><option value="" >' + $(this.header()).html() + '</option></select>').appendTo(select_container);
 
                 $('.brembo .search-submit').on('click', function () {
                     var val = $.fn.dataTable.util.escapeRegex((select.val()));
