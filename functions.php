@@ -2922,20 +2922,10 @@ if ( !defined('WPSEO_VERSION') && !class_exists('NY_OG_Admin')) {
 #-----------------------------------------------------------------#
 
 function dte_resources() {
-    wp_enqueue_style( 'wpb-google-fonts-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400', false );
-    wp_enqueue_style( 'wpb-google-fonts-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', false );
+    wp_enqueue_style( 'wpb-google-fonts-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400,700', false );
     wp_enqueue_style( 'wpb-google-fonts-fjalla', 'https://fonts.googleapis.com/icon?family=Fjalla+One', false );
     wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
-
-    if(is_page()){
-        global $wp_query;
-
-        $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
-        if($template_name == 'page-dte-company.php' || $template_name == 'page-dte-news.php'  || $template_name == 'page-dte-news-article.php' || $template_name == 'page-dte-products.php' || $template_name == 'page-dte-service.php' || $template_name == 'page-dte-technology.php'){
-            wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/dte.js', array(), true );
-            wp_dequeue_script( 'nectarFrontend' );
-        }
-    }
+    wp_enqueue_script( 'custom-scripts-dte', get_template_directory_uri() . '/js/dte.js', array(), true );
 }
 
 add_action('wp_enqueue_scripts', 'dte_resources');
@@ -2969,9 +2959,8 @@ function brembo_resources() {
     wp_enqueue_style('wp-datatables-css');
     wp_enqueue_style( 'wpb-google-fonts-open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400', false );
     wp_enqueue_style( 'wpb-google-fonts-titillium-web', 'https://fonts.googleapis.com/css?family=Titillium+Web:200,400', false );
-    wp_enqueue_style( 'wpb-google-fonts-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', false );
     wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
-    wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/js/brembo.js', array(), true );
+    wp_enqueue_script( 'custom-scripts-brembo', get_template_directory_uri() . '/js/brembo.js', array(), true );
     wp_enqueue_script( 'custom-scripts-slider', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), true );
     wp_enqueue_script( 'wp-datatables-js', get_template_directory_uri() . '/js/dataTables.js', array(), true );
 }

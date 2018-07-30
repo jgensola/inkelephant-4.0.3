@@ -10,7 +10,11 @@
     <div class="container">
         <!-- site header -->
         <header class="site-header dte">
+            <div class="header-wrapper">
             <a class="logo" href="<?php echo get_permalink(33216); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dte/dte-logo.png"></a>
+            <a class="menu-toggle" href="#">
+                <span class="label">Menu</span>
+            </a>
             <nav class="site-nav">
                 <?php
                 $args = array(

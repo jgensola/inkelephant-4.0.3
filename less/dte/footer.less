@@ -43,14 +43,13 @@
         margin: auto;
 
         .flex-display();
-        .flex-direction(column);
+        .flex-direction(row);
+        .flex-wrap(wrap);
 
         &:before {
             position: absolute;
             top: -7px;
-
-            width: 100%;
-            margin-left: -15px;
+            left: 50%;
 
             color: @white;
 
@@ -59,6 +58,8 @@
             text-align: center;
 
             content: 'arrow_drop_down';
+
+            .transform(translateX(-50%));
         }
 
         a {
@@ -66,6 +67,8 @@
 
             &:hover {
                 color: @thunderbird;
+
+                text-decoration: none;
             }
         }
     }
@@ -80,6 +83,7 @@
 
     .footer-block {
         margin-bottom: 30px;
+        width: 200px;
     }
 
     .bottom-section {
@@ -93,12 +97,27 @@
 
 //Screens with a width of 360px and up
 @media only screen  and (min-width: @screen__xxss) {
-    //Autovox Header
+    //Autovox Footer
     @{dte-pages} {
         #footer-outer {
             .row {
                 margin: 0 -15px;
             }
+        }
+    }
+}
+
+//Screens with a width of 640px and up
+@media only screen  and (min-width: @screen__s) {
+    //DTE Footer
+    .site-footer.dte {
+        .top-section {
+            padding: 30px 30px 0;
+        }
+
+        .footer-block {
+            margin-bottom: 30px;
+            width: 50%;
         }
     }
 }
@@ -123,8 +142,11 @@
         .top-section {
             max-width: 760px;
 
-            .flex-direction(row);
             .justify-content(space-between);
+        }
+
+        .footer-block {
+            width: auto;
         }
     }
 }
