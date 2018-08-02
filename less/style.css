@@ -4315,6 +4315,30 @@ readers do not read off random characters that represent icons */
   background: #52d626;
   text-decoration: none !important;
 }
+.page-template-page-dte-news-php .close-button,
+.page-template-page-dte-products-php .close-button,
+.page-template-page-dte-news-article-php .close-button,
+.page-template-page-dte-company-php .close-button,
+.page-template-page-dte-service-php .close-button,
+.page-template-page-dte-technology-php .close-button,
+.page-template-page-dte-home-php .close-button,
+.page-template-page-dte-catalog-php .close-button {
+  background: url('../img/dte/sprite@2x.png') no-repeat -101px -472px;
+  background-size: 400px 845px;
+  display: inline-block;
+  height: 20px;
+  width: 19px;
+}
+.page-template-page-dte-news-php .close-button:hover,
+.page-template-page-dte-products-php .close-button:hover,
+.page-template-page-dte-news-article-php .close-button:hover,
+.page-template-page-dte-company-php .close-button:hover,
+.page-template-page-dte-service-php .close-button:hover,
+.page-template-page-dte-technology-php .close-button:hover,
+.page-template-page-dte-home-php .close-button:hover,
+.page-template-page-dte-catalog-php .close-button:hover {
+  background-position: -101px -497px;
+}
 .page-template-page-dte-news-php #header-outer .container,
 .page-template-page-dte-products-php #header-outer .container,
 .page-template-page-dte-news-article-php #header-outer .container,
@@ -4819,39 +4843,43 @@ readers do not read off random characters that represent icons */
   left: 50%;
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   content: '\f0d8';
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child:before {
   left: 50%;
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   content: '\f0d8';
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 @media only screen and (min-width: 768px) {
   .ie-11 .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu > li.menu-item ul.sub-menu,
   .ie-11 .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu.active > li.menu-item ul.sub-menu {
     left: 50%;
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: perspective(1px) translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: perspective(1px) translateX(-50%);
+    -webkit-font-smoothing: antialiased;
   }
   .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
     left: 50%;
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: perspective(1px) translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: perspective(1px) translateX(-50%);
+    -webkit-font-smoothing: antialiased;
   }
   .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item .mega-menu-item-text-4 .bottom-section .column-2 ul li:first-child {
     display: -webkit-inline-flexbox;
@@ -4874,6 +4902,26 @@ readers do not read off random characters that represent icons */
   background-attachment: fixed, fixed;
   color: #161616;
   line-height: 22px;
+}
+.page-template-page-dte-news-php.pop-up-active,
+.page-template-page-dte-products-php.pop-up-active,
+.page-template-page-dte-news-article-php.pop-up-active,
+.page-template-page-dte-company-php.pop-up-active,
+.page-template-page-dte-service-php.pop-up-active,
+.page-template-page-dte-technology-php.pop-up-active,
+.page-template-page-dte-home-php.pop-up-active,
+.page-template-page-dte-catalog-php.pop-up-active {
+  width: 100%;
+}
+.page-template-page-dte-news-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-products-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-news-article-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-company-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-service-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-technology-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-home-php.pop-up-active .dte-catalog .overlay,
+.page-template-page-dte-catalog-php.pop-up-active .dte-catalog .overlay {
+  display: block;
 }
 .page-template-page-dte-news-php h1,
 .page-template-page-dte-products-php h1,
@@ -5018,6 +5066,17 @@ readers do not read off random characters that represent icons */
   margin: 0 0 10px 0;
   font-weight: 100;
   font-size: 20px;
+}
+.page-template-page-dte-news-php table,
+.page-template-page-dte-products-php table,
+.page-template-page-dte-news-article-php table,
+.page-template-page-dte-company-php table,
+.page-template-page-dte-service-php table,
+.page-template-page-dte-technology-php table,
+.page-template-page-dte-home-php table,
+.page-template-page-dte-catalog-php table {
+  margin: 0;
+  line-height: 1.5;
 }
 .page-template-page-dte-news-php .container,
 .page-template-page-dte-products-php .container,
@@ -6298,11 +6357,12 @@ readers do not read off random characters that represent icons */
   background-size: 123px 111px;
   background-position: center;
   content: '';
-  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: perspective(1px) translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: perspective(1px) translate(-50%, -50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .slideshow br,
 .page-template-page-dte-products-php .slideshow br,
@@ -6338,11 +6398,12 @@ readers do not read off random characters that represent icons */
   position: absolute;
   left: 50%;
   display: block;
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .slideshow p,
 .page-template-page-dte-products-php .slideshow p,
@@ -7194,11 +7255,12 @@ readers do not read off random characters that represent icons */
   background-size: 123px 111px;
   background-position: center;
   content: '';
-  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: perspective(1px) translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: perspective(1px) translate(-50%, -50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php article.post.news .button,
 .page-template-page-dte-products-php article.post.news .button,
@@ -7445,11 +7507,12 @@ readers do not read off random characters that represent icons */
   background-size: 123px 111px;
   background-position: center;
   content: '';
-  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: perspective(1px) translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: perspective(1px) translate(-50%, -50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog,
 .page-template-page-dte-products-php .dte-catalog,
@@ -7460,6 +7523,28 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-home-php .dte-catalog,
 .page-template-page-dte-catalog-php .dte-catalog {
   padding: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .new,
+.page-template-page-dte-products-php .dte-catalog .new,
+.page-template-page-dte-news-article-php .dte-catalog .new,
+.page-template-page-dte-company-php .dte-catalog .new,
+.page-template-page-dte-service-php .dte-catalog .new,
+.page-template-page-dte-technology-php .dte-catalog .new,
+.page-template-page-dte-home-php .dte-catalog .new,
+.page-template-page-dte-catalog-php .dte-catalog .new {
+  padding: 3px 4px;
+  background: #45b320;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: 'Fjalla One', Arial, sans-serif;
+  -webkit-transform: perspective(1px) translate(0, -4px);
+  -moz-transform: translate(0, -4px);
+  -o-transform: translate(0, -4px);
+  -ms-transform: translate(0, -4px);
+  transform: perspective(1px) translate(0, -4px);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .two-option,
 .page-template-page-dte-products-php .dte-catalog .two-option,
@@ -7598,18 +7683,7 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-technology-php .dte-catalog .teaser-heading .new,
 .page-template-page-dte-home-php .dte-catalog .teaser-heading .new,
 .page-template-page-dte-catalog-php .dte-catalog .teaser-heading .new {
-  padding: 3px 4px;
   margin-left: 5px;
-  background: #45b320;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 13px;
-  line-height: 13px;
-  -webkit-transform: translate(0, -4px);
-  -moz-transform: translate(0, -4px);
-  -o-transform: translate(0, -4px);
-  -ms-transform: translate(0, -4px);
-  transform: translate(0, -4px);
 }
 .page-template-page-dte-news-php .dte-catalog .key-features,
 .page-template-page-dte-products-php .dte-catalog .key-features,
@@ -7816,9 +7890,18 @@ readers do not read off random characters that represent icons */
   font-size: 12px;
   font-weight: 300;
   text-align: right;
+  cursor: pointer;
   -webkit-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
 }
 .page-template-page-dte-news-php .dte-catalog .key-features .performance-hints:after,
 .page-template-page-dte-products-php .dte-catalog .key-features .performance-hints:after,
@@ -7835,6 +7918,27 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/sprite@2x.png') no-repeat -346px -53px;
   background-size: 400px 845px;
   content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-products-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-news-article-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-company-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-service-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-technology-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-home-php .dte-catalog .key-features .performance-hints:hover,
+.page-template-page-dte-catalog-php .dte-catalog .key-features .performance-hints:hover {
+  text-decoration: underline;
+}
+.page-template-page-dte-news-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-products-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-news-article-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-company-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-service-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-technology-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-home-php .dte-catalog .key-features .performance-hints:hover:after,
+.page-template-page-dte-catalog-php .dte-catalog .key-features .performance-hints:hover:after {
+  background: url('../img/dte/sprite@2x.png') no-repeat no-repeat -363px -53px;
+  background-size: 400px 845px;
 }
 .page-template-page-dte-news-php .dte-catalog .product-information-wrapper .owl-carousel,
 .page-template-page-dte-products-php .dte-catalog .product-information-wrapper .owl-carousel,
@@ -7876,11 +7980,12 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-catalog-php .dte-catalog .product-information-wrapper .owl-carousel .owl-nav button {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
+  -webkit-transform: perspective(1px) translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: perspective(1px) translateY(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .product-information-wrapper .owl-carousel .owl-nav button span,
 .page-template-page-dte-products-php .dte-catalog .product-information-wrapper .owl-carousel .owl-nav button span,
@@ -8015,11 +8120,12 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/sprite@2x.png') no-repeat -49px -32px;
   background-size: 400px 845px;
   content: '';
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: perspective(1px) rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  transform: perspective(1px) rotate(90deg);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .options-heading:after,
 .page-template-page-dte-products-php .dte-catalog .options-heading:after,
@@ -8037,11 +8143,12 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/sprite@2x.png') no-repeat -49px -32px;
   background-size: 400px 845px;
   content: '';
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: perspective(1px) rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  transform: perspective(1px) rotate(90deg);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .power-control-options,
 .page-template-page-dte-products-php .dte-catalog .power-control-options,
@@ -8272,6 +8379,15 @@ readers do not read off random characters that represent icons */
   margin-bottom: 10px;
   padding: 0 5px;
   border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
 }
 .page-template-page-dte-news-php .dte-catalog .inclusive-options .block-wrapper:hover,
 .page-template-page-dte-products-php .dte-catalog .inclusive-options .block-wrapper:hover,
@@ -8316,6 +8432,46 @@ readers do not read off random characters that represent icons */
   -webkit-opacity: 0.3;
   -moz-opacity: 0.3;
   opacity: 0.3;
+}
+.page-template-page-dte-news-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-products-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-news-article-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-company-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-service-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-technology-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-home-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-catalog-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs,
+.page-template-page-dte-news-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-products-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-news-article-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-company-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-service-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-technology-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-home-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming,
+.page-template-page-dte-catalog-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming {
+  pointer-events: auto;
+}
+.page-template-page-dte-news-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-products-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-company-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-service-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-home-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .inclusive-options .block-wrapper.inactive.driving-programs .inner-wrapper,
+.page-template-page-dte-news-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-products-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-company-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-service-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-home-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .inclusive-options .block-wrapper.inactive.reprogramming .inner-wrapper {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 .page-template-page-dte-news-php .dte-catalog .inclusive-options .block-wrapper p,
 .page-template-page-dte-products-php .dte-catalog .inclusive-options .block-wrapper p,
@@ -8676,6 +8832,14 @@ readers do not read off random characters that represent icons */
   margin-bottom: 30px;
   padding: 0 15px;
   cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
   -webkit-flex: 1 40%;
   -ms-flex: 1 40%;
   flex: 1 40%;
@@ -8719,11 +8883,12 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-home-php .dte-catalog .advantages > div:last-of-type .text,
 .page-template-page-dte-catalog-php .dte-catalog .advantages > div:last-of-type .text {
   left: 50%;
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .advantages > div:before,
 .page-template-page-dte-products-php .dte-catalog .advantages > div:before,
@@ -8742,11 +8907,12 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   font-size: 16px;
   content: '\f0d8';
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .advantages > div:after,
 .page-template-page-dte-products-php .dte-catalog .advantages > div:after,
@@ -8765,11 +8931,12 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   font-size: 16px;
   content: '\f0d8';
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .advantages > div:hover:before,
 .page-template-page-dte-products-php .dte-catalog .advantages > div:hover:before,
@@ -8997,26 +9164,6 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs {
   display: none;
 }
-.page-template-page-dte-news-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-products-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-news-article-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-company-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-service-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-technology-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-home-php .dte-catalog .product-collateral dd,
-.page-template-page-dte-catalog-php .dte-catalog .product-collateral dd {
-  display: none;
-}
-.page-template-page-dte-news-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-products-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-news-article-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-company-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-service-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-technology-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-home-php .dte-catalog .product-collateral dd.active,
-.page-template-page-dte-catalog-php .dte-catalog .product-collateral dd.active {
-  display: block;
-}
 .page-template-page-dte-news-php .dte-catalog .product-collateral > dl > dt,
 .page-template-page-dte-products-php .dte-catalog .product-collateral > dl > dt,
 .page-template-page-dte-news-article-php .dte-catalog .product-collateral > dl > dt,
@@ -9035,6 +9182,14 @@ readers do not read off random characters that represent icons */
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.4;
   cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
 }
 .page-template-page-dte-news-php .dte-catalog .product-collateral > dl > dt:before,
 .page-template-page-dte-products-php .dte-catalog .product-collateral > dl > dt:before,
@@ -9122,6 +9277,1416 @@ readers do not read off random characters that represent icons */
   background: #e8e8e8;
   color: #333;
   content: '\f106';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-products-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-company-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-service-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-home-php .dte-catalog .product-collateral > dl > dd,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral > dl > dd {
+  padding: 10px 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container {
+  display: none;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container.active,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container.active {
+  display: block;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .new,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .new {
+  padding: 3px 3px 1px;
+  margin: 0 2px;
+  -webkit-transform: perspective(1px) none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: perspective(1px) none;
+  -webkit-font-smoothing: antialiased;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .icon-wrapper {
+  height: auto;
+  width: 100%;
+  background: none;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .icon,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .icon {
+  margin: 20px auto 0;
+  background: url('../img/dte/sprite@2x.png') no-repeat;
+  background-size: 400px 845px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-title,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-title {
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-title strong,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-title strong {
+  color: #cd1816;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 27px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .results .icon,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .results .icon {
+  height: 48px;
+  width: 86px;
+  background-position: -8px -126px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .quality .icon,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .quality .icon {
+  height: 50px;
+  width: 38px;
+  background-position: -228px -126px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .installation .icon,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .installation .icon {
+  height: 53px;
+  width: 50px;
+  background-position: -103px -124px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .consumption .icon,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .consumption .icon {
+  height: 64px;
+  width: 57px;
+  background-position: -169px -116px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container span.popup-trigger,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container span.popup-trigger {
+  color: #cd1816;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container span.popup-trigger:hover {
+  text-decoration: underline;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .label,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .label {
+  display: table-cell;
+  font-size: 14px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .data-table th,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .data-table th {
+  vertical-align: top;
+  padding: 10px;
+  border: none;
+  background: #f6f5f5;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-align: left;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .data-table td,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .data-table td {
+  vertical-align: top;
+  padding: 10px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .data-table td br {
+  display: none;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .data-table thead th,
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody td {
+  border: none;
+  color: #333;
+  text-align: left;
+  font-size: 14px;
+  white-space: pre-line;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .data-table tbody th {
+  padding-left: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table td {
+  display: none;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .table-heading,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .table-heading {
+  border-bottom: 1px solid #aaa;
+  color: #cd1816;
+  font-size: 16px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after {
+  display: inline-block;
+  height: 10px;
+  width: 27px;
+  margin-left: 10px;
+  background: url('../img/dte/scroll-h.svg') no-repeat;
+  background-size: 27px 10px;
+  content: '';
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .scrl,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .scrl {
+  overflow-x: auto;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .scrl th,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .scrl th {
+  white-space: pre-line;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .scrl .data.facts {
+  white-space: nowrap !important;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .tuning-power-kw td {
+  padding-top: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes p.note,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes p.note {
+  margin: 15px 0 0;
+  font-size: 12px;
+  line-height: 1.41;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs {
+  margin-bottom: 50px;
+  background: #f6f5f5;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs sup,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs sup {
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+  font-size: 75%;
+  line-height: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title {
+  padding-top: 10px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:first-of-type {
+  padding-top: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block.active .block-title:after {
+  background: #e8e8e8;
+  color: #333;
+  content: '\f106';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper {
+  overflow: hidden;
+  padding: 15px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:first-of-type {
+  padding-top: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover {
+  background: #f0f0f0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper:hover .block-title strong span {
+  background: #f0f0f0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:first-of-type {
+  padding-top: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:before {
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 97%;
+  height: 1px;
+  background: #ccc;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title:after {
+  display: inline-block;
+  right: 0;
+  top: 14px;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  margin-top: -10px;
+  background: #cd1816;
+  color: #fff;
+  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.4;
+  content: '\f107';
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong {
+  position: relative;
+  display: inline-block;
+  max-width: 94%;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block-title strong span {
+  background: #f6f5f5;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper {
+  margin-top: 15px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .content-wrapper p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.41;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review {
+  font-size: 14px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .thank-you,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .thank-you {
+  margin-bottom: 36px;
+  font-size: 24px;
+  text-align: center;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review img,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review p,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review p {
+  margin: 0 0 1.5em;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .satisfied,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .satisfied {
+  margin-top: 30px;
+  text-align: center;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .satisfied:before {
+  padding-bottom: 15px;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .satisfied:before,
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .satisfied:after,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .satisfied:after {
+  display: block;
+  height: 2px;
+  background-image: linear-gradient(to right, #000 21%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .satisfied .number:before {
+  left: 40px;
+  position: absolute;
+  top: 7px;
+  display: inline-block;
+  height: 36px;
+  width: 38px;
+  background: url('../img/dte/sprite@1x.png') no-repeat -232px -183px;
+  background-size: 400px 845px;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .number,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .number {
+  position: relative;
+  color: #45b320;
+  font-size: 48px;
+  line-height: normal;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .recommend,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .recommend {
+  margin-top: 30px;
+  text-align: center;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .recommend .number:before {
+  left: 35px;
+  position: absolute;
+  top: 10px;
+  display: inline-block;
+  height: 33px;
+  width: 46px;
+  background: url('../img/dte/sprite@1x.png') no-repeat -179px -185px;
+  background-size: 400px 845px;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .note,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .note {
+  margin-top: 30px;
+  font-size: 0.75rem;
+  line-height: normal;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .left,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .left {
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review h2,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review h2 {
+  margin-bottom: 0.5em;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .sub-line,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .sub-line {
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .stars,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .stars {
+  display: inline-block;
+  height: 24px;
+  width: 123px;
+  margin: 30px 0 15px;
+  background: url('../img/dte/sprite@1x.png') no-repeat -8px -520px;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review blockquote,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review blockquote {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.41;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review blockquote:before,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review blockquote:before {
+  top: 5px;
+  left: 0;
+  position: absolute;
+  font-size: 9px;
+  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
+  content: '\f10d';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review blockquote:after,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review blockquote:after {
+  bottom: 5px;
+  position: absolute;
+  padding-left: 3px;
+  font-size: 9px;
+  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
+  content: '\f10e';
+}
+.page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review blockquote p,
+.page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review blockquote p {
+  display: inline;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies,
+.page-template-page-dte-products-php .dte-catalog .technologies,
+.page-template-page-dte-news-article-php .dte-catalog .technologies,
+.page-template-page-dte-company-php .dte-catalog .technologies,
+.page-template-page-dte-service-php .dte-catalog .technologies,
+.page-template-page-dte-technology-php .dte-catalog .technologies,
+.page-template-page-dte-home-php .dte-catalog .technologies,
+.page-template-page-dte-catalog-php .dte-catalog .technologies {
+  padding: 0 15px 45px;
+  margin-bottom: 50px;
+  background: #f6f5f5;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper {
+  padding: 15px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper:hover,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper:hover {
+  background: #f0f0f0;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper:hover .block-title strong,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper:hover .block-title strong {
+  background: #f0f0f0;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .content-wrapper {
+  margin-top: 15px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .icon-wrapper {
+  float: left;
+  background: transparent;
+  margin-bottom: 15px;
+  width: 100px;
+  margin-top: 6px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .icon,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .icon {
+  margin: 0 auto;
+  background: url('../img/dte/sprite@2x.png') no-repeat;
+  background-size: 400px 845px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon {
+  height: 44px;
+  width: 47px;
+  background-position: -49px -366px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper.auto-adjust .icon {
+  height: 47px;
+  width: 40px;
+  background-position: -51px -418px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper.engine-protect .icon,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper.engine-protect .icon {
+  height: 47px;
+  width: 36px;
+  background-position: -105px -419px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper.legal .icon,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper.legal .icon {
+  height: 47px;
+  width: 39px;
+  background-position: -156px -418px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper p,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper p {
+  font-size: 16px;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-products-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-company-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-service-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-home-php .dte-catalog .technologies .block:first-child .block-title,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block:first-child .block-title {
+  padding-top: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-products-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-company-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-service-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-home-php .dte-catalog .technologies .block.active .block-title:after,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block.active .block-title:after {
+  background: #e8e8e8;
+  color: #333;
+  content: '\f106';
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-title,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-title {
+  position: relative;
+  padding: 10px 0 0;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-title:before,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-title:before {
+  left: 0;
+  position: absolute;
+  top: 13px;
+  height: 1px;
+  width: 97%;
+  background: #ccc;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-title:after,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-title:after {
+  display: inline-block;
+  right: 0;
+  top: 14px;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  margin-top: -10px;
+  background: #cd1816;
+  color: #fff;
+  line-height: 1.4;
+  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
+  text-align: center;
+  font-size: 15px;
+  content: '\f107';
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-title strong,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-title strong {
+  position: relative;
+  padding-right: 15px;
+  background: #f6f5f5;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 27px;
+  text-transform: none;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-title strong .highlight,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-title strong .highlight {
+  color: #cd1816;
+}
+.page-template-page-dte-news-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-title strong .normal,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-title strong .normal {
+  display: none;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up .left,
+.page-template-page-dte-products-php .dte-catalog .pop-up .left,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up .left,
+.page-template-page-dte-company-php .dte-catalog .pop-up .left,
+.page-template-page-dte-service-php .dte-catalog .pop-up .left,
+.page-template-page-dte-technology-php .dte-catalog .pop-up .left,
+.page-template-page-dte-home-php .dte-catalog .pop-up .left,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up .left {
+  padding: 0;
+  margin: 0;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-products-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-company-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-service-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-technology-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-home-php .dte-catalog .pop-up iframe,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up iframe {
+  width: 100% !important;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div {
+  display: none;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 1px solid #d2d2d2;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transform: perspective(1px) translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: perspective(1px) translate(-50%, -50%);
+  -webkit-font-smoothing: antialiased;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.pop-up-active,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.pop-up-active {
+  position: fixed;
+  display: block;
+  z-index: 10001;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div .icon-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div .icon-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+  background: none;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div .block-content img,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div .block-content img {
+  max-width: 538px;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div .block-content.inactive,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div .block-content.inactive {
+  display: none;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div .first-line,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div .first-line {
+  display: block;
+  margin-left: 19px;
+  color: #333;
+  font-family: 'Fjalla One', Arial, sans-serif;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div .sub-line,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div .sub-line {
+  color: #cd1816;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 19px;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div h2,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div h2 {
+  left: -19px;
+  position: relative;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div h2 span,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div h2 span {
+  display: block;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div h2:before,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div h2:before {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  height: 10px;
+  width: 11px;
+  margin-right: 8px;
+  background: url('../img/dte/sprite@2x.png') no-repeat -380px -22px;
+  background-size: 400px 845px;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.multi-map .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.multi-map .icon {
+  background: url('../img/dte/multi-kennfeld-20.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.app-control .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.app-control .icon {
+  background: url('../img/dte/app-steuerung.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.sport-instruments .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.sport-instruments .icon {
+  background: url('../img/dte/sportinstrumente.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.reprogramming .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.reprogramming .icon {
+  background: url('../img/dte/umprogrammierung.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.driving-programs .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.driving-programs .icon {
+  background: url('../img/dte/fahrprogramme.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.driving-programs .icon.power-control,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.driving-programs .icon.power-control {
+  background: url('../img/dte/fahrprogramme-pc.svg') no-repeat;
+  background-size: 80px 80px;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.driving-programs .icon.inactive,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.driving-programs .icon.inactive {
+  display: none;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.efficiency-mode .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.efficiency-mode .icon {
+  background: url('../img/dte/effizienz.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.parts-approval .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.parts-approval .icon {
+  background: url('../img/dte/teilegutachten.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-products-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-company-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-service-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-technology-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-home-php .dte-catalog .pop-up > div.warranty .icon,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up > div.warranty .icon {
+  background: url('../img/dte/garantie-pc.svg') no-repeat;
+  background-size: 80px 80px;
+  height: 100%;
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-products-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-company-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-service-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-technology-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-home-php .dte-catalog .pop-up .close-button,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up .close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
+}
+.page-template-page-dte-news-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-products-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-news-article-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-company-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-service-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-technology-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-home-php .dte-catalog .pop-up .content-wrapper,
+.page-template-page-dte-catalog-php .dte-catalog .pop-up .content-wrapper {
+  overflow: auto;
+  padding: 20px 39px;
+  max-height: inherit;
+}
+.page-template-page-dte-news-php .dte-catalog .overlay,
+.page-template-page-dte-products-php .dte-catalog .overlay,
+.page-template-page-dte-news-article-php .dte-catalog .overlay,
+.page-template-page-dte-company-php .dte-catalog .overlay,
+.page-template-page-dte-service-php .dte-catalog .overlay,
+.page-template-page-dte-technology-php .dte-catalog .overlay,
+.page-template-page-dte-home-php .dte-catalog .overlay,
+.page-template-page-dte-catalog-php .dte-catalog .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 @media only screen and (min-width: 360px) {
   .page-template-page-dte-news-php .slideshow .heading,
@@ -9639,11 +11204,12 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-home-php .dte-catalog .advantages > div:nth-of-type(6) .text,
   .page-template-page-dte-catalog-php .dte-catalog .advantages > div:nth-of-type(6) .text {
     left: 50%;
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: perspective(1px) translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: perspective(1px) translateX(-50%);
+    -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .dte-catalog .advantages > div:nth-of-type(1) .text,
   .page-template-page-dte-products-php .dte-catalog .advantages > div:nth-of-type(1) .text,
@@ -9681,11 +11247,12 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .advantages > div:last-of-type .text {
     right: -30px;
     left: auto;
-    -webkit-transform: none;
+    -webkit-transform: perspective(1px) none;
     -moz-transform: none;
     -o-transform: none;
     -ms-transform: none;
-    transform: none;
+    transform: perspective(1px) none;
+    -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .dte-catalog .product-collateral .collateral-tabs,
   .page-template-page-dte-products-php .dte-catalog .product-collateral .collateral-tabs,
@@ -9696,6 +11263,219 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-home-php .dte-catalog .product-collateral .collateral-tabs,
   .page-template-page-dte-catalog-php .dte-catalog .product-collateral .collateral-tabs {
     padding: 45px 30px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .block-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .block-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container {
+    padding: 10px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-wrapper {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-wrapper .icon-wrapper {
+    width: 23%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-wrapper .block,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-wrapper .block {
+    width: 77%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-wrapper.consumption {
+    margin-bottom: 0;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .red,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .red {
+    color: #cd1816;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .system-type-table tbody td {
+    display: table-cell;
+    font-size: 19.25px;
+    font-weight: 100;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .attributes .s-hint:after {
+    display: none;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper {
+    margin-bottom: 0;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper .block {
+    width: 100%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .right,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .right {
+    padding-left: 15px;
+    min-width: 300px;
+    max-width: 300px;
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .left {
+    padding: 0 15px 0 0;
+    width: auto;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+  }
+  .page-template-page-dte-news-php .dte-catalog .technologies,
+  .page-template-page-dte-products-php .dte-catalog .technologies,
+  .page-template-page-dte-news-article-php .dte-catalog .technologies,
+  .page-template-page-dte-company-php .dte-catalog .technologies,
+  .page-template-page-dte-service-php .dte-catalog .technologies,
+  .page-template-page-dte-technology-php .dte-catalog .technologies,
+  .page-template-page-dte-home-php .dte-catalog .technologies,
+  .page-template-page-dte-catalog-php .dte-catalog .technologies {
+    padding: 0 45px 45px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .content-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .content-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  .page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .icon-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .icon-wrapper {
+    float: none;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .block-content p:first-of-type {
+    margin-top: 0;
+  }
+  .page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper .block-content p:last-of-type {
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -9989,11 +11769,12 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .slideshow .text p {
     position: relative;
     left: 0;
-    -webkit-transform: none;
+    -webkit-transform: perspective(1px) none;
     -moz-transform: none;
     -o-transform: none;
     -ms-transform: none;
-    transform: none;
+    transform: perspective(1px) none;
+    -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .slideshow .left-top,
   .page-template-page-dte-products-php .slideshow .left-top,
@@ -10276,6 +12057,21 @@ readers do not read off random characters that represent icons */
     padding-top: 45px;
     margin: 0;
   }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .toggle-tabs:after,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs:after {
+    display: table;
+    border-bottom: 1px solid #aaa;
+    height: 1px;
+    margin: 0 auto;
+    width: 95%;
+    content: '';
+  }
   .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs li,
   .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs li,
   .page-template-page-dte-news-article-php .dte-catalog .product-collateral .toggle-tabs li,
@@ -10286,6 +12082,14 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs li {
     display: inline-block;
     cursor: pointer;
+    -webkit-user-select: none;
+    /* Chrome 49+ */
+    -moz-user-select: none;
+    /* Firefox 43+ */
+    -ms-user-select: none;
+    /* No support yet */
+    user-select: none;
+    /* Likely future */
   }
   .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs li:first-of-type,
   .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs li:first-of-type,
@@ -10322,6 +12126,24 @@ readers do not read off random characters that represent icons */
     font-weight: 100;
     line-height: 26px;
     cursor: pointer;
+    -webkit-user-select: none;
+    /* Chrome 49+ */
+    -moz-user-select: none;
+    /* Firefox 43+ */
+    -ms-user-select: none;
+    /* No support yet */
+    user-select: none;
+    /* Likely future */
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .toggle-tabs li:hover,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs li:hover {
+    color: #cd1816;
   }
   .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs li.active,
   .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs li.active,
@@ -10332,6 +12154,257 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-home-php .dte-catalog .product-collateral .toggle-tabs li.active,
   .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs li.active {
     color: #cd1816;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .toggle-tabs li.active:before,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs li.active:before {
+    position: absolute;
+    top: 100%;
+    display: block;
+    left: 50%;
+    height: 0;
+    width: 0;
+    border: 11px solid rgba(166, 166, 166, 0);
+    border-top-color: #aaa;
+    margin-left: -11px;
+    content: '';
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .toggle-tabs li.active:after,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .toggle-tabs li.active:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 0;
+    border: 10px solid rgba(245, 245, 245, 0);
+    border-top-color: #f6f5f5;
+    margin-left: -10px;
+    width: 0;
+    pointer-events: none;
+    content: '';
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .left,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .left {
+    padding-right: 30px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div {
+    width: 85%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div .icon-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div .icon-wrapper {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div .block-content {
+    margin-left: 90px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div .block-content p,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div .block-content p {
+    line-height: 19.5px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.performance-hints .block-content,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.consumption .block-content {
+    margin-left: 0;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.results .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.results .block-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.results .block-content h2,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.results .block-content h2 {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.results .block-content > div,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.results .block-content > div {
+    padding-right: 4%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.results .block-content > div:last-of-type {
+    padding-right: 0;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.consumption .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.consumption .block-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.consumption .block-content h2,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.consumption .block-content h2 {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.consumption .block-content > div,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.consumption .block-content > div {
+    width: 50%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.consumption .block-content > div:first-of-type {
+    padding-right: 1.2%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.consumption .block-content > div:last-of-type {
+    padding: 10px 0 0 1.2%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-products-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-company-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-service-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-home-php .dte-catalog .pop-up .left,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up .left {
+    width: 100%;
   }
   .page-template-page-dte-news-php .breadcrumbs,
   .page-template-page-dte-products-php .breadcrumbs,
@@ -11206,11 +13279,12 @@ readers do not read off random characters that represent icons */
     bottom: 8px;
     display: block;
     left: 50%;
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: perspective(1px) translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: perspective(1px) translateX(-50%);
+    -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .slideshow .owl-dot,
   .page-template-page-dte-products-php .slideshow .owl-dot,
@@ -11355,11 +13429,159 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .advantages > div .text {
     left: 50% !important;
     right: auto !important;
-    -webkit-transform: translateX(-50%) !important;
+    -webkit-transform: perspective(1px) translateX(-50%) !important;
     -moz-transform: translateX(-50%) !important;
     -o-transform: translateX(-50%) !important;
     -ms-transform: translateX(-50%) !important;
-    transform: translateX(-50%) !important;
+    transform: perspective(1px) translateX(-50%) !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container {
+    padding: 15px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .overview,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .overview {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-wrapper {
+    width: 50%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .block-wrapper.installation {
+    margin-bottom: 0;
+  }
+  .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-products-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-news-article-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-company-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-service-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-technology-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper,
+  .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .faqs .block-wrapper {
+    width: 100%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div {
+    max-width: 922.4px !important;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.installation .block-content,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.quality .block-content,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.quality .block-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.installation .block-content h2,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.quality .block-content h2,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.quality .block-content h2 {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.installation .block-content > div,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.quality .block-content > div,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.quality .block-content > div {
+    width: 50%;
+    padding-right: 2.5%;
+  }
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.installation .block-content > div:last-of-type,
+  .page-template-page-dte-news-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-products-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-news-article-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-company-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-service-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-technology-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-home-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type,
+  .page-template-page-dte-catalog-php .dte-catalog .pop-up > div.quality .block-content > div:last-of-type {
+    padding: 10px 0 0 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -11538,11 +13760,12 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .options-heading:after {
     position: absolute;
     margin: -25px 0 0 100px;
-    -webkit-transform: rotate(0);
+    -webkit-transform: perspective(1px) rotate(0);
     -moz-transform: rotate(0);
     -o-transform: rotate(0);
     -ms-transform: rotate(0);
-    transform: rotate(0);
+    transform: perspective(1px) rotate(0);
+    -webkit-font-smoothing: antialiased;
   }
 }
 .ie-11 .page-template-page-dte-news-php .page-container,
@@ -11739,11 +13962,12 @@ readers do not read off random characters that represent icons */
   font-size: 70px;
   text-align: center;
   content: 'arrow_drop_down';
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: perspective(1px) translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: perspective(1px) translateX(-50%);
+  -webkit-font-smoothing: antialiased;
 }
 .site-footer.dte .top-section a {
   color: #161616;

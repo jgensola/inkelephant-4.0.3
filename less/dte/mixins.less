@@ -126,11 +126,12 @@
 
 // Transform
 .transform (@transform) {
-    -webkit-transform: @transform;
+    -webkit-transform: perspective(1px) @transform;
     -moz-transform: @transform;
     -o-transform: @transform;
     -ms-transform: @transform;
-    transform: @transform;
+    transform: perspective(1px) @transform;
+    -webkit-font-smoothing: antialiased;
 }
 
 // Opacity
@@ -216,4 +217,12 @@
     -webkit-appearance: @value;
     -moz-appearance: @value;
     appearance: @value;
+}
+
+//User Select
+.user-select (@value){
+    -webkit-user-select: @value; /* Chrome 49+ */
+    -moz-user-select: @value; /* Firefox 43+ */
+    -ms-user-select: @value; /* No support yet */
+    user-select: @value; /* Likely future */
 }

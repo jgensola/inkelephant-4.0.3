@@ -23,6 +23,7 @@ get_header('dte');
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
         <div class="page-container dte-catalog">
+            <div class="overlay"></div>
             <div class="breadcrumbs">
                 <?php bcn_display(); ?>
             </div>

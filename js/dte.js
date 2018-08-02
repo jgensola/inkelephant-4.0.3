@@ -36,11 +36,11 @@ $(document).ready(function () {
 
         $('.dte-catalog .power-control-options a').on('click', function () {
             if ($(this).hasClass('power-control')) {
-                $('.two-option .power-control').removeClass('inactive').addClass('active');
-                $('.two-option .power-control-x').removeClass('active').addClass('inactive');
+                $('.dte-catalog .power-control').removeClass('inactive').addClass('active');
+                $('.dte-catalog .power-control-x').removeClass('active').addClass('inactive');
             } else {
-                $('.two-option .power-control-x').removeClass('inactive').addClass('active');
-                $('.two-option .power-control').removeClass('active').addClass('inactive');
+                $('.dte-catalog .power-control-x').removeClass('inactive').addClass('active');
+                $('.dte-catalog .power-control').removeClass('active').addClass('inactive');
             }
         });
 
@@ -63,11 +63,11 @@ $(document).ready(function () {
 
         $('.dte-catalog .product-switcher .owl-nav button').on('click', function () {
             if ($('.owl-item.active .power-control')[0]) {
-                $('.two-option .power-control').removeClass('inactive').addClass('active');
-                $('.two-option .power-control-x').removeClass('active').addClass('inactive');
+                $('.dte-catalog .power-control').removeClass('inactive').addClass('active');
+                $('.dte-catalog .power-control-x').removeClass('active').addClass('inactive');
             } else {
-                $('.two-option .power-control-x').removeClass('inactive').addClass('active');
-                $('.two-option .power-control').removeClass('active').addClass('inactive');
+                $('.dte-catalog .power-control-x').removeClass('inactive').addClass('active');
+                $('.dte-catalog .power-control').removeClass('active').addClass('inactive');
             }
         });
 
@@ -92,12 +92,94 @@ $(document).ready(function () {
                     $('.tab-container.fourth').addClass('active');
                 }
             } else {
-                $('.tab.active').removeClass('active');
+                if (!$(this).is('li')) {
+                    $('.tab.active').removeClass('active');
+                    $('.tab-container.active').removeClass('active');
+                }
             }
         });
+
+        $('.dte-catalog .popup-trigger').on('click', function () {
+            $(this).addClass('pop-up-active');
+            $('body').addClass('pop-up-active');
+
+            // $('.pop-up > div').css('max-height', $(window).height() - 40).css('max-width', $(window).width() - 40);
+            $('.pop-up > div').css('max-height', '528px').css('max-width', $(window).width() - 40);
+            // $('.overlay').css('max-height', $(window).height());
+
+            if ($(this).hasClass('performance-hints')) {
+                $('.pop-up .performance-hints').addClass('pop-up-active');
+            } else if ($(this).hasClass('multi-map')) {
+                $('.pop-up .multi-map').addClass('pop-up-active');
+            } else if ($(this).hasClass('app-control')) {
+                $('.pop-up .app-control').addClass('pop-up-active');
+            } else if ($(this).hasClass('sport-instruments')) {
+                $('.pop-up .sport-instruments').addClass('pop-up-active');
+            } else if ($(this).hasClass('reprogramming')) {
+                $('.pop-up .reprogramming').addClass('pop-up-active');
+            } else if ($(this).hasClass('driving-programs')) {
+                $('.pop-up .driving-programs').addClass('pop-up-active');
+            } else if ($(this).hasClass('efficiency-mode')) {
+                $('.pop-up .efficiency-mode').addClass('pop-up-active');
+            } else if ($(this).hasClass('parts-approval')) {
+                $('.pop-up .parts-approval').addClass('pop-up-active');
+            } else if ($(this).hasClass('warranty')) {
+                $('.pop-up .warranty').addClass('pop-up-active');
+            } else if ($(this).hasClass('results')) {
+                $('.pop-up .results').addClass('pop-up-active');
+            } else if ($(this).hasClass('quality')) {
+                $('.pop-up .quality').addClass('pop-up-active');
+            } else if ($(this).hasClass('installation')) {
+                $('.pop-up .installation').addClass('pop-up-active');
+            } else if ($(this).hasClass('consumption')) {
+                $('.pop-up .consumption').addClass('pop-up-active');
+            }
+
+            // var current = $(window).scrollTop();
+            // $(window).scroll(function() {
+            //     $(window).scrollTop(current);
+            // });
+        });
+
+        $('.dte-catalog .overlay').on('click', function () {
+            closePopup();
+        });
+
+        $('.dte-catalog .close-button').on('click', function () {
+            closePopup();
+        });
+
+        $('.dte-catalog .tab-content .content-wrapper').hide();
+
+        if ($('.dte-catalog .tab-content .faqs').length) {
+            addAccordion('.tab-content .faqs');
+        }
+
+        if ($('.dte-catalog .technologies').length) {
+            addAccordion('.technologies');
+        }
     }
 });
 
+function addAccordion(baseSelector) {
+    $(baseSelector + ' .block-wrapper:first-of-type .block').addClass('active');
+    $(baseSelector + ' .block-wrapper:first-of-type .content-wrapper').show();
+    $(baseSelector + ' .block-title').click(function () {
+        if (!$(this).parent().is($(baseSelector + ' .block.active'))) {
+            $(baseSelector + ' .block.active .content-wrapper').slideToggle();
+            $(baseSelector + ' .block.active').removeClass('active');
+        }
+        $(this).parent().toggleClass('active');
+        $(this).parent().children('.content-wrapper').slideToggle();
+    });
+}
+
+function closePopup() {
+    $('.pop-up-active').removeClass('pop-up-active');
+    $('body > .container').css('max-height', 'none');
+
+    // $(window).off('scroll');
+}
 
 /**
  * detect IE
