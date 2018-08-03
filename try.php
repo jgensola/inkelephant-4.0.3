@@ -1,57 +1,36 @@
 <div class="product-essential two-option">
     <div class="product-name">
-        <h1>VW GOLF VII (5G1, BQ1, BE1, BE2) 1.4 TSI 122 HP</h1>
-        <div class="date">from 11/2012</div>
-        <h2 class="system-name inactive power-control">PowerControl</h2>
-        <h2 class="system-name power-control-x active">PowerControl <span class="x">X</span></h2>
-        <h3 class="teaser-heading">More performance for your car. Safe and smart. <span class="power-control-x active new">new</span></h3>
+        <h1>BMW 4 Coupe (F32, F82) M4 431 HP</h1>
+        <div class="date">from 01/2014</div>
+        <h2 class="system-name">PowerControl <span class="rx">X</span></h2>
+        <h3 class="teaser-heading">More performance for your car. Safe and smart. <span class="new">new</span></h3>
         <div class="key-features">
             <div class="performance">
-                <p><span class="plus">+</span><span class="number">22</span><span class="unit">HP</span></p>
+                <p><span class="plus">+</span><span class="number">92</span><span class="unit">HP</span></p>
                 <p><span class="desc">Performance</span></p>
             </div>
             <div class="torque">
-                <p><span class="plus">+</span><span class="number">30</span><span class="unit">NM</span></p>
+                <p><span class="plus">+</span><span class="number">90</span><span class="unit">NM</span></p>
                 <p><span class="desc">Torque</span></p>
             </div>
             <div class="consumption">
                 <p><span class="up-to">up to</span></p>
-                <p><span class="plus">–</span><span class="power-control inactive number">8</span><span class="power-control-x active number">15</span><span class="unit">%</span></p>
+                <p><span class="plus">–</span><span class="number">15</span><span class="unit">%</span></p>
                 <p><span class="desc">Consumption</span></p>
             </div>
             <div class="popup-trigger performance-hints" href="#" title="Performance Hint">Proven performance figures based on EWG 80/1269 - More info</div>
         </div>
         <div class="product-information-wrapper">
             <div class="product-image">
-                <div class="product-switcher owl-carousel">
-                    <div class="inactive power-control" data-hash="power-control">
-                        <img alt="Power Control" src="http://localhost/autovox-live/wp-content/uploads/2018/07/powercontrol-2018-tga-01.jpg">
-                    </div>
-                    <div class="power-control-x active" data-hash="power-control-x">
-                        <img alt="Power Control X" src="http://localhost/autovox-live/wp-content/uploads/2018/07/powercontrol-x-2018-tga-01.jpg">
-                    </div>
-                </div>
-                <p class="options-heading">Choose <span class="next-line">your product</span></p>
-                <div class="power-control-options">
-                    <a class="inactive power-control" href="#power-control">PowerControl</a>
-                    <a class="power-control-x active" href="#power-control-x">PowerControl <strong>X</strong></a>
-                </div>
+                <img alt="Power Control RX" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-tga-01.jpg">
                 <div class="more-images">
-                    <ul class="product-images inactive power-control">
-                        <li><a title="Power Control 1" href=""><img alt="Power Control 1" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-2018-1.jpg"></a></li>
-                        <li><a title="Power Control 2" href=""><img alt="Power Control 2" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-2018-2.jpg"></a></li>
-                        <li><a title="Power Control 3" href=""><img alt="Power Control 3" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-2018-3.jpg"></a></li>
-                        <li><a title="Power Control 4" href=""><img alt="Power Control 4" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-2018-4.jpg"></a></li>
-                        <li><a title="Power Control 5" href=""><img alt="Power Control 5" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-2018-5.jpg"></a></li>
-                        <li><a title="Power Control 6" href=""><img alt="Power Control 6" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-2018-6.jpg"></a></li>
-                    </ul>
-                    <ul class="product-images power-control-x active">
-                        <li><a title="Power Control X 1" href=""><img alt="Power Control X 1" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-x-2018-tga-1.jpg"></a></li>
-                        <li><a title="Power Control X 2" href=""><img alt="Power Control X 2" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-x-2018-tga-2.jpg"></a></li>
-                        <li><a title="Power Control X 3" href=""><img alt="Power Control X 3" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-x-2018-tga-3.jpg"></a></li>
-                        <li><a title="Power Control X 4" href=""><img alt="Power Control X 4" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-x-2018-tga-4.jpg"></a></li>
-                        <li><a title="Power Control X 5" href=""><img alt="Power Control X 5" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-x-2018-tga-5.jpg"></a></li>
-                        <li><a title="Power Control X 6" href=""><img alt="Power Control X 6" src="http://localhost/autovox-live/wp-content/uploads/2018/07/thumbs-powercontrol-x-2018-tga-6.jpg"></a></li>
+                    <ul class="product-images power-control-rx">
+                        <li><a title="PowerControl RX 1" href="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-tga-01.jpg"><img alt="Power Control RX 1" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/thumbs-powercontrol-rx-2018-tga-1.jpg"></a></li>
+                        <li><a title="PowerControl RX 2" href="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-02.jpg"><img alt="Power Control RX 2" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/thumbs-powercontrol-rx-2018-tga-2.jpg"></a></li>
+                        <li><a title="PowerControl RX 3" href="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-03.jpg"><img alt="Power Control RX 3" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/thumbs-powercontrol-rx-2018-tga-3.jpg"></a></li>
+                        <li><a title="PowerControl RX 4" href="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-04.jpg"><img alt="Power Control RX 4" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/thumbs-powercontrol-rx-2018-tga-4.jpg"></a></li>
+                        <li><a title="PowerControl RX 5" href="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-05.jpg"><img alt="Power Control RX 5" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/thumbs-powercontrol-rx-2018-tga-5.jpg"></a></li>
+                        <li><a title="PowerControl RX 6" href="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/powercontrol-rx-2018-06.jpg"><img alt="Power Control RX 6" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/thumbs-powercontrol-rx-2018-tga-6.jpg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +46,7 @@
                         </p>
                     </div>
                 </div>
-                <div title="App Control" class="block-wrapper popup-trigger app-control power-control-x">
+                <div title="App Control" class="block-wrapper popup-trigger app-control">
                     <div class="inner-wrapper">
                         <span class="icon-wrapper">
                             <span class="icon sprite">&nbsp;</span>
@@ -78,7 +57,7 @@
                         </p>
                     </div>
                 </div>
-                <div title="Sport Instruments" class="block-wrapper popup-trigger sport-instruments power-control-x">
+                <div title="Sport Instruments" class="block-wrapper popup-trigger sport-instruments">
                     <div class="inner-wrapper">
                         <span class="icon-wrapper">
                             <span class="icon sprite">&nbsp;</span>
@@ -88,30 +67,29 @@
                         </p>
                     </div>
                 </div>
-                <div title="Reprogramming" class="block-wrapper popup-trigger reprogramming power-control-x">
+                <div title="Reprogramming" class="block-wrapper popup-trigger reprogramming">
                     <div class="inner-wrapper">
                         <span class="icon-wrapper">
                             <span class="icon sprite">&nbsp;</span>
                         </span>
                         <p class="block">
-                            <span><strong class="inactive power-control">1 x Reprogramming</strong><strong class="power-control-x active">2 x Reprogramming</strong> on vehicle change<i>&nbsp;</i></span>
+                            <span><strong">2 x Reprogramming</strong> on vehicle change<i>&nbsp;</i></span>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="inclusive-options second">
-                <div title="Driving Programs" class="block-wrapper popup-trigger driving-programs power-control-x active">
+                <div title="Driving Programs" class="block-wrapper popup-trigger driving-programs">
                     <div class="inner-wrapper">
                         <span class="icon-wrapper">
-                            <span class="icon sprite inactive power-control">&nbsp;</span>
-                            <span class="icon sprite power-control-x active">&nbsp;</span>
+                            <span class="icon sprite">&nbsp;</span>
                         </span>
                         <p class="block">
                             <span>selectable <strong>programs</strong> with 7 power levels each*<i>&nbsp;</i></span>
                         </p>
                     </div>
                 </div>
-                <div title="Efficiency Mode" class="block-wrapper popup-trigger efficiency-mode power-control-x active">
+                <div title="Efficiency Mode" class="block-wrapper popup-trigger efficiency-mode">
                     <div class="inner-wrapper">
                         <span class="icon-wrapper">
                             <span class="icon sprite">&nbsp;</span>
@@ -246,348 +224,273 @@
         <dd class="tab-container has-tables second">
             <div class="tab-content">
                 <div class="attributes">
-                    <table class="data-table system-type-table">
+                    <div class="table-heading">More Performance</div>
+                    <table class="data-table">
                         <colgroup><col width="30%">
-                            <col width="35%">
-                            <col width="35%">
-                        </colgroup><tbody>
+                            <col>
+                            <col>
+                        </colgroup><thead>
                         <tr>
-                            <th></th>
-                            <td>PowerControl</td>
-                            <td>PowerControl <strong class="red">X</strong></td>
+                            <th class="label">&nbsp;</th>
+                            <th class="label">Series</th>
+                            <th class="label">Optimised by PowerControl</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="label">Performance*</th>
+                            <td class="data">431 PS</td>
+                            <td class="data">+ 92 PS</td>
+                        </tr>
+                        <tr class="tuning-power-kw">
+                            <th class="label">&nbsp;</th>
+                            <td class="data">317 kW</td>
+                            <td class="data">+ 68 kW</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Torque*</th>
+                            <td class="data">550 NM</td>
+                            <td class="data">+ 90 NM</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Consumption</th>
+                            <td class="data" colspan="2">up to -15%</td>
+                        </tr>
+                        <tr>
+                            <th class="label">&nbsp;</th>
+                            <td class="data" colspan="2">tested and approved on gauged MAHA dyno,
+                                Extra power and security certified in independent part approval                                            </td>
                         </tr>
                         </tbody>
                     </table>
 
-                    <div class="table-heading s-hint">More Performance</div>
-                    <div class="scrl"><table class="data-table">
-                            <colgroup><col width="30%">
-                                <col width="10%">
-                                <col width="25%">
-                                <col width="10%">
-                                <col width="25%">
-                            </colgroup><thead>
-                            <tr>
-                                <th class="label">&nbsp;</th>
-                                <th class="label">Series</th>
-                                <th class="label">Optimised by PowerControl</th>
-                                <th class="label">Series</th>
-                                <th class="label">Optimised by PowerControl X</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th class="label">Performance*</th>
-                                <td class="data facts">122 PS</td>
-                                <td class="data facts">+ 22 PS</td>
-                                <td class="data facts">122 PS</td>
-                                <td class="data facts">+ 22 PS</td>
-                            </tr>
-                            <tr class="tuning-power-kw">
-                                <th class="label">&nbsp;</th>
-                                <td class="data facts">90 kW</td>
-                                <td class="data facts">+ 16 kW</td>
-                                <td class="data facts">90 kW</td>
-                                <td class="data facts">+ 16 kW</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Torque*</th>
-                                <td class="data facts">200 NM</td>
-                                <td class="data facts">+ 30 NM</td>
-                                <td class="data facts">200 NM</td>
-                                <td class="data facts">+ 30 NM</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Consumption</th>
-                                <td class="data facts" colspan="2">up to -8%</td>
-                                <td class="data facts" colspan="2">up to -15%</td>
-                            </tr>
-                            <tr>
-                                <th class="label">&nbsp;</th>
-                                <td class="data" colspan="2">tested and approved on gauged MAHA dyno,
-                                    Extra power and security certified in independent part approval                                            </td>
-                                <td class="data" colspan="2">tested and approved on gauged MAHA dyno,
-                                    Extra power and security certified in independent part approval                                            </td>
-                            </tr>
-                            </tbody>
-                        </table></div>
+                    <div class="table-heading">Technology</div>
+                    <table class="data-table">
+                        <colgroup><col width="30%">
+                            <col>
+                        </colgroup><tbody>
+                        <tr>
+                            <th class="label">System</th>
+                            <td class="data">Auxiliary power control unit with real-time sensor tuning</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Improved technology of the latest chip generation with 5x more precise signal processing</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Channels</th>
+                            <td class="data"><span class="new">new</span>9-channel system</td>
+                        </tr>
+                        <tr>
+                            <th class="label">programs</th>
+                            <td class="data">3 programs<br>
+                                <span class="program-sport">Sport</span>
+                                <span class="program-dynamic">Dynamic</span>
+                                <span class="program-efficiency">Efficiency</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">3 x 7 Performance levels</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Control</th>
+                            <td class="data">Keypad control</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>App control</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                    <div class="table-heading s-hint">Technology</div>
-                    <div class="scrl"><table class="data-table">
-                            <colgroup><col width="30%">
-                                <col width="35%">
-                                <col width="35%">
-                            </colgroup><tbody>
-                            <tr>
-                                <th class="label">System</th>
-                                <td class="data">Auxiliary power control unit with real-time sensor tuning</td>
-                                <td class="data">Auxiliary power control unit with real-time sensor tuning</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"><span class="new">new</span>Improved technology of the latest chip generation with 5x more precise signal processing</td>
-                                <td class="data"><span class="new">new</span>Improved technology of the latest chip generation with 5x more precise signal processing</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Channels</th>
-                                <td class="data"><span class="new">new</span>up to 9 channels</td>
-                                <td class="data"><span class="new">new</span>up to 9 channels</td>
-                            </tr>
-                            <tr>
-                                <th class="label">programs</th>
-                                <td class="data">2 programs<br>
-                                    <span class="program-sport">Sport</span>
-                                    <span class="program-dynamic">Dynamic</span>
-                                </td>
-                                <td class="data">3 programs<br>
-                                    <span class="program-sport">Sport</span>
-                                    <span class="program-dynamic">Dynamic</span>
-                                    <span class="program-efficiency">Efficiency</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">2 x 7 Performance levels</td>
-                                <td class="data">3 x 7 Performance levels</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Control</th>
-                                <td class="data">Keypad control</td>
-                                <td class="data">Keypad control</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"></td>
-                                <td class="data"><span class="new">new</span>App control</td>
-                            </tr>
-                            </tbody>
-                        </table></div>
+                    <div class="table-heading">Functions and features</div>
+                    <table class="data-table">
+                        <colgroup><col width="30%">
+                            <col>
+                        </colgroup><tbody>
+                        <tr>
+                            <th class="label">Features</th>
+                            <td class="data"><span class="new">new</span>Sports instrumentation panel</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Warm-up-timer (configurable)</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Memory function</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Multi map technology 4.0</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Multi protocol technology Analogue/SENT</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Adaptive Sensor System</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Engine Protect+</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Warranty</th>
+                            <td class="data">2 years product warranty</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Additional service</th>
+                            <td class="data">Customization of tuning possible upon request</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Upgradeable, ready for future use</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>2 x re-programming e.g. changing vehicles</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Interchangeable between engine technologies gasoline / diesel / hybrid analogue and SENT possible</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Optional Services</th>
+                            <td class="data">Installation and Removal on-site at DTE by request</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Installation service at desired address</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">TÜV registration at DTE on-site</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Dynometer performance measurement on&nbsp;MAHA MSR 500</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Customized tuning profile</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                    <div class="table-heading s-hint">Functions and features</div>
-                    <div class="scrl"><table class="data-table">
-                            <colgroup><col width="30%">
-                                <col width="35%">
-                                <col width="35%">
-                            </colgroup><tbody>
-                            <tr>
-                                <th class="label">Features</th>
-                                <td class="data"></td>
-                                <td class="data"><span class="new">new</span>Sports instrumentation panel</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"></td>
-                                <td class="data"><span class="new">new</span>Warm-up-timer (configurable)</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"><span class="new">new</span>Memory function</td>
-                                <td class="data"><span class="new">new</span>Memory function</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"><span class="new">new</span>Multi map technology 4.0</td>
-                                <td class="data"><span class="new">new</span>Multi map technology 4.0</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"></td>
-                                <td class="data"><span class="new">new</span>Multi protocol technology Analogue/SENT</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Adaptive Sensor System</td>
-                                <td class="data">Adaptive Sensor System</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Engine Protect+</td>
-                                <td class="data">Engine Protect+</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Warranty</th>
-                                <td class="data">2 years product warranty</td>
-                                <td class="data">2 years product warranty</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Additional service</th>
-                                <td class="data">Customization of tuning possible upon request</td>
-                                <td class="data">Customization of tuning possible upon request</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"><span class="new">new</span>Upgradeable, ready for future use</td>
-                                <td class="data"><span class="new">new</span>Upgradeable, ready for future use</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"><span class="new">new</span>1 x re-programming e.g. changing vehicles</td>
-                                <td class="data"><span class="new">new</span>2 x re-programming e.g. changing vehicles</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"></td>
-                                <td class="data"><span class="new">new</span>Interchangeable between engine technologies gasoline / diesel / hybrid analogue and SENT possible</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Optional Services</th>
-                                <td class="data"></td>
-                                <td class="data">Installation service at desired address</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">TÜV registration at DTE on-site</td>
-                                <td class="data">TÜV registration at DTE on-site</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Dynometer performance measurement on&nbsp;MAHA MSR 500</td>
-                                <td class="data">Dynometer performance measurement on&nbsp;MAHA MSR 500</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Customized tuning profile</td>
-                                <td class="data">Customized tuning profile</td>
-                            </tr>
-                            </tbody>
-                        </table></div>
+                    <div class="table-heading">Hardware and Software</div>
+                    <table class="data-table">
+                        <colgroup><col width="30%">
+                            <col>
+                        </colgroup><tbody>
+                        <tr>
+                            <th class="label">Hardware</th>
+                            <td class="data">PowerControl RX system</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Digital Signal Controller / MCU </td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>High-precision microcontroller with 72 MIPS (million instructions per second)</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data"><span class="new">new</span>Bluetooth 4.0 / BT LE <br> compatible from Android 7.0 and from iOS 10</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Specially developed for automotive applications<br>-40°C up to +125°C/ -40°F up to 257°F</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Integrated Active Power Management</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Wiring loom Made by DTE with original safety plugs</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Software</th>
+                            <td class="data">Original DTE PowerControl software</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Vehicle-specific tuning profile developed and fine-tuned by DTE</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                    <div class="table-heading s-hint">Hardware and Software</div>
-                    <div class="scrl"><table class="data-table">
-                            <colgroup><col width="30%">
-                                <col width="35%">
-                                <col width="35%">
-                            </colgroup><tbody>
-                            <tr>
-                                <th class="label">Hardware</th>
-                                <td class="data">PowerControl system</td>
-                                <td class="data">PowerControl X system</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Digital Signal Controller / MCU </td>
-                                <td class="data">Digital Signal Controller / MCU </td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"><span class="new">new</span>High-precision microcontroller with 48 MIPS (million instructions per second)</td>
-                                <td class="data"><span class="new">new</span>High-precision microcontroller with 60 MIPS (million instructions per second)</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data"></td>
-                                <td class="data"><span class="new">new</span>Bluetooth 4.0 / BT LE <br> compatible from Android 7.0 and from iOS 10</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Specially developed for automotive applications<br>-40°C up to +125°C/ -40°F up to 257°F</td>
-                                <td class="data">Specially developed for automotive applications<br>-40°C up to +125°C/ -40°F up to 257°F</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Integrated Active Power Management, optional power supply</td>
-                                <td class="data">Integrated Active Power Management, optional power supply</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Wiring loom Made by DTE with original safety plugs</td>
-                                <td class="data">Wiring loom Made by DTE with original safety plugs</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Software</th>
-                                <td class="data">Original DTE PowerControl software</td>
-                                <td class="data">Original DTE PowerControl software</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Vehicle-specific tuning profile developed and fine-tuned by DTE</td>
-                                <td class="data">Vehicle-specific tuning profile developed and fine-tuned by DTE</td>
-                            </tr>
-                            </tbody>
-                        </table></div>
+                    <div class="table-heading">Safety and Certifications</div>
+                    <table class="data-table">
+                        <colgroup><col width="30%">
+                            <col>
+                        </colgroup><tbody>
+                        <tr>
+                            <th class="label">Safety Features</th>
+                            <td class="data">High-strength and heat-proof, fibre-glass reinforced housing with composite sealing against humidity and splash water according to IP67</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Power &amp; Current Limitation to protect connected engine components</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Certifications</th>
+                            <td class="data">Developed and manufactured according to management system for national and international road traffic laws, certified by TÜV Austria</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Part approval for proven performance and safety</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Developed and manufactured by DTE in Germany</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                    <div class="table-heading s-hint">Safety and Certifications</div>
-                    <div class="scrl"><table class="data-table">
-                            <colgroup><col width="30%">
-                                <col width="35%">
-                                <col width="35%">
-                            </colgroup><tbody>
-                            <tr>
-                                <th class="label">Safety Features</th>
-                                <td class="data">High-strength and heat-proof, fibre-glass reinforced housing with composite sealing against humidity and splash water according to IP67</td>
-                                <td class="data">High-strength and heat-proof, fibre-glass reinforced housing with composite sealing against humidity and splash water according to IP67</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Power &amp; Current Limitation to protect connected engine components</td>
-                                <td class="data">Power &amp; Current Limitation to protect connected engine components</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Certifications</th>
-                                <td class="data">Developed and manufactured according to management system for national and international road traffic laws, certified by TÜV Austria</td>
-                                <td class="data">Developed and manufactured according to management system for national and international road traffic laws, certified by TÜV Austria</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Part approval for proven performance and safety</td>
-                                <td class="data">Part approval for proven performance and safety</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Developed and manufactured by DTE in Germany</td>
-                                <td class="data">Developed and manufactured by DTE in Germany</td>
-                            </tr>
-                            </tbody>
-                        </table></div>
-
-                    <div class="table-heading s-hint">Contents and Dimensions</div>
-                    <div class="scrl"><table class="data-table">
-                            <colgroup><col width="30%">
-                                <col width="35%">
-                                <col width="35%">
-                            </colgroup><tbody>
-                            <tr>
-                                <th class="label">Contents</th>
-                                <td class="data">PowerControl module</td>
-                                <td class="data">PowerControl X module</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Engine-specific wiring loom</td>
-                                <td class="data">Engine-specific wiring loom</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Installation manual with engine-specific photos</td>
-                                <td class="data">Installation manual with engine-specific photos</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">Part approval</td>
-                                <td class="data">Part approval</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">By-pass safety plug</td>
-                                <td class="data">By-pass safety plug</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Dimensions and Weight</th>
-                                <td class="data">13 x 13 x 4 cm / 5 x 5 x 1.6 inch</td>
-                                <td class="data">13 x 13 x 4 cm / 5 x 5 x 1.6 inch</td>
-                            </tr>
-                            <tr>
-                                <th class="label"></th>
-                                <td class="data">660 g / 1.5 lbs module weight</td>
-                                <td class="data">660 g / 1.5 lbs module weight</td>
-                            </tr>
-                            <tr>
-                                <th class="label">Item Number</th>
-                                <td class="data">A071.514</td>
-                                <td class="data">A056.962</td>
-                            </tr>
-                            </tbody>
-                        </table></div>
+                    <div class="table-heading">Contents and Dimensions</div>
+                    <table class="data-table">
+                        <colgroup><col width="30%">
+                            <col>
+                        </colgroup><tbody>
+                        <tr>
+                            <th class="label">Contents</th>
+                            <td class="data">PowerControl RX module</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Engine-specific wiring loom</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Installation manual with engine-specific photos</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">Part approval</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">By-pass safety plug</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Dimensions and Weight</th>
+                            <td class="data">13 x 13 x 4 cm / 5 x 5 x 1.6 inch</td>
+                        </tr>
+                        <tr>
+                            <th class="label"></th>
+                            <td class="data">660 g / 1.5 lbs module weight</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Item Number</th>
+                            <td class="data">A055.224</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
                     <p class="note">* vehicle-specific deviations due to factory-provided tolerances and vehicle age upwards and downwards possible</p>
 
@@ -801,7 +704,7 @@
                             <strong><span>We appreciate your feedback!</span></strong>
                         </div>
                         <p class="thank-you">We say thank you!</p>
-                        <div id="eKomiWidgetProductReview"><a id="eKomiWidget_0E907158EBDF8E8_eKomiWidgetProductReview" href="https://www.ekomi.de/bewertungen-dte-systems-gmbh.html" title="eKomi - The Feedback Company: Bin sehr zufrieden mit diesem Produkt. Einfach unglaublich was das ausmacht für das Ansprechverhalten."><img border="0" src="http://10.99.201.19/autovox-live/wp-content/uploads/2018/08/0E907158EBDF8E8-1.gif" alt="eKomi - The Feedback Company: Bin sehr zufrieden mit diesem Produkt. Einfach unglaublich was das ausmacht für das Ansprechverhalten." title="eKomi - The Feedback Company: Bin sehr zufrieden mit diesem Produkt. Einfach unglaublich was das ausmacht für das Ansprechverhalten."></a></div>
+                        <div id="eKomiWidgetProductReview"><a id="eKomiWidget_0E907158EBDF8E8_eKomiWidgetProductReview" href="https://www.ekomi.de/bewertungen-dte-systems-gmbh.html" title="eKomi - The Feedback Company: Bin sehr zufrieden mit diesem Produkt. Einfach unglaublich was das ausmacht für das Ansprechverhalten."><img border="0" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/08/0E907158EBDF8E8-1.gif" alt="eKomi - The Feedback Company: Bin sehr zufrieden mit diesem Produkt. Einfach unglaublich was das ausmacht für das Ansprechverhalten." title="eKomi - The Feedback Company: Bin sehr zufrieden mit diesem Produkt. Einfach unglaublich was das ausmacht für das Ansprechverhalten."></a></div>
 
                         <div class="satisfied">
                             <div class="number">99<span class="percent">%</span></div>
@@ -818,7 +721,7 @@
                         <div class="block-title">
                             <strong><span>Did you know?</span></strong>
                         </div>
-                        <p>We are only satisfied when you are excited. And if something is not as you like, our <a href="http://10.99.201.19/autovox-live/performance-tuning/dte-chiptuning/service/" target="_blank">Service team</a> is happy to help.</p>
+                        <p>We are only satisfied when you are excited. And if something is not as you like, our <a href="http://10.99.201.19/autovox-live-backup/performance-tuning/dte-chiptuning/service/" target="_blank">Service team</a> is happy to help.</p>
                     </div>
                     <div class="left">
                         <h2><span class="sub-line">What our customers say</span></h2>
@@ -880,6 +783,21 @@
 <div class="technologies-wrapper">
     <div class="technologies">
         <h3>All Features and Information for PowerControl in Detail</h3>
+        <div class="block-wrapper multi-map">
+            <div class="block active">
+                <div class="block-title">
+                    <strong><span class="highlight">Multi-Map Technology.</span><span class="normal"> Tuning for every sensor.</span></strong>
+                </div>
+                <div class="content-wrapper" style="display: none;">
+                    <div class="icon-wrapper">
+                        <div class="icon sprite">&nbsp;</div>
+                    </div>
+                    <div class="block-content">
+                        <p>DTE have developed a multi-map tuning technology which can optimise up to five different channels, all in real time. Whether it be common rail pressure, boost pressure, turbo pressure, intake manifold pressure or air mass volume, DTE’s PowerControl is able to control them all. Even the latest generation and most technically demanding engines are effortlessly controlled, all within a multi-dimensional multi-map environment. The driver is able to select from 3 different programs: Sport, Dynamic and Efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="block-wrapper adaptive-sensor">
             <div class="block">
                 <div class="block-title">
@@ -973,7 +891,7 @@
             <div class="block-content">
                 <h2><span class="first-line">App control with warm-up timer</span><span class="sub-line">The next generation of smart tuning<br></span></h2>
                 <p>In addition to PowerControl’s keypad, which DTE introduced in 2014, the new DTE performance of PowerControl X and RX can now also be operated from the cockpit.</p>
-                <span class="sub-line"><img title="The chip tuning box with app control by DTE Systems" alt="The chip tuning box with app control by DTE Systems" src="http://localhost/autovox-live/wp-content/uploads/2018/07/Chiptuning_App_for_smartphone_usage.jpg"><br></span>
+                <span class="sub-line"><img title="The chip tuning box with app control by DTE Systems" alt="The chip tuning box with app control by DTE Systems" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/07/Chiptuning_App_for_smartphone_usage.jpg"><br></span>
                 <ul>
                     <li>The chip tuning’s extra power can be easily switched on or off with the smartphone</li>
                     <li>Drivers can change between various driving programs: Sport, Dynamic and Efficiency</li>
@@ -990,7 +908,7 @@
             </div>
             <div class="block-content">
                 <h2><span class="first-line">Sport instrumentation panel</span><span class="sub-line">The full performance at a glance</span></h2>
-                <p>A highlight of the PowerControl app is the sport instrumentation panel, which shows the engine's relevant performance data in real time.<br><br><img title="Chiptuning per Smartphone-Steuerung" alt="Chiptuning per Smartphone-Steuerung" src="http://localhost/autovox-live/wp-content/uploads/2018/07/Smartphone_APP_Chiptuning.jpg"><br><strong>The highlights of DTE's sport instrumentation panel:</strong></p>
+                <p>A highlight of the PowerControl app is the sport instrumentation panel, which shows the engine's relevant performance data in real time.<br><br><img title="Chiptuning per Smartphone-Steuerung" alt="Chiptuning per Smartphone-Steuerung" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/07/Smartphone_APP_Chiptuning.jpg"><br><strong>The highlights of DTE's sport instrumentation panel:</strong></p>
                 <ul>
                     <li>Displaying of turbo pressure, rail pressure and rpm in real time</li>
                     <li>An innovative accelerometer that measures the g-forces applying to the vehicle</li>
@@ -1005,14 +923,9 @@
             <div class="icon-wrapper">
                 <div class="icon">&nbsp;</div>
             </div>
-            <div class="block-content power-control-x">
+            <div class="block-content">
                 <h2><span class="first-line">Reprogramming for vehicle change</span><span class="sub-line">Keep your tuning box up to date</span></h2>
                 <p>A DTE engine tuning like PowerControl has the advantage that its installation is very easy. Furthermore, the dismantling back to stock condition is easy as well, e.g. when you change your vehicle. So, you can use your PowerControl tuning box again for your next vehicle. The reprogramming of the used tuning box for your new vehicle is free of charge 1x (PowerControl) and 2x (PowerControl X).</p>
-            </div>
-            <div class="block-content power-control inactive">
-                <h2><span class="first-line">Reprogramming for vehicle change</span><span class="sub-line">Keep your tuning box up to date</span></h2>
-                <p>A DTE engine tuning like PowerControl has the advantage that its installation is very easy. Furthermore, the dismantling back to stock condition is easy as well, e.g. when you change your vehicle. So, you can use your PowerControl tuning box again for your next vehicle. The reprogramming of the used tuning box for your new vehicle is free of charge 1x (PowerControl) and 2x (PowerControl X).</p>
-                <p>Your configuration only includes one single reprogramming. Please switch to PowerControl X to get a two-time reprogramming.</p>
             </div>
         </div>
     </div>
@@ -1020,25 +933,15 @@
         <div class="close-button">&nbsp;</div>
         <div class="content-wrapper">
             <div class="icon-wrapper">
-                <div class="icon power-control-x active">&nbsp;</div>
-                <div class="icon power-control inactive">&nbsp;</div>
+                <div class="icon">&nbsp;</div>
             </div>
-            <div class="block-content power-control-x active">
+            <div class="block-content">
                 <h2><span class="first-line">3 selectable driving programs with 7 power levels each</span><span class="sub-line">Choose your favorite tuning setting</span></h2>
                 <p>With DTE’s PowerControl, drivers have the option to choose their own and fully customizable driving program: <strong>Sport</strong>, <strong>Dynamic</strong> and <strong>Efficiency</strong>.</p>
                 <p>Note: The Efficiency program is only available for PowerControl X.</p>
                 <p><strong>Sport</strong><br> In Sport mode, the engine’s parameters are modified for maximum performance. The vehicle reacts more directly for a more responsive driving experience.</p>
                 <p><strong>Dynamic</strong><br> The Dynamic mode is a great all-rounder and very well balanced for long distances. The vehicle reacts more dynamically for better agility throughout the rpm range.</p>
                 <p><strong>Efficiency</strong> (for PowerControl X only)<br> The Efficiency mode is focused on improving the engine’s fuel consumption. Savings of up to 15% can be achieved.</p>
-            </div>
-            <div class="block-content power-control inactive">
-                <h2><span class="first-line">2 selectable driving programs with 7 power levels each</span><span class="sub-line">Choose your favorite tuning setting</span></h2>
-                <p>With DTE’s PowerControl, drivers have the option to choose their own and fully customizable driving program: <strong>Sport</strong>, <strong>Dynamic</strong> and <strong>Efficiency</strong>.</p>
-                <p>Note: The Efficiency program is only available for PowerControl X.</p>
-                <p><strong>Sport</strong><br> In Sport mode, the engine’s parameters are modified for maximum performance. The vehicle reacts more directly for a more responsive driving experience.</p>
-                <p><strong>Dynamic</strong><br> The Dynamic mode is a great all-rounder and very well balanced for long distances. The vehicle reacts more dynamically for better agility throughout the rpm range.</p>
-                <p><strong>Efficiency</strong> (for PowerControl X only)<br> The Efficiency mode is focused on improving the engine’s fuel consumption. Savings of up to 15% can be achieved.</p>
-                <p>The Efficiency mode for up to 15% better fuel consumption is not included in your configuration. Please switch to PowerControl X.</p>
             </div>
         </div>
     </div>
@@ -1077,7 +980,7 @@
                 <input type="hidden" autofocus="autofocus">
                 <p>We provide comprehensive and beyond-the-law guarantees that cover our products. We also provide a 30-day money back guarantee, so you can feel the product in comfort of your own vehicle.</p>
                 <p><strong>Our satisfaction guarantee</strong><br> Try our quality tuning and look forward to a completely new driving experience. Test the chiptuning system extensively and then evaluate the effects on consumption and driving characteristics - you will definitely enjoy!</p>
-                <p><strong>Our product guarantee</strong><br> In development and production, our main focus is on the longevity and durability of our tuning products. Therefore, we generally grant a 2-year manufacturer's warranty (upon registration) on the PowerControl tuning products from the date of purchase.<br><br>Further details on the provided warranty you can find <a title="here" href="http://localhost/autovox-live/performance-tuning/dte-chiptuning/service/warranty/">here</a>.</p>
+                <p><strong>Our product guarantee</strong><br> In development and production, our main focus is on the longevity and durability of our tuning products. Therefore, we generally grant a 2-year manufacturer's warranty (upon registration) on the PowerControl tuning products from the date of purchase.<br><br>Further details on the provided warranty you can find <a title="here" href="http://10.99.201.19/autovox-live-backup/performance-tuning/dte-chiptuning/service/warranty/">here</a>.</p>
             </div>
         </div>
     </div>
@@ -1087,17 +990,17 @@
             <div class="block-content">
                 <h2><span class="sub-line">Best performance values and results with DTE's latest tuning-technologies</span></h2>
                 <div class="col1">
-                    <p><img alt="Eigene Entwicklung und Produktion" src="http://localhost/autovox-live/wp-content/uploads/2018/07/results-production.jpg"></p>
+                    <p><img alt="Eigene Entwicklung und Produktion" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/07/results-production.jpg"></p>
                     <div class="sub-line" style="margin-left: 0;">Own development and production</div>
                     <p>DTE does its own R&amp;D as well as production work, due to this it remains the technology leader.</p>
                 </div>
                 <div class="col2">
-                    <p><img alt="Maß- und Präzisionsarbeit" src="http://localhost/autovox-live/wp-content/uploads/2018/07/results-precision.jpg"></p>
+                    <p><img alt="Maß- und Präzisionsarbeit" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/07/results-precision.jpg"></p>
                     <div class="sub-line" style="margin-left: 0;">Precision work</div>
                     <p>On the road performance perfection is the aim of our engineers, that’s why each vehicle gets a precise individual tune.</p>
                 </div>
                 <div class="col3">
-                    <p><img alt="Für das optimale Ergebnis" src="http://localhost/autovox-live/wp-content/uploads/2018/07/results-optimum.jpg"></p>
+                    <p><img alt="Für das optimale Ergebnis" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/07/results-optimum.jpg"></p>
                     <div class="sub-line" style="margin-left: 0;">Achieving optimum results</div>
                     <p>The end result, after all the development work is done, is a high quality product combined with DTE’s know-how and experience.</p>
                 </div>
@@ -1152,7 +1055,7 @@
             <div class="block-content">
                 <h2><span class="first-line">More power, less consumption</span><span class="sub-line">Save fuel with DTE’s performance tuning boxes</span></h2>
                 <div class="left">
-                    <p><img alt="" src="http://localhost/autovox-live/wp-content/uploads/2018/07/consumption.jpg"></p></div>
+                    <p><img alt="" src="http://10.99.201.19/autovox-live-backup/wp-content/uploads/2018/07/consumption.jpg"></p></div>
                 <div class="right">
                     <div class="sub-line" style="margin-left: 0;">Accelerate, shift up a gear, lower your rpm</div>
                     <p>DTE’s PowerControl allows you to drive at much lower revs per minute, which significantly reduces fuel consumption. Gear changes can be made earlier and more fuel can be saved with each crankshaft revolution.</p>

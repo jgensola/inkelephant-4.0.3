@@ -3,6 +3,10 @@
 @import 'variables.less';
 @import 'buttons.less';
 
+.dte-html {
+    margin-right: 0 !important;
+}
+
 @{dte-pages} {
     background: url('@{image-path}dte/scanlines.png'), url('@{image-path}dte/background.jpg');
     background-position: 0 0, center 0;
@@ -856,6 +860,34 @@
         display: none;
     }
 
+    //Image Popup
+
+    .mfp-container {
+        padding: 0;
+    }
+
+    .mfp-image-holder {
+        .mfp-close {
+            right: 0;
+
+            padding-right: 0;
+        }
+    }
+
+    .mfp-title {
+        color: @white;
+
+        font-size: 16px;
+    }
+
+    .mfp-bg {
+        z-index: 10001;
+    }
+
+    .mfp-wrap {
+        z-index: 10002;
+    }
+
     .main-content {
         width: 100%;
 
@@ -1456,6 +1488,36 @@
                         background: url('@{image-path}dte/rxplus.svg') no-repeat;
                         background-size: 65px 29px;
                         background-position: -24px -1px;
+                        background-color: #fff;
+
+                        content: '';
+                    }
+                }
+
+                .rx {
+                    position: relative;
+                    display: inline-block;
+
+                    margin-left: -1px;
+                    height: 27px;
+                    width: 49px;
+
+                    color: @white;
+
+                    font-weight: 400;
+
+                    &:after {
+                        position: absolute;
+                        display: inline-block;
+                        left: 0;
+                        bottom: 2px;
+
+                        width: 49px;
+                        height: 27px;
+
+                        background: url('@{image-path}dte/rxplus.svg') no-repeat;
+                        background-size: 65px 29px;
+                        background-position: 0 -1px;
                         background-color: #fff;
 
                         content: '';
@@ -2859,6 +2921,13 @@
                     background-size: 400px 845px;
                 }
 
+                &.multi-map .icon {
+                    height: 44px;
+                    width: 88px;
+
+                    background-position: -181px -356px;
+                }
+
                 &.adaptive-sensor .icon {
                     height: 44px;
                     width: 47px;
@@ -2909,6 +2978,10 @@
                 position: relative;
 
                 padding: 10px 0 0;
+
+                cursor: pointer;
+
+                .user-select(none);
 
                 &:before {
                     left: 0;
@@ -3885,6 +3958,10 @@
                         }
                     }
                 }
+            }
+
+            .technologies .block-title strong .normal {
+                display: inline;
             }
 
             .pop-up {

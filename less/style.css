@@ -4843,42 +4843,38 @@ readers do not read off random characters that represent icons */
   left: 50%;
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   content: '\f0d8';
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child:before {
   left: 50%;
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   content: '\f0d8';
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 @media only screen and (min-width: 768px) {
   .ie-11 .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu > li.menu-item ul.sub-menu,
   .ie-11 .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu.active > li.menu-item ul.sub-menu {
     left: 50%;
-    -webkit-transform: perspective(1px) translateX(-50%);
+    -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: perspective(1px) translateX(-50%);
     -webkit-font-smoothing: antialiased;
   }
   .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
     left: 50%;
-    -webkit-transform: perspective(1px) translateX(-50%);
+    -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: perspective(1px) translateX(-50%);
     -webkit-font-smoothing: antialiased;
   }
   .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item .mega-menu-item-text-4 .bottom-section .column-2 ul li:first-child {
@@ -4887,6 +4883,9 @@ readers do not read off random characters that represent icons */
     display: -ms-inline-flexbox;
     display: inline-flexbox;
   }
+}
+.dte-html {
+  margin-right: 0 !important;
 }
 .page-template-page-dte-news-php,
 .page-template-page-dte-products-php,
@@ -6357,11 +6356,10 @@ readers do not read off random characters that represent icons */
   background-size: 123px 111px;
   background-position: center;
   content: '';
-  -webkit-transform: perspective(1px) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: perspective(1px) translate(-50%, -50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .slideshow br,
@@ -6398,11 +6396,10 @@ readers do not read off random characters that represent icons */
   position: absolute;
   left: 50%;
   display: block;
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .slideshow p,
@@ -6505,6 +6502,58 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-home-php .breadcrumbs,
 .page-template-page-dte-catalog-php .breadcrumbs {
   display: none;
+}
+.page-template-page-dte-news-php .mfp-container,
+.page-template-page-dte-products-php .mfp-container,
+.page-template-page-dte-news-article-php .mfp-container,
+.page-template-page-dte-company-php .mfp-container,
+.page-template-page-dte-service-php .mfp-container,
+.page-template-page-dte-technology-php .mfp-container,
+.page-template-page-dte-home-php .mfp-container,
+.page-template-page-dte-catalog-php .mfp-container {
+  padding: 0;
+}
+.page-template-page-dte-news-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-products-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-news-article-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-company-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-service-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-technology-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-home-php .mfp-image-holder .mfp-close,
+.page-template-page-dte-catalog-php .mfp-image-holder .mfp-close {
+  right: 0;
+  padding-right: 0;
+}
+.page-template-page-dte-news-php .mfp-title,
+.page-template-page-dte-products-php .mfp-title,
+.page-template-page-dte-news-article-php .mfp-title,
+.page-template-page-dte-company-php .mfp-title,
+.page-template-page-dte-service-php .mfp-title,
+.page-template-page-dte-technology-php .mfp-title,
+.page-template-page-dte-home-php .mfp-title,
+.page-template-page-dte-catalog-php .mfp-title {
+  color: #fff;
+  font-size: 16px;
+}
+.page-template-page-dte-news-php .mfp-bg,
+.page-template-page-dte-products-php .mfp-bg,
+.page-template-page-dte-news-article-php .mfp-bg,
+.page-template-page-dte-company-php .mfp-bg,
+.page-template-page-dte-service-php .mfp-bg,
+.page-template-page-dte-technology-php .mfp-bg,
+.page-template-page-dte-home-php .mfp-bg,
+.page-template-page-dte-catalog-php .mfp-bg {
+  z-index: 10001;
+}
+.page-template-page-dte-news-php .mfp-wrap,
+.page-template-page-dte-products-php .mfp-wrap,
+.page-template-page-dte-news-article-php .mfp-wrap,
+.page-template-page-dte-company-php .mfp-wrap,
+.page-template-page-dte-service-php .mfp-wrap,
+.page-template-page-dte-technology-php .mfp-wrap,
+.page-template-page-dte-home-php .mfp-wrap,
+.page-template-page-dte-catalog-php .mfp-wrap {
+  z-index: 10002;
 }
 .page-template-page-dte-news-php .main-content,
 .page-template-page-dte-products-php .main-content,
@@ -7255,11 +7304,10 @@ readers do not read off random characters that represent icons */
   background-size: 123px 111px;
   background-position: center;
   content: '';
-  -webkit-transform: perspective(1px) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: perspective(1px) translate(-50%, -50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php article.post.news .button,
@@ -7507,11 +7555,10 @@ readers do not read off random characters that represent icons */
   background-size: 123px 111px;
   background-position: center;
   content: '';
-  -webkit-transform: perspective(1px) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: perspective(1px) translate(-50%, -50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog,
@@ -7539,11 +7586,10 @@ readers do not read off random characters that represent icons */
   font-size: 13px;
   line-height: 13px;
   font-family: 'Fjalla One', Arial, sans-serif;
-  -webkit-transform: perspective(1px) translate(0, -4px);
+  -webkit-transform: translate(0, -4px);
   -moz-transform: translate(0, -4px);
   -o-transform: translate(0, -4px);
   -ms-transform: translate(0, -4px);
-  transform: perspective(1px) translate(0, -4px);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .two-option,
@@ -7638,6 +7684,42 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/rxplus.svg') no-repeat;
   background-size: 65px 29px;
   background-position: -24px -1px;
+  background-color: #fff;
+  content: '';
+}
+.page-template-page-dte-news-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-products-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-news-article-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-company-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-service-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-technology-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-home-php .dte-catalog .product-name .system-name .rx,
+.page-template-page-dte-catalog-php .dte-catalog .product-name .system-name .rx {
+  position: relative;
+  display: inline-block;
+  margin-left: -1px;
+  height: 27px;
+  width: 49px;
+  color: #fff;
+  font-weight: 400;
+}
+.page-template-page-dte-news-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-products-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-news-article-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-company-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-service-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-technology-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-home-php .dte-catalog .product-name .system-name .rx:after,
+.page-template-page-dte-catalog-php .dte-catalog .product-name .system-name .rx:after {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: 2px;
+  width: 49px;
+  height: 27px;
+  background: url('../img/dte/rxplus.svg') no-repeat;
+  background-size: 65px 29px;
+  background-position: 0 -1px;
   background-color: #fff;
   content: '';
 }
@@ -7980,11 +8062,10 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-catalog-php .dte-catalog .product-information-wrapper .owl-carousel .owl-nav button {
   position: absolute;
   top: 50%;
-  -webkit-transform: perspective(1px) translateY(-50%);
+  -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: perspective(1px) translateY(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .product-information-wrapper .owl-carousel .owl-nav button span,
@@ -8120,11 +8201,10 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/sprite@2x.png') no-repeat -49px -32px;
   background-size: 400px 845px;
   content: '';
-  -webkit-transform: perspective(1px) rotate(90deg);
+  -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: perspective(1px) rotate(90deg);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .options-heading:after,
@@ -8143,11 +8223,10 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/sprite@2x.png') no-repeat -49px -32px;
   background-size: 400px 845px;
   content: '';
-  -webkit-transform: perspective(1px) rotate(90deg);
+  -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: perspective(1px) rotate(90deg);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .power-control-options,
@@ -8883,11 +8962,10 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-home-php .dte-catalog .advantages > div:last-of-type .text,
 .page-template-page-dte-catalog-php .dte-catalog .advantages > div:last-of-type .text {
   left: 50%;
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .advantages > div:before,
@@ -8907,11 +8985,10 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   font-size: 16px;
   content: '\f0d8';
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .advantages > div:after,
@@ -8931,11 +9008,10 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
   font-size: 16px;
   content: '\f0d8';
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .advantages > div:hover:before,
@@ -9318,11 +9394,10 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .new {
   padding: 3px 3px 1px;
   margin: 0 2px;
-  -webkit-transform: perspective(1px) none;
+  -webkit-transform: none;
   -moz-transform: none;
   -o-transform: none;
   -ms-transform: none;
-  transform: perspective(1px) none;
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container .icon-wrapper,
@@ -10187,6 +10262,18 @@ readers do not read off random characters that represent icons */
   background: url('../img/dte/sprite@2x.png') no-repeat;
   background-size: 400px 845px;
 }
+.page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-company-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-service-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-technology-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-home-php .dte-catalog .technologies .block-wrapper.multi-map .icon,
+.page-template-page-dte-catalog-php .dte-catalog .technologies .block-wrapper.multi-map .icon {
+  height: 44px;
+  width: 88px;
+  background-position: -181px -356px;
+}
 .page-template-page-dte-news-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
 .page-template-page-dte-products-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
 .page-template-page-dte-news-article-php .dte-catalog .technologies .block-wrapper.adaptive-sensor .icon,
@@ -10277,6 +10364,15 @@ readers do not read off random characters that represent icons */
 .page-template-page-dte-catalog-php .dte-catalog .technologies .block-title {
   position: relative;
   padding: 10px 0 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome 49+ */
+  -moz-user-select: none;
+  /* Firefox 43+ */
+  -ms-user-select: none;
+  /* No support yet */
+  user-select: none;
+  /* Likely future */
 }
 .page-template-page-dte-news-php .dte-catalog .technologies .block-title:before,
 .page-template-page-dte-products-php .dte-catalog .technologies .block-title:before,
@@ -10395,11 +10491,10 @@ readers do not read off random characters that represent icons */
   border: 1px solid #d2d2d2;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
-  -webkit-transform: perspective(1px) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: perspective(1px) translate(-50%, -50%);
   -webkit-font-smoothing: antialiased;
 }
 .page-template-page-dte-news-php .dte-catalog .pop-up > div.pop-up-active,
@@ -11204,11 +11299,10 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-home-php .dte-catalog .advantages > div:nth-of-type(6) .text,
   .page-template-page-dte-catalog-php .dte-catalog .advantages > div:nth-of-type(6) .text {
     left: 50%;
-    -webkit-transform: perspective(1px) translateX(-50%);
+    -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: perspective(1px) translateX(-50%);
     -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .dte-catalog .advantages > div:nth-of-type(1) .text,
@@ -11247,11 +11341,10 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .advantages > div:last-of-type .text {
     right: -30px;
     left: auto;
-    -webkit-transform: perspective(1px) none;
+    -webkit-transform: none;
     -moz-transform: none;
     -o-transform: none;
     -ms-transform: none;
-    transform: perspective(1px) none;
     -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .dte-catalog .product-collateral .collateral-tabs,
@@ -11769,11 +11862,10 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .slideshow .text p {
     position: relative;
     left: 0;
-    -webkit-transform: perspective(1px) none;
+    -webkit-transform: none;
     -moz-transform: none;
     -o-transform: none;
     -ms-transform: none;
-    transform: perspective(1px) none;
     -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .slideshow .left-top,
@@ -12202,6 +12294,16 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-home-php .dte-catalog .product-collateral .tab-container .review .left,
   .page-template-page-dte-catalog-php .dte-catalog .product-collateral .tab-container .review .left {
     padding-right: 30px;
+  }
+  .page-template-page-dte-news-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-products-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-news-article-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-company-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-service-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-technology-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-home-php .dte-catalog .technologies .block-title strong .normal,
+  .page-template-page-dte-catalog-php .dte-catalog .technologies .block-title strong .normal {
+    display: inline;
   }
   .page-template-page-dte-news-php .dte-catalog .pop-up > div,
   .page-template-page-dte-products-php .dte-catalog .pop-up > div,
@@ -13279,11 +13381,10 @@ readers do not read off random characters that represent icons */
     bottom: 8px;
     display: block;
     left: 50%;
-    -webkit-transform: perspective(1px) translateX(-50%);
+    -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: perspective(1px) translateX(-50%);
     -webkit-font-smoothing: antialiased;
   }
   .page-template-page-dte-news-php .slideshow .owl-dot,
@@ -13429,11 +13530,10 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .advantages > div .text {
     left: 50% !important;
     right: auto !important;
-    -webkit-transform: perspective(1px) translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
     -moz-transform: translateX(-50%) !important;
     -o-transform: translateX(-50%) !important;
     -ms-transform: translateX(-50%) !important;
-    transform: perspective(1px) translateX(-50%) !important;
     -webkit-font-smoothing: antialiased !important;
   }
   .page-template-page-dte-news-php .dte-catalog .product-collateral .tab-container,
@@ -13760,11 +13860,10 @@ readers do not read off random characters that represent icons */
   .page-template-page-dte-catalog-php .dte-catalog .options-heading:after {
     position: absolute;
     margin: -25px 0 0 100px;
-    -webkit-transform: perspective(1px) rotate(0);
+    -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
     -o-transform: rotate(0);
     -ms-transform: rotate(0);
-    transform: perspective(1px) rotate(0);
     -webkit-font-smoothing: antialiased;
   }
 }
@@ -13962,11 +14061,10 @@ readers do not read off random characters that represent icons */
   font-size: 70px;
   text-align: center;
   content: 'arrow_drop_down';
-  -webkit-transform: perspective(1px) translateX(-50%);
+  -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: perspective(1px) translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
 .site-footer.dte .top-section a {

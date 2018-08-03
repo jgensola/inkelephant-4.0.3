@@ -3,6 +3,8 @@ $(document).ready(function () {
         // Get IE or Edge browser version
         var version = detectIE();
 
+        $('html').addClass('dte-html');
+
         if (version === false) {
             // document.getElementById('result').innerHTML = '<s>IE/Edge</s>';
             $('html').addClass('ie-edge');
@@ -135,10 +137,7 @@ $(document).ready(function () {
                 $('.pop-up .consumption').addClass('pop-up-active');
             }
 
-            // var current = $(window).scrollTop();
-            // $(window).scroll(function() {
-            //     $(window).scrollTop(current);
-            // });
+            $('html').css('overflow','hidden');
         });
 
         $('.dte-catalog .overlay').on('click', function () {
@@ -158,6 +157,75 @@ $(document).ready(function () {
         if ($('.dte-catalog .technologies').length) {
             addAccordion('.technologies');
         }
+
+        // $('.dte-catalog .product-images a').on('click', function () {
+        //     $('html').css('overflow','hidden');
+        //
+        //
+        //     $('.mfp-bg').on('click', function () {
+        //         $('html').css('overflow','auto');
+        //     });
+        // });
+
+        $('.dte-catalog .product-images.power-control').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            callbacks: {
+                open: function() {
+                    $('html').css('overflow','hidden');
+                },
+                close: function() {
+                    $('html').css('overflow','auto');
+                }
+            }
+        });
+
+        $('.dte-catalog .product-images.power-control-x').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            callbacks: {
+                open: function() {
+                    $('html').css('overflow','hidden');
+                },
+                close: function() {
+                    $('html').css('overflow','auto');
+                }
+            }
+        });
+
+        $('.dte-catalog .product-images.power-control-rx').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            callbacks: {
+                open: function() {
+                    $('html').css('overflow','hidden');
+                },
+                close: function() {
+                    $('html').css('overflow','auto');
+                }
+            }
+        });
     }
 });
 
@@ -178,7 +246,7 @@ function closePopup() {
     $('.pop-up-active').removeClass('pop-up-active');
     $('body > .container').css('max-height', 'none');
 
-    // $(window).off('scroll');
+    $('html').css('overflow','auto');
 }
 
 /**

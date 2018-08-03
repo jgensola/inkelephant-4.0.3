@@ -2922,10 +2922,15 @@ if ( !defined('WPSEO_VERSION') && !class_exists('NY_OG_Admin')) {
 #-----------------------------------------------------------------#
 
 function dte_resources() {
+    wp_register_style('wp-image-css', get_template_directory_uri() . '/css/magnific-popup.css');
+
+    wp_enqueue_style('wp-image-css');
     wp_enqueue_style( 'wpb-google-fonts-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400,700', false );
     wp_enqueue_style( 'wpb-google-fonts-fjalla', 'https://fonts.googleapis.com/icon?family=Fjalla+One', false );
     wp_enqueue_script( 'my-jquery', 'http://code.jquery.com/jquery.min.js', array(), true );
     wp_enqueue_script( 'custom-scripts-dte', get_template_directory_uri() . '/js/dte.js', array(), true );
+    wp_enqueue_script( 'custom-scripts-image-pop', get_template_directory_uri() . '/js/jquery.magnific-popup.js', array(), true );
+    wp_enqueue_script( 'custom-scripts-image-pop-2', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array(), true );
 }
 
 add_action('wp_enqueue_scripts', 'dte_resources');

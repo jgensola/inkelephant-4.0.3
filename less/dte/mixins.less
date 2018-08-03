@@ -126,11 +126,10 @@
 
 // Transform
 .transform (@transform) {
-    -webkit-transform: perspective(1px) @transform;
+    -webkit-transform: @transform;
     -moz-transform: @transform;
     -o-transform: @transform;
     -ms-transform: @transform;
-    transform: perspective(1px) @transform;
     -webkit-font-smoothing: antialiased;
 }
 
