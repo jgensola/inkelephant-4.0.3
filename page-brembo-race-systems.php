@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Brembo Performance System Page Template
+ * Template Name: Brembo Race System Page Template
  *
  * The template for displaying all pages
  *
@@ -34,10 +34,10 @@ if (have_posts()) :
                             <div class="inner-container">
                                 <div class="row">
                                     <script>
-                                        var performance_table;
+                                        var race_table;
                                         $(document).ready(function () {
-                                            performance_table = $('#applist_table-performance').DataTable({
-                                                "ajax": "<?php echo home_url(); ?>/wp-content/themes/inkelephant-4.0.3/data/brembo-performance-systems.txt",
+                                            race_table = $('#applist_table-race').DataTable({
+                                                "ajax": "<?php echo home_url(); ?>/wp-content/themes/inkelephant-4.0.3/data/brembo-race-systems.txt",
                                                 pagingType: 'full_numbers',
                                                 "lengthChange": false,
                                                 "info": false,
@@ -83,7 +83,6 @@ if (have_posts()) :
                                                             $(this).children('div').addClass('active');
                                                         });
                                                     }
-
                                                     refreshTable();
                                                 },
                                                 "fnDrawCallback": function( oSettings ) {
@@ -93,19 +92,11 @@ if (have_posts()) :
                                                 }
                                             });
 
-                                            yadcf.init(performance_table,
+                                            yadcf.init(race_table,
                                                 [
                                                     {
-                                                        column_number: 4 ,
-                                                        filter_container_id: 'external_filter_container_0',
-                                                        filter_default_label: "Product Category",
-                                                        column_data_type: "html",
-                                                        html_data_type: "text",
-                                                        filter_reset_button_text: false
-                                                    },
-                                                    {
                                                         column_number : 2,
-                                                        filter_container_id: 'external_filter_container_1',
+                                                        filter_container_id: 'external_filter_container_0',
                                                         column_data_type: "html",
                                                         html_data_type: "text",
                                                         filter_default_label: "Year",
@@ -113,13 +104,13 @@ if (have_posts()) :
                                                     },
                                                     {
                                                         column_number : 0,
-                                                        filter_container_id: 'external_filter_container_2',
+                                                        filter_container_id: 'external_filter_container_1',
                                                         filter_default_label: "Make",
                                                         filter_reset_button_text: false
                                                     },
                                                     {
                                                         column_number : 1,
-                                                        filter_container_id: 'external_filter_container_3',
+                                                        filter_container_id: 'external_filter_container_2',
                                                         filter_default_label: "Model",
                                                         filter_reset_button_text: false
                                                     }
@@ -129,7 +120,7 @@ if (have_posts()) :
                                                 }
                                             );
 
-                                            $('#applist_table-performance').on('page.dt', function () {
+                                            $('#applist_table-race').on('page.dt', function () {
                                                 $('html, body').animate({
                                                     scrollTop: $(".main-section").offset().top
                                                 }, 1000);

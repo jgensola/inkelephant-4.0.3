@@ -853,6 +853,49 @@
                 }
             }
 
+            .table-filter-toggle {
+                margin-bottom: 10px;
+
+                > div > div {
+                    position: relative;
+
+                    width: 100%;
+                    margin: 0;
+                    border: 1px solid @mine-shaft;
+
+                    background: @white;
+
+                    &:after {
+                        position: absolute;
+                        top: 50%;
+                        visibility: visible;
+                        pointer-events: none;
+                        right: 10px;
+
+                        margin-top: -12px;
+
+                        font-family: @generic-icon-font;
+                        font-size: 15px;
+
+                        content: @caret-down;
+                    }
+                }
+
+                select {
+                    border: none;
+                    padding: 10px 12px;
+
+                    background: transparent;
+
+                    font-size: 15px;
+                    font-weight: lighter;
+                    font-family: inherit;
+
+                    .box-shadow(none) !important;
+                    .appearance(none);
+                }
+            }
+
             p.has-button {
                 margin-bottom: 30px;
             }
@@ -932,6 +975,51 @@
                         width: 45%;
 
                         font-weight: normal;
+                    }
+
+                    > span {
+                        display: none;
+
+                        &:first-of-type,
+                        &:last-of-type {
+                            display: inline;
+                        }
+
+                        &:only-of-type:before {
+                            display: none;
+                        }
+
+                        &:last-of-type:before {
+                            content: '-';
+                        }
+
+                        &.caliper-piston {
+                            font-size: 0;
+
+                            &:before {
+                                display: inline;
+                            }
+
+                            &.pistons-4:before {
+                                content: url('@{image-path}brembo/icon-pistons-4.png');
+                            }
+
+                            &.pistons-6:before {
+                                content: url('@{image-path}brembo/icon-pistons-6.png');
+                            }
+
+                            &.pistons-2:before {
+                                content: url('@{image-path}brembo/icon-pistons-2.png');
+                            }
+
+                            &.pistons-8:before {
+                                content: url('@{image-path}brembo/icon-pistons-8.png');
+                            }
+
+                            &.pistons-1:before {
+                                content: url('@{image-path}brembo/icon_1piston.png');
+                            }
+                        }
                     }
 
                     &.views-field-make:before {
@@ -1063,30 +1151,6 @@
                         text-transform: uppercase;
                         font-family: @brembo-secondary-font;
                         font-weight: 400;
-                    }
-
-                    .caliper-piston {
-                        font-size: 0;
-
-                        &.pistons-4:before {
-                            content: url('@{image-path}brembo/icon-pistons-4.png');
-                        }
-
-                        &.pistons-6:before {
-                            content: url('@{image-path}brembo/icon-pistons-6.png');
-                        }
-
-                        &.pistons-2:before {
-                            content: url('@{image-path}brembo/icon-pistons-2.png');
-                        }
-
-                        &.pistons-8:before {
-                            content: url('@{image-path}brembo/icon-pistons-8.png');
-                        }
-
-                        &.pistons-1:before {
-                            content: url('@{image-path}brembo/icon_1piston.png');
-                        }
                     }
 
                     a {
@@ -1983,6 +2047,22 @@
 
             //Application List
             &.application-list {
+                .table-filter-toggle {
+                    margin: 0 10px 0 0;
+
+                    > div > div {
+                        width: 180px;
+                    }
+
+                    select {
+                        padding: 10px 32px 10px 12px !important;
+                    }
+                }
+
+                .multi-filter {
+                    .flex-display();
+                }
+
                 .table-filter {
                     margin: 0 10px 0 -10px;
                     width: auto;
@@ -2117,6 +2197,7 @@
                         color: @black;
 
                         text-align: center;
+                        line-height: 1.25;
 
                         &:before {
                             display: none;
@@ -2383,6 +2464,11 @@
     @{brembo-pages} {
         article.post {
             &.application-list {
+
+                .table-filter-toggle select::-ms-expand {
+                    opacity: .01;
+                }
+
                 .table-filter .select-container {
                     &:after {
                         right: 10px;
@@ -2440,6 +2526,10 @@
                 &.application-list {
                     table td {
                         display: table-cell;
+                    }
+
+                    .table-filter-toggle select {
+                        padding: 10px 12px !important;
                     }
                 }
             }

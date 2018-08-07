@@ -861,7 +861,6 @@
     }
 
     //Image Popup
-
     .mfp-container {
         padding: 0;
     }
@@ -3225,6 +3224,89 @@
 
             .opacity(.7);
         }
+
+        .single-option {
+            padding: 0 15px;
+
+            .product-name {
+                .system-name {
+                    text-align: left;
+                    font-size: 24px;
+                }
+            }
+
+            .more-images {
+                min-height: 118px;
+            }
+
+            .inclusive-options {
+                margin-top: 25px;
+            }
+
+            .inclusive-options {
+                .block-wrapper {
+                    border: none;
+
+                    cursor: auto;
+
+                    .user-select(auto);
+                    .flex-display();
+
+                    .icon-wrapper {
+                        width: 9.259259259%;
+                    }
+
+                    .block {
+                        width: 90.74074074%;
+                    }
+
+                    .block-title {
+                        position: relative;
+
+                        margin-bottom: 5px;
+
+                        font-size: 16px;
+                        line-height: 21px;
+
+                        strong {
+                            font-weight: 300;
+                        }
+
+                        span:after {
+                            display: none;
+                        }
+                    }
+
+                    &.multi-channel .icon {
+                        height: 14px;
+                        width: 20px;
+
+                        background-position: -116px -77px;
+                    }
+
+                    &.installation-plug-in-power .icon {
+                        height: 19px;
+                        width: 18px;
+
+                        background-position: -361px -185px;
+                    }
+
+                    &.guarantee .icon {
+                        height: 20px;
+                        width: 17px;
+
+                        background-position: -112px -55px;
+                    }
+
+                    &.tga .icon {
+                        height: 21px;
+                        width: 18px;
+
+                        background-position: -140px -78px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -3357,7 +3439,6 @@
         .dte-catalog {
             .two-option {
                 padding: 30px;
-
             }
 
             .product-name h1 {
@@ -3596,6 +3677,24 @@
                                 margin-bottom: 0;
                             }
                         }
+                    }
+                }
+            }
+
+            .single-option {
+                padding: 0 30px;
+
+                .inclusive-options {
+                    width: 100%;
+                }
+
+                .block-wrapper {
+                    .icon-wrapper {
+                        height: 20px;
+                    }
+
+                    .block {
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -3962,6 +4061,66 @@
 
             .technologies .block-title strong .normal {
                 display: inline;
+            }
+
+            .single-option-wrapper {
+                position: relative;
+                padding-left: 50%;
+
+                .flex-display();
+                .flex-direction(column);
+
+                .product-image {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                    padding: 0 15px 0 0;
+                }
+
+                > div {
+                    padding-left: 15px;
+                }
+
+                .product-name {
+                    .system-name {
+                        margin-top: 0;
+                    }
+
+                    h1 {
+                        padding-left: 1em;
+
+                        text-indent: -1em;
+
+                        &:before {
+                            position: relative;
+                        }
+                    }
+                }
+
+                .date {
+                    padding-left: 37px;
+                }
+
+                .key-features {
+                    .justify-content(flex-start);
+
+                    .performance-hints {
+                        margin: 20px 0 10px 0;
+
+                        text-align: right;
+
+                        &:after {
+                            position: absolute;
+
+                            margin-top: 6px;
+                        }
+                    }
+                }
+
+                .inclusive-options {
+                    max-width: none;
+                }
             }
 
             .pop-up {
@@ -4536,6 +4695,23 @@
                             width: 100%;
                         }
                     }
+                }
+            }
+
+            .single-option-wrapper {
+                .inclusive-options {
+                    .flex-display();
+                    .flex-wrap(wrap);
+
+                    > div {
+                        width: 50%;
+                    }
+                }
+
+                .key-features .performance-hints:after {
+                    position: relative;
+
+                    margin-top: 0;
                 }
             }
 

@@ -104,10 +104,7 @@ $(document).ready(function () {
         $('.dte-catalog .popup-trigger').on('click', function () {
             $(this).addClass('pop-up-active');
             $('body').addClass('pop-up-active');
-
-            // $('.pop-up > div').css('max-height', $(window).height() - 40).css('max-width', $(window).width() - 40);
             $('.pop-up > div').css('max-height', '528px').css('max-width', $(window).width() - 40);
-            // $('.overlay').css('max-height', $(window).height());
 
             if ($(this).hasClass('performance-hints')) {
                 $('.pop-up .performance-hints').addClass('pop-up-active');
@@ -157,15 +154,6 @@ $(document).ready(function () {
         if ($('.dte-catalog .technologies').length) {
             addAccordion('.technologies');
         }
-
-        // $('.dte-catalog .product-images a').on('click', function () {
-        //     $('html').css('overflow','hidden');
-        //
-        //
-        //     $('.mfp-bg').on('click', function () {
-        //         $('html').css('overflow','auto');
-        //     });
-        // });
 
         $('.dte-catalog .product-images.power-control').magnificPopup({
             delegate: 'a',
