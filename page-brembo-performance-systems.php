@@ -59,6 +59,7 @@ if (have_posts()) :
                                                     {className: "views-field-notes", "targets": [14]},
                                                     {"defaultContent": " ", "targets": "_all"}
                                                 ],
+                                                processing: true,
                                                 language: {
                                                     paginate: {
                                                         first: '« first',
@@ -74,10 +75,13 @@ if (have_posts()) :
                                                             last: 'Last'
                                                         }
                                                     },
-                                                    "zeroRecords": "Loading Data..."
+                                                    "zeroRecords": "NO RESULTS FOUND",
+                                                    "processing" : "Loading Data..."
                                                 },
                                                 conditionalPaging: true,
                                                 initComplete: function () {
+                                                    $('.hide-me').hide();
+
                                                     if ($('.brembo table .views-field-notes .icn-note')[0]) {
                                                         $('.brembo table .views-field-notes').on('click', function () {
                                                             $(this).children('div').addClass('active');
@@ -90,6 +94,7 @@ if (have_posts()) :
                                                     $('.brembo .paginate_button').on('click', function () {
                                                         refreshTable();
                                                     });
+                                                    // $('#applist_table-performance').show();
                                                 }
                                             });
 
@@ -139,6 +144,22 @@ if (have_posts()) :
                                                 refreshTable();
                                             });
 
+                                            $('.brembo .reset').on('click', function () {
+                                                $('.dataTables_paginate').hide();
+                                                $('.hide-me').show();
+                                                $('#applist_table-performance tbody').hide();
+
+                                                setTimeout(
+                                                    function() {
+                                                    yadcf.exResetAllFilters(performance_table);
+                                                    refreshTable();
+
+                                                    $('.hide-me').hide();
+                                                    $('#applist_table-performance tbody').show();
+                                                    $('.dataTables_paginate').show();
+                                                }, 100);
+                                            });
+
                                             $('.dataTables_wrapper table th').on('click', function () {
                                                 refreshTable();
                                             });
@@ -152,6 +173,9 @@ if (have_posts()) :
                                         }
                                     </script>
                                     <?php the_content(); ?>
+                                    <div class="dataTables_processing hide-me">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brembo/spinner.gif">
+                                    </div>
                                 </div>
                             </div>
                         </div>

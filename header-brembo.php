@@ -10,7 +10,7 @@
     <div id="brembo-container" class="container brembo">
         <!-- site header -->
         <header class="site-header brembo">
-            <a class="logo" href="<?php echo get_permalink(33489); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brembo/brembo-logo.png"></a>
+            <a style="visibility: hidden" class="logo" href="<?php echo get_permalink(33489); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brembo/brembo-logo.png"></a>
             <span class="menu-toggle"><i class="material-icons">menu</i></span>
             <nav class="site-nav">
                 <div class="inner-container">

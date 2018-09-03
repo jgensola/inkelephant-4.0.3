@@ -35,8 +35,8 @@ if (have_posts()) :
                                 <div class="row">
                                     <script>
                                         var race_table;
-                                        $(document).ready(function () {
-                                            race_table = $('#applist_table-race').DataTable({
+                                        jQuery(document).ready(function () {
+                                            race_table = jQuery('#applist_table-race').DataTable({
                                                 "ajax": "<?php echo home_url(); ?>/wp-content/themes/inkelephant-4.0.3/data/brembo-race-systems.txt",
                                                 pagingType: 'full_numbers',
                                                 "lengthChange": false,
@@ -59,6 +59,7 @@ if (have_posts()) :
                                                     {className: "views-field-notes", "targets": [14]},
                                                     {"defaultContent": " ", "targets": "_all"}
                                                 ],
+                                                processing: true,
                                                 language: {
                                                     paginate: {
                                                         first: '« first',
@@ -74,19 +75,22 @@ if (have_posts()) :
                                                             last: 'Last'
                                                         }
                                                     },
-                                                    "zeroRecords": "Loading Data..."
+                                                    "zeroRecords": "NO RESULTS FOUND",
+                                                    "processing" : "Loading Data..."
                                                 },
                                                 conditionalPaging: true,
                                                 initComplete: function () {
-                                                    if ($('.brembo table .views-field-notes .icn-note')[0]) {
-                                                        $('.brembo table .views-field-notes').on('click', function () {
-                                                            $(this).children('div').addClass('active');
+                                                    $('.hide-me').hide();
+
+                                                    if (jQuery('.brembo table .views-field-notes .icn-note')[0]) {
+                                                        jQuery('.brembo table .views-field-notes').on('click', function () {
+                                                            jQuery(this).children('div').addClass('active');
                                                         });
                                                     }
                                                     refreshTable();
                                                 },
                                                 "fnDrawCallback": function( oSettings ) {
-                                                    $('.brembo .paginate_button').on('click', function () {
+                                                    jQuery('.brembo .paginate_button').on('click', function () {
                                                         refreshTable();
                                                     });
                                                 }
@@ -120,29 +124,39 @@ if (have_posts()) :
                                                 }
                                             );
 
-                                            $('#applist_table-race').on('page.dt', function () {
-                                                $('html, body').animate({
-                                                    scrollTop: $(".main-section").offset().top
+                                            jQuery('#applist_table-race').on('page.dt', function () {
+                                                jQuery('html, body').animate({
+                                                    scrollTop: jQuery(".main-section").offset().top
                                                 }, 1000);
                                             });
 
-                                            $('.brembo .search-submit').on('click', function () {
+                                            jQuery('.brembo .search-submit').on('click', function () {
                                                 refreshTable();
                                             });
 
-                                            $('.dataTables_wrapper table th').on('click', function () {
+                                            jQuery('.brembo .reset').on('click', function () {
+                                                $('.hide-me').show();
+                                                yadcf.exResetAllFilters(race_table);
+                                                refreshTable();
+                                                $('.hide-me').hide();
+                                            });
+
+                                            jQuery('.dataTables_wrapper table th').on('click', function () {
                                                 refreshTable();
                                             });
                                         });
 
                                         function refreshTable() {
-                                            $('.dataTables_wrapper table tbody.clone').remove();
+                                            jQuery('.dataTables_wrapper table tbody.clone').remove();
 
-                                            $('.dataTables_wrapper table tbody').addClass('original').addClass('hidden');
-                                            $('.dataTables_wrapper table tbody').clone().prependTo('.inner-container > .row .dataTables_wrapper table').addClass('clone').removeClass('original').removeClass('hidden');
+                                            jQuery('.dataTables_wrapper table tbody').addClass('original').addClass('hidden');
+                                            jQuery('.dataTables_wrapper table tbody').clone().prependTo('.inner-container > .row .dataTables_wrapper table').addClass('clone').removeClass('original').removeClass('hidden');
                                         }
                                     </script>
                                     <?php the_content(); ?>
+                                    <div class="dataTables_processing hide-me">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brembo/spinner.gif">
+                                    </div>
                                 </div>
                             </div>
                         </div>

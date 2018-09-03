@@ -1,52 +1,52 @@
-$(document).ready(function () {
-    if ($('.site-header.brembo')[0]) {
+jQuery(document).ready(function () {
+    if (jQuery('.site-header.brembo')[0]) {
         // Get IE or Edge browser version
         var version = detectIE();
 
         if (version === false) {
             // document.getElementById('result').innerHTML = '<s>IE/Edge</s>';
-            $('html').addClass('ie-edge');
+            jQuery('html').addClass('ie-edge');
         } else if (version >= 12) {
             // document.getElementById('result').innerHTML = 'Edge ' + version;
-            $('html').addClass('ie-edge-' + version);
+            jQuery('html').addClass('ie-edge-' + version);
         } else {
             // document.getElementById('result').innerHTML = 'IE ' + version;
-            $('html').addClass('ie-' + version);
+            jQuery('html').addClass('ie-' + version);
         }
 
         //mobile sliding menu
-        $('.brembo .menu-toggle').on('click', function () {
-            $('.brembo.container').removeClass('inactive').addClass('active');
-            $('.site-nav').removeClass('inactive').addClass('active');
-            $('body').removeClass('inactive').addClass('active');
+        jQuery('.brembo .menu-toggle').on('click', function () {
+            jQuery('.brembo.container').removeClass('inactive').addClass('active');
+            jQuery('.site-nav').removeClass('inactive').addClass('active');
+            jQuery('body').removeClass('inactive').addClass('active');
         });
 
-        $('.brembo .btn-close').on('click', function () {
-            $('.brembo.container').removeClass('active').addClass('inactive');
-            $('.site-nav').removeClass('active').addClass('inactive');
-            $('body').removeClass('active').addClass('inactive');
+        jQuery('.brembo .btn-close').on('click', function () {
+            jQuery('.brembo.container').removeClass('active').addClass('inactive');
+            jQuery('.site-nav').removeClass('active').addClass('inactive');
+            jQuery('body').removeClass('active').addClass('inactive');
         });
 
-        $('.brembo .overlay').on('click', function () {
-            $('.brembo.container').removeClass('active').addClass('inactive');
-            $('.site-nav').removeClass('active').addClass('inactive');
-            $('body').removeClass('active').addClass('inactive');
+        jQuery('.brembo .overlay').on('click', function () {
+            jQuery('.brembo.container').removeClass('active').addClass('inactive');
+            jQuery('.site-nav').removeClass('active').addClass('inactive');
+            jQuery('body').removeClass('active').addClass('inactive');
         });
 
-        if ($('.brembo table .views-field-notes .icn-note')[0]) {
-            $('.brembo table .views-field-notes').on('click', function () {
-                $(this).children('div').addClass('active');
+        if (jQuery('.brembo table .views-field-notes .icn-note')[0]) {
+            jQuery('.brembo table .views-field-notes').on('click', function () {
+                jQuery(this).children('div').addClass('active');
             });
         }
 
-        $('.brembo-company .owl-carousel').owlCarousel({
+        jQuery('.brembo-company .owl-carousel').owlCarousel({
             items: 1,
             loop: true,
             nav: true,
             navElement: 'span type="span" class="button" role="presentation"'
         });
 
-        $("#applist_table").DataTable({
+        jQuery("#applist_table").DataTable({
             "lengthChange": false,
             "info": false,
             pagingType: 'full_numbers',
@@ -71,18 +71,18 @@ $(document).ready(function () {
             initComplete: function () {
                 this.api().columns().every(function () {
                     var column = this;
-                    var select_container = $('<div class="select-container ' + $(this.header()).html().split(" ").join("-").toLowerCase().replace('#', 'no') + '"></div>').prependTo($(".table-filter"));
-                    var select = $('<select><option value="" >' + $(this.header()).html() + '</option></select>').appendTo(select_container);
+                    var select_container = jQuery('<div class="select-container ' + jQuery(this.header()).html().split(" ").join("-").toLowerCase().replace('#', 'no') + '"></div>').prependTo(jQuery(".table-filter"));
+                    var select = jQuery('<select><option value="" >' + jQuery(this.header()).html() + '</option></select>').appendTo(select_container);
 
-                    $('.brembo .search-submit').on('click', function () {
-                        var val = $.fn.dataTable.util.escapeRegex((select.val()));
+                    jQuery('.brembo .search-submit').on('click', function () {
+                        var val = jQuery.fn.dataTable.util.escapeRegex((select.val()));
 
                         column.search(val ? '^' + val + '$' : '', true, false).draw();
 
-                        if ($('#applist_table tbody tr td.dataTables_empty')[0]) {
-                            $('#applist_table thead').addClass('hide');
+                        if (jQuery('#applist_table tbody tr td.dataTables_empty')[0]) {
+                            jQuery('#applist_table thead').addClass('hide');
                         } else {
-                            $('#applist_table thead').removeClass('hide');
+                            jQuery('#applist_table thead').removeClass('hide');
                         }
                     });
 
@@ -93,16 +93,16 @@ $(document).ready(function () {
             }
         });
 
-        $('#applist_table').on('page.dt', function () {
-            $('html, body').animate({
-                scrollTop: $(".main-section").offset().top
+        jQuery('#applist_table').on('page.dt', function () {
+            jQuery('html, body').animate({
+                scrollTop: jQuery(".main-section").offset().top
             }, 1000);
         });
     }
 });
 
-$(document).mouseup(function (e) {
-    var container = $(".brembo table .views-field-notes div");
+jQuery(document).mouseup(function (e) {
+    var container = jQuery(".brembo table .views-field-notes div");
 
     // if the target of the click isn't the container nor a descendant of the container
     if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -125,12 +125,12 @@ $(document).mouseup(function (e) {
  * of pages is <= 1. The controls can either appear / disappear or fade in / out
  *
  * @example
- *    $('#myTable').DataTable({
+ *    jQuery('#myTable').DataTable({
  *        conditionalPaging: true
  *    });
  *
  * @example
- *    $('#myTable').DataTable({
+ *    jQuery('#myTable').DataTable({
  *        conditionalPaging: {
  *            style: 'fade',
  *            speed: 500 // optional
@@ -139,7 +139,7 @@ $(document).mouseup(function (e) {
  */
 
 (function (window, document, $) {
-    $(document).on('init.dt', function (e, dtSettings) {
+    jQuery(document).on('init.dt', function (e, dtSettings) {
         if (e.namespace !== 'dt') {
             return;
         }
@@ -151,7 +151,7 @@ $(document).mouseup(function (e) {
                 api = new $.fn.dataTable.Api(dtSettings),
                 speed = 'slow',
                 conditionalPaging = function (e) {
-                    var $paging = $(api.table().container()).find('div.dataTables_paginate'),
+                    var $paging = jQuery(api.table().container()).find('div.dataTables_paginate'),
                         pages = api.page.info().pages;
 
                     if (e instanceof $.Event) {

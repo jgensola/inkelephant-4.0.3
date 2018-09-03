@@ -30,7 +30,8 @@
     background: @white;
 
     padding: 0 15px;
-    height: 110px;
+    height: 55px;
+    //height: 110px;
 
     .flex-display();
     .align-items(center);
@@ -84,10 +85,29 @@
             }
 
             &.current_page_item,
-            &.current-page-ancestor {
+            &.current-page-ancestor,
+            &.current-menu-ancestor {
                 a {
                     color: @white;
                     background: @tundora;
+                }
+
+                .sub-menu {
+                    a {
+                        color: @silver;
+                        background: transparent;
+                    }
+
+                    .current_page_item a {
+                        color: @white;
+                    }
+                }
+            }
+
+            &:first-of-type {
+                &.current-page-ancestor a {
+                    background: transparent;
+                    color: @silver;
                 }
             }
 
@@ -104,7 +124,7 @@
                 .justify-content(space-between);
 
                 &:hover {
-                    color: @white;
+                    color: @white !important;
                     background: @tundora;
                 }
 
@@ -121,6 +141,7 @@
 
     ul.sub-menu {
         padding: 12px 30px;
+
         li {
             border: none;
 
@@ -142,7 +163,8 @@
             }
 
             &.current_page_item,
-            &.current-page-ancestor {
+            &.current-page-ancestor,
+            &.current-menu-ancestor {
                 a {
                     background: none;
                 }
@@ -262,9 +284,20 @@
                 }
 
                 &.current_page_item,
-                &.current-page-ancestor {
+                &.current-page-ancestor,
+                &.current-menu-ancestor {
                     a:after {
                         display: block;
+                    }
+                }
+
+                &:first-of-type {
+                    &.current-page-ancestor a {
+                        color: @mine-shaft;
+
+                        &:after {
+                            display: none;
+                        }
                     }
                 }
 
@@ -307,7 +340,8 @@
 
             li {
                 &.current_page_item a,
-                &.current-page-ancestor a {
+                &.current-page-ancestor a,
+                &.current-menu-ancestor a {
                     color: @white !important;
                 }
 

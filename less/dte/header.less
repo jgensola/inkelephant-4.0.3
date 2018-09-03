@@ -378,144 +378,6 @@
                 }
             }
         }
-
-        //Mega Menu
-        #mega-menu-wrap-dte-header {
-            word-wrap: normal;
-
-            #mega-menu-dte-header {
-                word-wrap: normal;
-
-                .flex-display();
-
-                > li.mega-menu-item {
-                    border-bottom: none;
-
-                    word-wrap: normal;
-
-                    > a.mega-menu-link {
-                        width: auto;
-                    }
-
-                    //Home Button in Navigation
-                    &.mega-menu-item-850 {
-                        margin-top: -3px;
-
-                        a {
-                            padding: 0 0 0 23px;
-                            margin-right: -15px;
-
-                            color: transparent;
-
-                            font-size: 6px;
-                            word-wrap: normal;
-
-                            &:hover {
-                                color: transparent;
-                            }
-                        }
-                    }
-
-                }
-
-                li.mega-menu-item-has-children {
-                    .flex-display();
-                    .flex-direction(column);
-                    .align-items(center);
-
-                    a.mega-menu-link {
-                        padding: 0 13px;
-
-                        word-wrap: normal;
-
-                        pointer-events: auto;
-
-                        &:before {
-                            display: none
-                        }
-                    }
-
-                    .mega-sub-menu {
-                        display: block;
-                        top: 40px;
-
-                        padding: 0;
-                        width: auto;
-                        margin-top: 0;
-
-                        white-space: nowrap;
-                        word-wrap: normal;
-
-                        .box-shadow(0 10px 29px 0 rgba(0, 0, 0, .17));
-
-                        li {
-                            width: 240px;
-                        }
-
-                        li:first-child {
-                            .flex-display();
-                            .justify-content(center);
-
-                            &:before {
-                                position: absolute;
-                                display: block !important;
-                                top: -2px;
-
-                                color: white;
-
-                                font-family: @google-icon-font;
-                                font-size: 20px;
-                                line-height: .1;
-
-                                content: 'arrow_drop_up';
-                            }
-
-                            a {
-                                width: 100%;
-                            }
-
-                            &:hover:before {
-                                color: @thunderbird;
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        .mega-sub-menu {
-                            display: block;
-
-                            a {
-                                padding: 0 20px;
-                            }
-                        }
-                    }
-
-                    //PedalBox in Navigation
-                    &.mega-menu-item-33247,
-                    &.mega-menu-item-33247.mega-toggle-on {
-                        position: relative;
-
-                        a:before {
-                            display: none;
-                        }
-
-                        &:hover {
-                            .mega-sub-menu {
-                                display: block;
-
-                                li:first-child:before {
-                                    display: none !important;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
-                    padding: 0 20px;
-                }
-            }
-        }
     }
 }
 
@@ -560,22 +422,6 @@
                 }
             }
         }
-
-        #mega-menu-wrap-dte-header {
-
-            #mega-menu-dte-header {
-
-                li.mega-menu-item-has-children .mega-sub-menu li:first-child:before {
-                    left: 50%;
-
-                    font-family: @generic-icon-font;
-
-                    content: @caret-up;
-
-                    .transform(translateX(-50%));
-                }
-            }
-        }
     }
 
     @media only screen  and (min-width: @screen__m) {
@@ -588,23 +434,6 @@
                             left: 50%;
 
                             .transform(translateX(-50%));
-                        }
-                    }
-                }
-            }
-
-
-            #mega-menu-wrap-dte-header {
-                #mega-menu-dte-header {
-                    > li.mega-menu-item {
-                        &.mega-menu-flyout ul.mega-sub-menu {
-                            left: 50%;
-
-                            .transform(translateX(-50%));
-                        }
-
-                        .mega-menu-item-text-4 .bottom-section .column-2 ul li:first-child {
-                            .flex-display(inline-flexbox);
                         }
                     }
                 }

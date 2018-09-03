@@ -4,6 +4,10 @@
 @import 'buttons.less';
 
 @{brembo-pages} {
+    .invisible {
+        visibility: hidden;
+    }
+
     position: initial;
 
     font-family: @brembo-primary-font;
@@ -898,6 +902,10 @@
 
             p.has-button {
                 margin-bottom: 30px;
+
+                &.btn-sub {
+                    margin-bottom: 10px;
+                }
             }
 
             .search {
@@ -906,6 +914,22 @@
 
             .dataTables_filter {
                 display: none;
+            }
+
+            .dataTables_processing {
+                height: auto;
+                padding: 10px;
+
+                background: @wild-sand;
+
+                .transform(translateY(-50%));
+
+                img {
+                    display: block;
+
+                    margin: auto;
+                    height: 40px;
+                }
             }
 
             table {
@@ -2081,17 +2105,33 @@
                 }
 
                 .search-submit {
-                    position: absolute;
+                    //position: absolute;
                     top: 2.5px;
-                    width: 150px;
                     margin-bottom: 0;
                 }
 
                 p.has-button {
-                    position: absolute;
                     display: inline-block;
 
-                    margin: -3px 0 0;
+                    margin: 0;
+                    width: 50%;
+                    max-width: 150px;
+
+                    &.btn-sub {
+                        margin-right: 7px;
+                    }
+                }
+
+                .dataTables_processing {
+                    z-index: 10;
+
+                    height: 90px;
+                }
+
+                #externaly_triggered_wrapper-controls {
+                    width: 100%;
+
+                    .flex-display();
                 }
 
                 table {

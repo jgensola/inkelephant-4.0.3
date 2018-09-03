@@ -4695,121 +4695,6 @@ readers do not read off random characters that represent icons */
   .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu.active ul.sub-menu li:first-child:hover:before {
     color: #cd1816;
   }
-  .site-header.dte #mega-menu-wrap-dte-header {
-    word-wrap: normal;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header {
-    word-wrap: normal;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item {
-    border-bottom: none;
-    word-wrap: normal;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item > a.mega-menu-link {
-    width: auto;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item.mega-menu-item-850 {
-    margin-top: -3px;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item.mega-menu-item-850 a {
-    padding: 0 0 0 23px;
-    margin-right: -15px;
-    color: transparent;
-    font-size: 6px;
-    word-wrap: normal;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item.mega-menu-item-850 a:hover {
-    color: transparent;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children a.mega-menu-link {
-    padding: 0 13px;
-    word-wrap: normal;
-    pointer-events: auto;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children a.mega-menu-link:before {
-    display: none;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu {
-    display: block;
-    top: 40px;
-    padding: 0;
-    width: auto;
-    margin-top: 0;
-    white-space: nowrap;
-    word-wrap: normal;
-    -webkit-box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.17);
-    -moz-box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.17);
-    box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.17);
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li {
-    width: 240px;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child:before {
-    position: absolute;
-    display: block !important;
-    top: -2px;
-    color: white;
-    font-family: 'Material Icons', Arial;
-    font-size: 20px;
-    line-height: 0.1;
-    content: 'arrow_drop_up';
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child a {
-    width: 100%;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child:hover:before {
-    color: #cd1816;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children:hover .mega-sub-menu {
-    display: block;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children:hover .mega-sub-menu a {
-    padding: 0 20px;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247,
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247.mega-toggle-on {
-    position: relative;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247 a:before,
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247.mega-toggle-on a:before {
-    display: none;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247:hover .mega-sub-menu,
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247.mega-toggle-on:hover .mega-sub-menu {
-    display: block;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247:hover .mega-sub-menu li:first-child:before,
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children.mega-menu-item-33247.mega-toggle-on:hover .mega-sub-menu li:first-child:before {
-    display: none !important;
-  }
-  .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
-    padding: 0 20px;
-  }
 }
 @media only screen and (min-width: 1000px) {
   .page-template-page-dte-news-php #header-outer .container,
@@ -4849,16 +4734,6 @@ readers do not read off random characters that represent icons */
   -ms-transform: translateX(-50%);
   -webkit-font-smoothing: antialiased;
 }
-.ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header li.mega-menu-item-has-children .mega-sub-menu li:first-child:before {
-  left: 50%;
-  font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Regular', 'Font Awesome 5 Free';
-  content: '\f0d8';
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-font-smoothing: antialiased;
-}
 @media only screen and (min-width: 768px) {
   .ie-11 .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu > li.menu-item ul.sub-menu,
   .ie-11 .site-header.dte .menu-dte-header-menu-container #menu-dte-header-menu.active > li.menu-item ul.sub-menu {
@@ -4868,20 +4743,6 @@ readers do not read off random characters that represent icons */
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -webkit-font-smoothing: antialiased;
-  }
-  .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-font-smoothing: antialiased;
-  }
-  .ie-11 .site-header.dte #mega-menu-wrap-dte-header #mega-menu-dte-header > li.mega-menu-item .mega-menu-item-text-4 .bottom-section .column-2 ul li:first-child {
-    display: -webkit-inline-flexbox;
-    display: -ms-inline-flexboxbox;
-    display: -ms-inline-flexbox;
-    display: inline-flexbox;
   }
 }
 .dte-html {
@@ -14972,7 +14833,15 @@ a {
 .page-template-page-brembo-product-php .search-submit,
 .page-template-page-brembo-application-list-php .search-submit,
 .page-template-page-brembo-performance-systems-php .search-submit,
-.page-template-page-brembo-race-systems-php .search-submit {
+.page-template-page-brembo-race-systems-php .search-submit,
+.page-template-page-brembo-company-php .reset,
+.page-template-page-brembo-default-php .reset,
+.page-template-page-brembo-knowledgebase-php .reset,
+.page-template-page-brembo-knowledgebase-children-php .reset,
+.page-template-page-brembo-product-php .reset,
+.page-template-page-brembo-application-list-php .reset,
+.page-template-page-brembo-performance-systems-php .reset,
+.page-template-page-brembo-race-systems-php .reset {
   display: block;
   height: 44px;
   margin-bottom: 10px;
@@ -14993,7 +14862,15 @@ a {
 .page-template-page-brembo-product-php .search-submit:hover,
 .page-template-page-brembo-application-list-php .search-submit:hover,
 .page-template-page-brembo-performance-systems-php .search-submit:hover,
-.page-template-page-brembo-race-systems-php .search-submit:hover {
+.page-template-page-brembo-race-systems-php .search-submit:hover,
+.page-template-page-brembo-company-php .reset:hover,
+.page-template-page-brembo-default-php .reset:hover,
+.page-template-page-brembo-knowledgebase-php .reset:hover,
+.page-template-page-brembo-knowledgebase-children-php .reset:hover,
+.page-template-page-brembo-product-php .reset:hover,
+.page-template-page-brembo-application-list-php .reset:hover,
+.page-template-page-brembo-performance-systems-php .reset:hover,
+.page-template-page-brembo-race-systems-php .reset:hover {
   border: 1px solid #333;
   background: #333;
 }
@@ -15076,7 +14953,7 @@ a {
 .site-header.brembo {
   background: #fff;
   padding: 0 15px;
-  height: 110px;
+  height: 55px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -15127,9 +15004,25 @@ a {
   display: block;
 }
 .site-header.brembo ul.menu li.current_page_item a,
-.site-header.brembo ul.menu li.current-page-ancestor a {
+.site-header.brembo ul.menu li.current-page-ancestor a,
+.site-header.brembo ul.menu li.current-menu-ancestor a {
   color: #fff;
   background: #404040;
+}
+.site-header.brembo ul.menu li.current_page_item .sub-menu a,
+.site-header.brembo ul.menu li.current-page-ancestor .sub-menu a,
+.site-header.brembo ul.menu li.current-menu-ancestor .sub-menu a {
+  color: #ccc;
+  background: transparent;
+}
+.site-header.brembo ul.menu li.current_page_item .sub-menu .current_page_item a,
+.site-header.brembo ul.menu li.current-page-ancestor .sub-menu .current_page_item a,
+.site-header.brembo ul.menu li.current-menu-ancestor .sub-menu .current_page_item a {
+  color: #fff;
+}
+.site-header.brembo ul.menu li:first-of-type.current-page-ancestor a {
+  background: transparent;
+  color: #ccc;
 }
 .site-header.brembo ul.menu li a {
   padding: 15px;
@@ -15146,7 +15039,7 @@ a {
   justify-content: space-between;
 }
 .site-header.brembo ul.menu li a:hover {
-  color: #fff;
+  color: #fff !important;
   background: #404040;
 }
 .site-header.brembo ul.menu li a:after {
@@ -15175,7 +15068,8 @@ a {
   background: none;
 }
 .site-header.brembo ul.sub-menu li.current_page_item a,
-.site-header.brembo ul.sub-menu li.current-page-ancestor a {
+.site-header.brembo ul.sub-menu li.current-page-ancestor a,
+.site-header.brembo ul.sub-menu li.current-menu-ancestor a {
   background: none;
 }
 @media only screen and (min-width: 360px) {
@@ -15282,8 +15176,15 @@ a {
     display: block;
   }
   .site-header.brembo ul.menu li.current_page_item a:after,
-  .site-header.brembo ul.menu li.current-page-ancestor a:after {
+  .site-header.brembo ul.menu li.current-page-ancestor a:after,
+  .site-header.brembo ul.menu li.current-menu-ancestor a:after {
     display: block;
+  }
+  .site-header.brembo ul.menu li:first-of-type.current-page-ancestor a {
+    color: #333;
+  }
+  .site-header.brembo ul.menu li:first-of-type.current-page-ancestor a:after {
+    display: none;
   }
   .site-header.brembo ul.menu li a {
     position: relative;
@@ -15320,7 +15221,8 @@ a {
     box-shadow: 0px 0px 1px 0px #404040;
   }
   .site-header.brembo ul.sub-menu li.current_page_item a,
-  .site-header.brembo ul.sub-menu li.current-page-ancestor a {
+  .site-header.brembo ul.sub-menu li.current-page-ancestor a,
+  .site-header.brembo ul.sub-menu li.current-menu-ancestor a {
     color: #fff !important;
   }
   .site-header.brembo ul.sub-menu li a {
@@ -15386,6 +15288,16 @@ a {
   position: initial;
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: lighter;
+}
+.page-template-page-brembo-company-php .invisible,
+.page-template-page-brembo-default-php .invisible,
+.page-template-page-brembo-knowledgebase-php .invisible,
+.page-template-page-brembo-knowledgebase-children-php .invisible,
+.page-template-page-brembo-product-php .invisible,
+.page-template-page-brembo-application-list-php .invisible,
+.page-template-page-brembo-performance-systems-php .invisible,
+.page-template-page-brembo-race-systems-php .invisible {
+  visibility: hidden;
 }
 .page-template-page-brembo-company-php #header-space,
 .page-template-page-brembo-default-php #header-space,
@@ -17122,6 +17034,16 @@ a {
 .page-template-page-brembo-race-systems-php article.post.application-list p.has-button {
   margin-bottom: 30px;
 }
+.page-template-page-brembo-company-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-default-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-knowledgebase-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-knowledgebase-children-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-product-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-application-list-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-performance-systems-php article.post.application-list p.has-button.btn-sub,
+.page-template-page-brembo-race-systems-php article.post.application-list p.has-button.btn-sub {
+  margin-bottom: 10px;
+}
 .page-template-page-brembo-company-php article.post.application-list .search,
 .page-template-page-brembo-default-php article.post.application-list .search,
 .page-template-page-brembo-knowledgebase-php article.post.application-list .search,
@@ -17141,6 +17063,35 @@ a {
 .page-template-page-brembo-performance-systems-php article.post.application-list .dataTables_filter,
 .page-template-page-brembo-race-systems-php article.post.application-list .dataTables_filter {
   display: none;
+}
+.page-template-page-brembo-company-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-default-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-knowledgebase-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-knowledgebase-children-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-product-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-application-list-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-performance-systems-php article.post.application-list .dataTables_processing,
+.page-template-page-brembo-race-systems-php article.post.application-list .dataTables_processing {
+  height: auto;
+  padding: 10px;
+  background: #f6f5f5;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+}
+.page-template-page-brembo-company-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-default-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-knowledgebase-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-knowledgebase-children-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-product-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-application-list-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-performance-systems-php article.post.application-list .dataTables_processing img,
+.page-template-page-brembo-race-systems-php article.post.application-list .dataTables_processing img {
+  display: block;
+  margin: auto;
+  height: 40px;
 }
 .page-template-page-brembo-company-php article.post.application-list table,
 .page-template-page-brembo-default-php article.post.application-list table,
@@ -19590,9 +19541,7 @@ a {
   .page-template-page-brembo-application-list-php article.post.application-list .search-submit,
   .page-template-page-brembo-performance-systems-php article.post.application-list .search-submit,
   .page-template-page-brembo-race-systems-php article.post.application-list .search-submit {
-    position: absolute;
     top: 2.5px;
-    width: 150px;
     margin-bottom: 0;
   }
   .page-template-page-brembo-company-php article.post.application-list p.has-button,
@@ -19603,9 +19552,45 @@ a {
   .page-template-page-brembo-application-list-php article.post.application-list p.has-button,
   .page-template-page-brembo-performance-systems-php article.post.application-list p.has-button,
   .page-template-page-brembo-race-systems-php article.post.application-list p.has-button {
-    position: absolute;
     display: inline-block;
-    margin: -3px 0 0;
+    margin: 0;
+    width: 50%;
+    max-width: 150px;
+  }
+  .page-template-page-brembo-company-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-default-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-knowledgebase-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-knowledgebase-children-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-product-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-application-list-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-performance-systems-php article.post.application-list p.has-button.btn-sub,
+  .page-template-page-brembo-race-systems-php article.post.application-list p.has-button.btn-sub {
+    margin-right: 7px;
+  }
+  .page-template-page-brembo-company-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-default-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-knowledgebase-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-knowledgebase-children-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-product-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-application-list-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-performance-systems-php article.post.application-list .dataTables_processing,
+  .page-template-page-brembo-race-systems-php article.post.application-list .dataTables_processing {
+    z-index: 10;
+    height: 90px;
+  }
+  .page-template-page-brembo-company-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-default-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-knowledgebase-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-knowledgebase-children-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-product-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-application-list-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-performance-systems-php article.post.application-list #externaly_triggered_wrapper-controls,
+  .page-template-page-brembo-race-systems-php article.post.application-list #externaly_triggered_wrapper-controls {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
   }
   .page-template-page-brembo-company-php article.post.application-list table,
   .page-template-page-brembo-default-php article.post.application-list table,
