@@ -199,6 +199,40 @@
 
         line-height: 1.6;
 
+        //pic header
+        &.knowledgebase,
+        &.knowledgebase-children,
+        &.application-list,
+        &.default {
+            .title-container {
+                background-image: url('@{image-path}brembo/brembo-b-m8-caliper-yellow_xlarge2.png');
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position-y: 50%;
+
+                h2.page-title {
+                    display: block;
+
+                    width: 100%;
+                    margin-left: 50%;
+
+                    text-align: right;
+                }
+            }
+
+            &.about,
+            &.product {
+                .title-container {
+                    background-image: none;
+
+                    h2.page-title {
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
         table {
             max-width: 100%;
 
@@ -351,7 +385,6 @@
 
             .title-container {
                 height: 150px;
-                border-bottom: 1px solid @white;
                 padding: 0 15px;
 
                 .flex-display();
@@ -361,6 +394,7 @@
 
             .main-section {
                 padding: 30px 15px 50px 15px;
+                border-top: 1px solid @white;
             }
 
             .inner-container {
@@ -1803,6 +1837,33 @@
 @media only screen  and (min-width: @screen__m) {
     @{brembo-pages} {
         article.post {
+            //pic header
+            &.knowledgebase,
+            &.knowledgebase-children,
+            &.application-list,
+            &.default {
+                .title-container {
+                    padding: 0 24px;
+                    max-width: 750px;
+                    margin: auto;
+
+                    background-size: 50%;
+
+                    h2.page-title {
+                        margin-left: 50%;
+                    }
+                }
+
+                &.about,
+                &.product {
+                    .title-container {
+                        h2.page-title {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
             &.default {
                 .column {
                     padding: 15px;
@@ -1981,6 +2042,20 @@
         }
 
         article.post {
+            //pic header
+            &.knowledgebase,
+            &.knowledgebase-children,
+            &.application-list,
+            &.default {
+                .title-container {
+                    max-width: 940px;
+
+                    h2.page-title {
+                        text-align: center;
+                    }
+                }
+            }
+
             table {
                 tbody td {
                     vertical-align: middle;
@@ -2395,6 +2470,16 @@
 @media only screen  and (min-width: @screen__sxl) {
     @{brembo-pages} {
         article.post {
+            //pic header
+            &.knowledgebase,
+            &.knowledgebase-children,
+            &.application-list,
+            &.default {
+                .title-container {
+                    max-width: 1140px;
+                }
+            }
+
             &.default {
                 .inner-container {
                     max-width: 1140px;
